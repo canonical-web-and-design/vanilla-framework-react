@@ -5,6 +5,7 @@ import './App.css';
 import ButtonBrand from './components/ButtonBrand';
 import ButtonNegative from './components/ButtonNegative';
 import ButtonPositive from './components/ButtonPositive';
+import Switch from './components/Switch';
 
 class App extends Component {
   render() {
@@ -38,6 +39,15 @@ class App extends Component {
               <ButtonBrand value="Vanilla 💥" />
               <ButtonPositive value="Success 😁" />
               <ButtonNegative value="Error 😬" />
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div className="p-strip">
+          <div className="row">
+            <div className="col-6">
+              <h2>Switch</h2>
+              <Switch />
             </div>
           </div>
         </div>

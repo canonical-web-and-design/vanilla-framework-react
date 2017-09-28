@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 // Components
@@ -16,17 +15,16 @@ class App extends Component {
             <div className="p-navigation__banner">
               <div className="p-navigation__logo">
                 <a className="p-navigation__link" href="/">
-                  <img src={logo} className="App-logo" alt="logo" />Vanilla
+                  <img src="https://assets.ubuntu.com/v1/d96d86b5-vanilla_black-orange_hex.svg" className="App-logo" alt="logo" />
                 </a>
               </div>
             </div>
           </div>
         </header>
-        <div className="p-strip">
+        <div className="p-strip u-no-padding--bottom">
           <div className="row">
           <div className="col-12">
-            <h1 className="App-title">Vanilla Framework (in React)</h1>
-            <p className="App-intro">
+            <p>
               This is a simple implementation of Vanilla Framework using React.
             </p>
           </div>
@@ -43,6 +41,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <hr/>
       </div>
     );
   }

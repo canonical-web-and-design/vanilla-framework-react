@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 // Components
-import ButtonBrand from './components/ButtonBrand';
-import ButtonNegative from './components/ButtonNegative';
-import ButtonPositive from './components/ButtonPositive';
+import Button from './components/Button';
 import Switch from './components/Switch';
 
 class App extends Component {
@@ -36,9 +34,10 @@ class App extends Component {
           <div className="row">
             <div className="col-6">
               <h2>Buttons</h2>
-              <ButtonBrand value="Vanilla 💥" />
-              <ButtonPositive value="Success 😁" />
-              <ButtonNegative value="Error 😬" />
+              <Button value="Neutral button 😶" type="neutral" />
+              <Button value="Brand button 💥" type="brand" />
+              <Button value="Negative button 😡" type="negative" />
+              <Button value="Positive button 😁" type="positive" />
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import ButtonBrand from './components/ButtonBrand';
 import ButtonNegative from './components/ButtonNegative';
 import ButtonPositive from './components/ButtonPositive';
 import Switch from './components/Switch';
+import Card from './components/Card';
 
 class App extends Component {
   render() {
@@ -52,6 +53,26 @@ class App extends Component {
           </div>
         </div>
         <hr/>
+        <div className="p-strip">
+          <div className="row">
+            <div className="col-6">
+              <h2>Card</h2>
+              <Card
+                title="Card title"
+                imgSrc="http://placehold.it/200x32"
+                cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
+              />
+              <h2>Highlighted Card</h2>
+              <Card
+                modifier="highlighted"
+                title="Card title"
+                imgSrc="http://placehold.it/200x32"
+                cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
       </div>
     );
   }

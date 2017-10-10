@@ -34,7 +34,8 @@ class App extends Component {
           <div className="row">
             <div className="col-6">
               <h2>Buttons</h2>
-              <p><Button value="Neutral button 😶" type="neutral" /></p>
+              <p><Button value="Base button 😶" /></p>
+              <p><Button value="Neutral button 😐" type="neutral" /></p>
               <p><Button value="Brand button 💥" type="brand" /></p>
               <p><Button value="Negative button 😡" type="negative" /></p>
               <p><Button value="Positive button 😁" type="positive" /></p>

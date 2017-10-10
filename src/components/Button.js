@@ -8,4 +8,6 @@ class Button extends React.Component {
   }
 }
 
+Button.defaultProps = {type: 'base'};
+
 export default Button;

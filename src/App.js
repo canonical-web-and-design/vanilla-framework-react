@@ -3,9 +3,15 @@ import './App.css';
 
 // Components
 import Button from './components/Button';
-import Switch from './components/Switch';
+import Card from './components/Card';
 
 class App extends Component {
+
+  cardImg = {
+    url : "http://placehold.it/200x32",
+    alt : "Placeholder"
+  }
+
   render() {
     return (
       <div className="App">
@@ -46,12 +52,25 @@ class App extends Component {
         <div className="p-strip">
           <div className="row">
             <div className="col-6">
-              <h2>Switch</h2>
-              <Switch />
+              <h2>Card</h2>
+              <Card
+                title="Card title"
+                imgSrc={ this.cardImg.url }
+                imgAlt={ this.cardImg.alt }
+                cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
+              />
+              <h2>Highlighted Card</h2>
+              <Card
+                modifier="highlighted"
+                title="Card title"
+                imgSrc={ this.cardImg.url }
+                imgAlt={ this.cardImg.alt }
+                cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
+              />
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
       </div>
     );
   }

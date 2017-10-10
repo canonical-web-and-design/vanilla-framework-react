@@ -23,14 +23,14 @@ class App extends Component {
         </header>
         <div className="p-strip u-no-padding--bottom">
           <div className="row">
-          <div className="col-12">
-            <p>
+            <div className="col-12">
+              <p>
               This is a simple implementation of Vanilla Framework using React.
-            </p>
-          </div>
+              </p>
+            </div>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className="p-strip">
           <div className="row">
             <div className="col-6">
@@ -41,7 +41,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
       </div>
     );
   }

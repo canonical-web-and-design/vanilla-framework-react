@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 // Components
-import ButtonBrand from './components/ButtonBrand';
-import ButtonNegative from './components/ButtonNegative';
-import ButtonPositive from './components/ButtonPositive';
+import Button from './components/Button';
+import Switch from './components/Switch';
 
 class App extends Component {
   render() {
@@ -35,9 +34,20 @@ class App extends Component {
           <div className="row">
             <div className="col-6">
               <h2>Buttons</h2>
-              <ButtonBrand value="Vanilla 💥" />
-              <ButtonPositive value="Success 😁" />
-              <ButtonNegative value="Error 😬" />
+              <p><Button value="Base button 😶" /></p>
+              <p><Button value="Neutral button 😐" type="neutral" /></p>
+              <p><Button value="Brand button 💥" type="brand" /></p>
+              <p><Button value="Negative button 😡" type="negative" /></p>
+              <p><Button value="Positive button 😁" type="positive" /></p>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div className="p-strip">
+          <div className="row">
+            <div className="col-6">
+              <h2>Switch</h2>
+              <Switch />
             </div>
           </div>
         </div>

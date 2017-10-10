@@ -9,6 +9,12 @@ import Switch from './components/Switch';
 import Card from './components/Card';
 
 class App extends Component {
+
+  cardImg = {
+    url : "http://placehold.it/200x32",
+    alt : "Placeholder"
+  }
+
   render() {
     return (
       <div className="App">
@@ -59,14 +65,16 @@ class App extends Component {
               <h2>Card</h2>
               <Card
                 title="Card title"
-                imgSrc="http://placehold.it/200x32"
+                imgSrc={ this.cardImg.url }
+                imgAlt={ this.cardImg.alt }
                 cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
               />
               <h2>Highlighted Card</h2>
               <Card
                 modifier="highlighted"
                 title="Card title"
-                imgSrc="http://placehold.it/200x32"
+                imgSrc={ this.cardImg.url }
+                imgAlt={ this.cardImg.alt }
                 cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
               />
             </div>

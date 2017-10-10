@@ -4,7 +4,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div className={ this.props.modifier ? 'p-card--' +  this.props.modifier : 'p-card' }>
+      <div className={ this.props.modifier ? `p-card--${this.props.modifier}` : 'p-card' }>
         <header className="p-card__header">
           <img src={ this.props.imgSrc } alt="placeholder" />
         </header>

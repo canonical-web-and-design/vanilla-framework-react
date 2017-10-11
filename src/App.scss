@@ -1,1 +1,6 @@
-@import 'vanilla-framework/scss/build';
+@import 'vanilla-framework/scss/base';
+@import 'vanilla-framework/scss/patterns_grid';
+
+@include vanilla-base;
+@include vf-p-grid;
+@include vf-p-grid-modifications;

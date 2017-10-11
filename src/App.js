@@ -41,10 +41,10 @@ class App extends Component {
             <div className="col-6">
               <h2>Buttons</h2>
               <p><Button value="Base button 😶" /></p>
-              <p><Button value="Neutral button 😐" type="neutral" /></p>
-              <p><Button value="Brand button 💥" type="brand" /></p>
-              <p><Button value="Negative button 😡" type="negative" /></p>
-              <p><Button value="Positive button 😁" type="positive" /></p>
+              <p><Button value="Neutral button 😐" modifier="neutral" /></p>
+              <p><Button value="Brand button 💥" modifier="brand" /></p>
+              <p><Button value="Negative button 😡" modifier="negative" /></p>
+              <p><Button value="Positive button 😁" modifier="positive" /></p>
             </div>
           </div>
         </div>

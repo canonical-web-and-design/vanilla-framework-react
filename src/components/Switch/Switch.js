@@ -3,6 +3,19 @@ import PropTypes from 'prop-types';
 import './Switch.css';
 
 class Switch extends React.Component {
+  constructor() {
+    super();
+    this.switchToggle = this.switchToggle.bind(this);
+    this.state = {
+      checked: false,
+    };
+  }
+
+  switchToggle() {
+    const currentState = this.state.checked;
+    this.setState({ checked: !currentState });
+  }
+
   render() {
     return (
       <span>
@@ -12,8 +25,9 @@ class Switch extends React.Component {
           className="p-switch"
           type="button"
           role="switch"
-          aria-checked="true"
+          aria-checked={this.state.checked}
           aria-labelledby="switch-on-label"
+          onClick={() => this.switchToggle(this)}
         >
           <span>On</span>
           <span>Off</span>

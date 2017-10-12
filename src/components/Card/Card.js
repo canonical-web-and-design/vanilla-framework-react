@@ -10,7 +10,7 @@ class Card extends React.Component {
           <img src={this.props.imgSrc} alt={this.props.imgAlt} />
         </header>
         <h3 className="p-card__title">{this.props.title}</h3>
-        <p className="p-card__content">{this.props.cardContent}</p>
+        { this.props.children }
       </div>
     );
   }
@@ -23,7 +23,7 @@ Card.defaultProps = {
 };
 
 Card.propTypes = {
-  cardContent: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   imgAlt: PropTypes.string,
   imgSrc: PropTypes.string,
   modifier: PropTypes.string,

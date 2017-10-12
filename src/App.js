@@ -57,16 +57,18 @@ class App extends Component {
                 title="Card title"
                 imgSrc={ this.cardImg.url }
                 imgAlt={ this.cardImg.alt }
-                cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
-              />
+              >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </Card>
               <h2>Highlighted Card</h2>
               <Card
                 modifier="highlighted"
                 title="Card title"
                 imgSrc={ this.cardImg.url }
                 imgAlt={ this.cardImg.alt }
-                cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
-              />
+              >
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </Card>
             </div>
           </div>
         </div>

@@ -1,12 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Card from '../components/Card/Card';
+import ReactTestRenderer from 'react-test-renderer';
+import Card from './Card';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(
-    <Card
-      title="title"
+describe('Card component should render expected markup', () => {
+  it('should compare the component with a snapshot', () => {
+    const card = ReactTestRenderer.create(<Card
+      className="p-card"
+      title="Title"
       cardContent="Lorem ipsum dolor sit amet"
-    />, div);
+    />);
+    const json = card.toJSON();
+    expect(json).toMatchSnapshot();
+  });
 });

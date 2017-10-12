@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component should render expected markup should compare the component with a snapshot 1`] = `
+<div
+  className="p-card"
+>
+  <header
+    className="p-card__header"
+  >
+    <img
+      alt="Placeholder"
+      src="http://placehold.it/200x32"
+    />
+  </header>
+  <h3
+    className="p-card__title"
+  >
+    Title
+  </h3>
+  <p
+    className="p-card__content"
+  >
+    Lorem ipsum dolor sit amet
+  </p>
+</div>
+`;

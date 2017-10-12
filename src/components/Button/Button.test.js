@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import Button from './Button';
 

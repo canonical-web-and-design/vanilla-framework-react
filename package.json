@@ -19,7 +19,7 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "node_modules/.bin/eslint .",
+    "lint": "node_modules/.bin/eslint ./src",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

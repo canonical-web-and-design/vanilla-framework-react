@@ -6,12 +6,13 @@ import Button from './components/Button/Button';
 import Card from './components/Card/Card';
 
 class App extends Component {
-
-  cardImg = {
-    url : "http://placehold.it/200x32",
-    alt : "Placeholder"
+  constructor() {
+    super();
+    this.image = {
+      src: 'http://placekitten.com/g/64/64',
+      alt: 'Placeholder',
+    };
   }
-
   render() {
     return (
       <div className="App">
@@ -41,32 +42,32 @@ class App extends Component {
             <div className="col-6">
               <h2>Buttons</h2>
               <p><Button value="Base button 😶" /></p>
-              <p><Button value="Neutral button 😐" type="neutral" /></p>
-              <p><Button value="Brand button 💥" type="brand" /></p>
-              <p><Button value="Negative button 😡" type="negative" /></p>
-              <p><Button value="Positive button 😁" type="positive" /></p>
+              <p><Button value="Neutral button 😐" modifier="neutral" /></p>
+              <p><Button value="Brand button 💥" modifier="brand" /></p>
+              <p><Button value="Negative button 😡" modifier="negative" /></p>
+              <p><Button value="Positive button 😁" modifier="positive" /></p>
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className="p-strip">
           <div className="row">
             <div className="col-6">
               <h2>Card</h2>
               <Card
                 title="Card title"
-                imgSrc={ this.cardImg.url }
-                imgAlt={ this.cardImg.alt }
-                cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
-              />
+                image={this.image}
+              >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </Card>
               <h2>Highlighted Card</h2>
               <Card
                 modifier="highlighted"
                 title="Card title"
-                imgSrc={ this.cardImg.url }
-                imgAlt={ this.cardImg.alt }
-                cardContent="Lorem ipsum dolor sit amet, consectetur adipisicing."
-              />
+                image={this.image}
+              >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </Card>
             </div>
           </div>
         </div>

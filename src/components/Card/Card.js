@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.css';
 
 class Card extends React.Component {
@@ -6,12 +7,31 @@ class Card extends React.Component {
     return (
       <div className={this.props.modifier ? `p-card--${this.props.modifier}` : 'p-card'}>
         <header className="p-card__header">
-          <img src={this.props.imgSrc} alt={this.props.imgAlt} />
+          <img src={this.props.image.src} alt={this.props.image.alt} />
         </header>
         <h3 className="p-card__title">{this.props.title}</h3>
-        <p className="p-card__content">{this.props.cardContent}</p>
+        { this.props.children }
       </div>
-    )
+    );
   }
 }
+
+Card.defaultProps = {
+  modifier: '',
+  image: {
+    src: PropTypes.string,
+    alt: PropTypes.string,
+  },
+};
+
+Card.propTypes = {
+  children: PropTypes.node.isRequired,
+  image: {
+    src: PropTypes.string,
+    alt: PropTypes.string,
+  },
+  modifier: PropTypes.string,
+  title: PropTypes.string.isRequired,
+};
+
 export default Card;

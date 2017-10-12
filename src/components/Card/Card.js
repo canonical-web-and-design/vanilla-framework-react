@@ -7,7 +7,7 @@ class Card extends React.Component {
     return (
       <div className={this.props.modifier ? `p-card--${this.props.modifier}` : 'p-card'}>
         <header className="p-card__header">
-          <img src={this.props.imgSrc} alt={this.props.imgAlt} />
+          <img src={this.props.image.src} alt={this.props.image.alt} />
         </header>
         <h3 className="p-card__title">{this.props.title}</h3>
         { this.props.children }
@@ -18,14 +18,18 @@ class Card extends React.Component {
 
 Card.defaultProps = {
   modifier: '',
-  imgSrc: 'http://placehold.it/200x32',
-  imgAlt: 'Placeholder',
+  image: {
+    src: PropTypes.string,
+    alt: PropTypes.string,
+  },
 };
 
 Card.propTypes = {
   children: PropTypes.node.isRequired,
-  imgAlt: PropTypes.string,
-  imgSrc: PropTypes.string,
+  image: {
+    src: PropTypes.string,
+    alt: PropTypes.string,
+  },
   modifier: PropTypes.string,
   title: PropTypes.string.isRequired,
 };

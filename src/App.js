@@ -6,13 +6,11 @@ import Button from './components/Button/Button';
 import Card from './components/Card/Card';
 
 class App extends Component {
-
-  cardImg = {
-    url : "http://placehold.it/200x32",
-    alt : "Placeholder"
-  }
-
   render() {
+    const image = {
+      src: 'http://placekitten.com/g/64/64',
+      alt: 'Placeholder',
+    };
     return (
       <div className="App">
         <header id="navigation" className="p-navigation--light">
@@ -48,15 +46,14 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className="p-strip">
           <div className="row">
             <div className="col-6">
               <h2>Card</h2>
               <Card
                 title="Card title"
-                imgSrc={ this.cardImg.url }
-                imgAlt={ this.cardImg.alt }
+                image={image}
               >
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               </Card>
@@ -64,11 +61,10 @@ class App extends Component {
               <Card
                 modifier="highlighted"
                 title="Card title"
-                imgSrc={ this.cardImg.url }
-                imgAlt={ this.cardImg.alt }
+                image={image}
               >
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            </Card>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </Card>
             </div>
           </div>
         </div>

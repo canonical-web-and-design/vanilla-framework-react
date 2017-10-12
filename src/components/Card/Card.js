@@ -23,11 +23,11 @@ Card.defaultProps = {
 };
 
 Card.propTypes = {
-  modifier: PropTypes.string,
-  imgSrc: PropTypes.string,
-  imgAlt: PropTypes.string,
-  title: PropTypes.string.isRequired,
   cardContent: PropTypes.string.isRequired,
+  imgAlt: PropTypes.string,
+  imgSrc: PropTypes.string,
+  modifier: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 export default Card;

@@ -18,18 +18,11 @@ class Card extends React.Component {
 
 Card.defaultProps = {
   modifier: '',
-  image: {
-    src: PropTypes.string,
-    alt: PropTypes.string,
-  },
 };
 
 Card.propTypes = {
   children: PropTypes.node.isRequired,
-  image: {
-    src: PropTypes.string,
-    alt: PropTypes.string,
-  },
+  image: PropTypes.object,
   modifier: PropTypes.string,
   title: PropTypes.string.isRequired,
 };

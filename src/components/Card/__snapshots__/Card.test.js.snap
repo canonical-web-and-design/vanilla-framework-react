@@ -9,7 +9,7 @@ exports[`Card component should render expected markup should compare the compone
   >
     <img
       alt="Placeholder"
-      src="http://placehold.it/200x32"
+      src="http://placekitten.com/g/64/64"
     />
   </header>
   <h3
@@ -17,10 +17,6 @@ exports[`Card component should render expected markup should compare the compone
   >
     Title
   </h3>
-  <p
-    className="p-card__content"
-  >
-    Lorem ipsum dolor sit amet
-  </p>
+  Lorem ipsum dolor sit amet
 </div>
 `;

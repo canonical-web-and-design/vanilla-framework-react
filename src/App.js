@@ -6,11 +6,14 @@ import Button from './components/Button/Button';
 import Card from './components/Card/Card';
 
 class App extends Component {
-  render() {
-    const image = {
+  constructor() {
+    super();
+    this.image = {
       src: 'http://placekitten.com/g/64/64',
       alt: 'Placeholder',
     };
+  }
+  render() {
     return (
       <div className="App">
         <header id="navigation" className="p-navigation--light">
@@ -53,7 +56,7 @@ class App extends Component {
               <h2>Card</h2>
               <Card
                 title="Card title"
-                image={image}
+                image={this.image}
               >
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               </Card>
@@ -61,7 +64,7 @@ class App extends Component {
               <Card
                 modifier="highlighted"
                 title="Card title"
-                image={image}
+                image={this.image}
               >
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               </Card>

@@ -4,6 +4,7 @@ import './App.css';
 // Components
 import Button from '../Button/Button';
 import Card from '../Card/Card';
+import Switch from '../Switch/Switch';
 
 class App extends Component {
   constructor() {
@@ -68,6 +69,15 @@ class App extends Component {
               >
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               </Card>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div className="p-strip">
+          <div className="row">
+            <div className="col-6">
+              <h2>Switch</h2>
+              <p><Switch label="Turn On/Off" /></p>
             </div>
           </div>
         </div>

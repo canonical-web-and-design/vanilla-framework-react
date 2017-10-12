@@ -18,7 +18,7 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "node_modules/.bin/eslint ."
+    "lint": "node_modules/.bin/eslint ./src"
   },
   "devDependencies": {
     "eslint": "^4.8.0",

@@ -10,6 +10,7 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/prefer-stateless-function": 0,
-    "function-paren-newline": "never"
+    "react/forbid-prop-types": 0,
+    "function-paren-newline": 0
   }
 }

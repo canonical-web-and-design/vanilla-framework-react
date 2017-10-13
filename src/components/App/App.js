@@ -1,90 +1,32 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 // Components
-import Button from '../Button/Button';
-import Card from '../Card/Card';
-import Switch from '../Switch/Switch';
+import Header from '../Header/Header';
+import Intro from '../Intro/Intro';
+
+import CardsExample from '../Card/CardsExample';
+import ButtonsExample from '../Button/ButtonsExample';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.image = {
-      src: 'http://placekitten.com/g/64/64',
-      alt: 'Placeholder',
-    };
-  }
   render() {
     return (
       <div className="App">
-        <header id="navigation" className="p-navigation--light">
-          <div className="row">
-            <div className="p-navigation__banner">
-              <div className="p-navigation__logo">
-                <a className="p-navigation__link" href="/">
-                  <img src="https://assets.ubuntu.com/v1/d96d86b5-vanilla_black-orange_hex.svg" className="App-logo" alt="logo" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
-        <div className="p-strip u-no-padding--bottom">
-          <div className="row">
-            <div className="col-12">
-              <p>
-              This is a simple implementation of Vanilla Framework using React.
-              </p>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div className="p-strip">
-          <div className="row">
-            <div className="col-6">
-              <h2>Buttons</h2>
-              <p><Button value="Base button 😶" /></p>
-              <p><Button value="Neutral button 😐" modifier="neutral" /></p>
-              <p><Button value="Brand button 💥" modifier="brand" /></p>
-              <p><Button value="Negative button 😡" modifier="negative" /></p>
-              <p><Button value="Positive button 😁" modifier="positive" /></p>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div className="p-strip">
-          <div className="row">
-            <div className="col-6">
-              <h2>Card</h2>
-              <Card
-                title="Card title"
-                image={this.image}
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-              </Card>
-              <h2>Highlighted Card</h2>
-              <Card
-                modifier="highlighted"
-                title="Card title"
-                image={this.image}
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-              </Card>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div className="p-strip">
-          <div className="row">
-            <div className="col-6">
-              <h2>Switch</h2>
-              <p><Switch label="Turn On/Off" /></p>
-            </div>
-          </div>
-        </div>
-        <hr />
+        <Header />
+        <main>
+          <Route exact path="/" component={Intro} />
+          <Route exact path="/cards" component={CardsExample} />
+          <Route exact path="/buttons" component={ButtonsExample} />
+        </main>
       </div>
     );
   }
 }
+
+App.contextTypes = {
+  router: PropTypes.object,
+};
 
 export default App;

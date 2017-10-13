@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 // Components
-import Button from './components/Button/Button';
-import Card from './components/Card/Card';
+import Button from '../Button/Button';
+import Card from '../Card/Card';
 
 class App extends Component {
   constructor() {

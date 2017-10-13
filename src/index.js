@@ -5,13 +5,11 @@ import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
-const Root = () => {
-  return(
-    <Router>
-      <App />
-    </Router>
-  );
-}
+const Root = () => (
+  <Router>
+    <App />
+  </Router>
+);
 
 
 ReactDOM.render(<Root />, document.getElementById('root'));

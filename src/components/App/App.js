@@ -5,6 +5,7 @@ import './App.css';
 
 // Components
 import Header from '../Header/Header';
+import Aside from '../Aside/Aside';
 import Intro from '../Intro/Intro';
 
 import CardsExample from '../Card/CardsExample';
@@ -14,12 +15,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <main>
-          <Route exact path="/" component={Intro} />
-          <Route exact path="/cards" component={CardsExample} />
-          <Route exact path="/buttons" component={ButtonsExample} />
-        </main>
+        <div className="row">
+          <div className="col-12">
+            <Header />
+            <Aside />
+            <main>
+              <Route exact path="/" component={Intro} />
+              <Route exact path="/cards" component={CardsExample} />
+              <Route exact path="/buttons" component={ButtonsExample} />
+            </main>
+          </div>
+        </div>
       </div>
     );
   }

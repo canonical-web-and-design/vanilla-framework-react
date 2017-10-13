@@ -3,7 +3,10 @@ import React from 'react';
 class Intro extends React.Component {
   render() {
     return (
-      <h1>This is an implementation of Vanilla Framework in React.</h1>
+      <div>
+        <h1>Vanilla Framework (in React)</h1>
+        <p>This is an implementation of Vanilla Framework in React.</p>
+      </div>
     );
   }
 }

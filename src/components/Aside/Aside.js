@@ -7,9 +7,18 @@ class Aside extends React.Component {
     return (
       <aside>
         <ul className="p-list">
-          <li><NavLink exact to="/buttons" activeClassName="active">Buttons</NavLink></li>
-          <li><NavLink exact to="/cards" activeClassName="active">Cards</NavLink></li>
-          <li><NavLink exact to="/switches" activeClassName="active">Switches</NavLink></li>
+          <li className="p-list__item">
+            <NavLink exact to="/accordion" activeClassName="active">Accordion</NavLink>
+          </li>
+          <li className="p-list__item">
+            <NavLink exact to="/buttons" activeClassName="active">Buttons</NavLink>
+          </li>
+          <li className="p-list__item">
+            <NavLink exact to="/cards" activeClassName="active">Cards</NavLink>
+          </li>
+          <li className="p-list__item">
+            <NavLink exact to="/switches" activeClassName="active">Switches</NavLink>
+          </li>
         </ul>
       </aside>
     );

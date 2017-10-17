@@ -11,6 +11,7 @@ import Intro from '../Intro/Intro';
 import CardsExample from '../Card/CardsExample';
 import ButtonsExample from '../Button/ButtonsExample';
 import SwitchesExample from '../Switch/SwitchesExample';
+import AccordionsExample from '../Accordion/AccordionsExample';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
           <Route exact path="/cards" component={CardsExample} />
           <Route exact path="/buttons" component={ButtonsExample} />
           <Route exact path="/switches" component={SwitchesExample} />
+          <Route exact path="/accordion" component={AccordionsExample} />
         </main>
       </div>
     );

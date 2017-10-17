@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion component should render expected markup should compare the component with a snapshot 1`] = `
+<aside
+  aria-multiselect="true"
+  class="p-accordion"
+  role="tablist"
+>
+  <ul
+    class="p-accordion__list"
+  >
+    <li
+      class="p-accordion__group"
+    >
+      <button
+        aria-controls="#owner"
+        aria-expanded="true"
+        class="p-accordion__tab"
+        id="owner-tab"
+        role="tab"
+      >
+        Owner
+      </button>
+      <section
+        aria-hidden="false"
+        aria-labelledby="owner-tab"
+        class="p-accordion__panel"
+        id="owner"
+        role="tabpanel"
+      >
+        <p>
+          Open panel
+        </p>
+      </section>
+    </li>
+    <li
+      class="p-accordion__group"
+    >
+      <button
+        aria-controls="#status"
+        aria-expanded="false"
+        class="p-accordion__tab"
+        id="status-tab"
+        role="tab"
+      >
+        Status
+      </button>
+      <section
+        aria-hidden="true"
+        aria-labelledby="status-tab"
+        class="p-accordion__panel"
+        id="status"
+        role="tabpanel"
+      >
+        <p>
+          Closed panel
+        </p>
+      </section>
+    </li>
+    <li
+      class="p-accordion__group"
+    >
+      <button
+        aria-controls="#tags"
+        aria-expanded="false"
+        class="p-accordion__tab"
+        id="tags-tab"
+        role="tab"
+      >
+        Tags
+      </button>
+      <section
+        aria-hidden="true"
+        aria-labelledby="tags-tab"
+        class="p-accordion__panel"
+        id="tags"
+        role="tabpanel"
+      >
+        <p>
+          Closed panel
+        </p>
+      </section>
+    </li>
+  </ul>
+</aside>
+`;

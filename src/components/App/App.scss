@@ -6,9 +6,14 @@
 @include vf-p-grid-modifications;
 
 // Temp layout
+
+.app-logo {
+  padding: 0 1rem;
+}
+
 @supports (display: grid) {
 
-  .App {
+  .app {
     display: grid;
     width: 100%;
     grid-template-areas: "head head"
@@ -23,10 +28,13 @@
 
   aside {
     grid-area: nav;
+    border-right: 1px solid #ccc;
+    margin-right: 1rem;
   }
 
   main {
     grid-area: main;
+    padding-left: 1rem;
   }
 }
 

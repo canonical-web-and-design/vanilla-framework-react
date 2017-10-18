@@ -18,14 +18,12 @@ class App extends Component {
       <div className="App">
         <Header />
         <Aside />
-        <Router>
-          <main>
-            <Route exact path="/" component={Intro} />
-            <Route exact path="/cards" component={CardsExample} />
-            <Route exact path="/buttons" component={ButtonsExample} />
-            <Route exact path="/switches" component={SwitchesExample} />
-          </main>
-        </Router>
+        <main>
+          <Route exact path="/" component={Intro} />
+          <Route exact path="/cards" component={CardsExample} />
+          <Route exact path="/buttons" component={ButtonsExample} />
+          <Route exact path="/switches" component={SwitchesExample} />
+        </main>
       </div>
     );
   }

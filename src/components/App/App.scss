@@ -6,18 +6,44 @@
 @include vf-p-grid-modifications;
 
 // Temp layout
-aside,
-main {
-  float: left;
+@supports (display: grid) {
+
+  .App {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head head"
+                         "nav  main";
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 150px 1fr;
+  }
+
+  header {
+    grid-area: head;
+  }
+
+  aside {
+    grid-area: nav;
+  }
+
+  main {
+    grid-area: main;
+  }
 }
 
-aside {
-  width: calc(20% - 1rem);
-  border-right: 1px solid #ccc;
-  margin-right: 1rem;
-}
+@supports not (display: grid) {
+  aside,
+  main {
+    float: left;
+  }
 
-main {
-  padding-left: 1rem;
-  width: 80%;
+  aside {
+    width: calc(20% - 1rem);
+    border-right: 1px solid #ccc;
+    margin-right: 1rem;
+  }
+
+  main {
+    padding-left: 1rem;
+    width: 80%;
+  }
 }

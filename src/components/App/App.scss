@@ -4,3 +4,54 @@
 @include vanilla-base;
 @include vf-p-grid;
 @include vf-p-grid-modifications;
+
+// Temp layout
+
+.app-logo {
+  padding: 0 1rem;
+}
+
+@supports (display: grid) {
+
+  .app {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head head"
+                         "nav  main";
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 150px 1fr;
+  }
+
+  header {
+    grid-area: head;
+  }
+
+  aside {
+    grid-area: nav;
+    border-right: 1px solid #ccc;
+    margin-right: 1rem;
+  }
+
+  main {
+    grid-area: main;
+    padding-left: 1rem;
+  }
+}
+
+@supports not (display: grid) {
+  aside,
+  main {
+    float: left;
+  }
+
+  aside {
+    width: calc(20% - 1rem);
+    border-right: 1px solid #ccc;
+    margin-right: 1rem;
+  }
+
+  main {
+    padding-left: 1rem;
+    width: 80%;
+  }
+}

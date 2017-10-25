@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import './Switch.css';
 
 class Switch extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.switchToggle = this.switchToggle.bind(this);
     this.state = {
       checked: false,

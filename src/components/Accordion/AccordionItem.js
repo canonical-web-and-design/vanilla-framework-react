@@ -10,15 +10,15 @@ class AccordionItem extends React.Component {
       hidden: true,
     };
   }
+
   accordionItemToggle() {
     const currentState = this.state.hidden;
     this.setState({ hidden: !currentState });
   }
+
   render() {
     return (
-      <li
-        className="p-accordion__group"
-      >
+      <li className="p-accordion__group">
         <button
           className="p-accordion__tab"
           id="status-tab"

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import './Accordion.css';
 
 class AccordionItem extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.accordionItemToggle = this.accordionItemToggle.bind(this);
     this.state = {
       hidden: true,

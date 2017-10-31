@@ -29,16 +29,18 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
   },
   "devDependencies": {
+    "@percy-io/percy-storybook": "^1.2.5",
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.4.0",
-    "react-test-renderer": "^16.0.0",
     "gh-pages": "^1.0.0",
+    "react-test-renderer": "^16.0.0",
     "vanilla-framework": "^1.5.4"
   }
 }

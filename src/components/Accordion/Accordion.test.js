@@ -3,8 +3,8 @@ import ReactTestRenderer from 'react-test-renderer';
 import Accordion from './Accordion';
 import AccordionItem from './AccordionItem';
 
-describe('Accordion component should render expected markup', () => {
-  it('should compare the component with a snapshot', () => {
+describe('Accordion component', () => {
+  it('should compare with a snapshot', () => {
     const accordionComponent = ReactTestRenderer.create(
       <Accordion>
         <AccordionItem title="Title of Item 1">

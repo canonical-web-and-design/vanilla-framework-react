@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Switch component should render expected markup should compare the component with a snapshot 1`] = `
+exports[`Switch component should compare with a snapshot 1`] = `
 <span>
   <label
     htmlFor="switch-on"

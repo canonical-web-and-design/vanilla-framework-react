@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card component should render expected markup should compare the component with a snapshot 1`] = `
+exports[`Card component should compare with a snapshot 1`] = `
 <div
   className="p-card"
 >

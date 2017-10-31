@@ -1,83 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Accordion component should render expected markup should compare the component with a snapshot 1`] = `
+exports[`Accordion component should compare with a snapshot 1`] = `
 <aside
-  aria-multiselect="true"
-  class="p-accordion"
+  className="p-accordion"
   role="tablist"
 >
   <ul
-    class="p-accordion__list"
+    className="p-accordion__list"
   >
     <li
-      class="p-accordion__group"
-    >
-      <button
-        aria-controls="#owner"
-        aria-expanded="true"
-        class="p-accordion__tab"
-        id="owner-tab"
-        role="tab"
-      >
-        Owner
-      </button>
-      <section
-        aria-hidden="false"
-        aria-labelledby="owner-tab"
-        class="p-accordion__panel"
-        id="owner"
-        role="tabpanel"
-      >
-        <p>
-          Open panel
-        </p>
-      </section>
-    </li>
-    <li
-      class="p-accordion__group"
+      className="p-accordion__group"
     >
       <button
         aria-controls="#status"
-        aria-expanded="false"
-        class="p-accordion__tab"
+        aria-expanded={false}
+        className="p-accordion__tab"
         id="status-tab"
+        onClick={[Function]}
+        onKeyDown={[Function]}
         role="tab"
       >
-        Status
+        Title of Item 1
       </button>
       <section
-        aria-hidden="true"
+        aria-hidden={true}
         aria-labelledby="status-tab"
-        class="p-accordion__panel"
+        className="p-accordion__panel"
         id="status"
         role="tabpanel"
       >
         <p>
-          Closed panel
+          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
       </section>
     </li>
     <li
-      class="p-accordion__group"
+      className="p-accordion__group"
     >
       <button
-        aria-controls="#tags"
-        aria-expanded="false"
-        class="p-accordion__tab"
-        id="tags-tab"
+        aria-controls="#status"
+        aria-expanded={false}
+        className="p-accordion__tab"
+        id="status-tab"
+        onClick={[Function]}
+        onKeyDown={[Function]}
         role="tab"
       >
-        Tags
+        Title of Item 2
       </button>
       <section
-        aria-hidden="true"
-        aria-labelledby="tags-tab"
-        class="p-accordion__panel"
-        id="tags"
+        aria-hidden={true}
+        aria-labelledby="status-tab"
+        className="p-accordion__panel"
+        id="status"
         role="tabpanel"
       >
         <p>
-          Closed panel
+          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </section>
+    </li>
+    <li
+      className="p-accordion__group"
+    >
+      <button
+        aria-controls="#status"
+        aria-expanded={false}
+        className="p-accordion__tab"
+        id="status-tab"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+      >
+        Title of Item 3
+      </button>
+      <section
+        aria-hidden={true}
+        aria-labelledby="status-tab"
+        className="p-accordion__panel"
+        id="status"
+        role="tabpanel"
+      >
+        <p>
+          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
       </section>
     </li>

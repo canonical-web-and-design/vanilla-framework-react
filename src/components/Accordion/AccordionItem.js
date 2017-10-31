@@ -32,10 +32,10 @@ class AccordionItem extends React.Component {
         </button>
         <section
           className="p-accordion__panel"
-          id="owner"
+          id="status"
           role="tabpanel"
           aria-hidden={this.state.hidden}
-          aria-labelledby="owner-tab"
+          aria-labelledby="status-tab"
         >
           { this.props.children }
         </section>

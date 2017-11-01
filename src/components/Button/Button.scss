@@ -1,3 +1,7 @@
 @import 'vanilla-framework/scss/base_button';
 @import 'vanilla-framework/scss/patterns_buttons';
 @include vf-p-buttons;
+
+body {
+  background: #cdcdcd;
+}

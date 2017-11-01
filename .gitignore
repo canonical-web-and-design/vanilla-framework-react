@@ -23,3 +23,6 @@ yarn-error.log*
 # ignore css
 src/**/*.css
 *.css
+
+# percy static site
+/storybook-static

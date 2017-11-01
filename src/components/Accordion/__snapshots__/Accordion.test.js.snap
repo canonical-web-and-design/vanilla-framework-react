@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion component should compare with a snapshot 1`] = `
+<aside
+  className="p-accordion"
+  role="tablist"
+>
+  <ul
+    className="p-accordion__list"
+  >
+    <li
+      className="p-accordion__group"
+    >
+      <button
+        aria-controls="#status"
+        aria-expanded={false}
+        className="p-accordion__tab"
+        id="status-tab"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+      >
+        Title of Item 1
+      </button>
+      <section
+        aria-hidden={true}
+        aria-labelledby="status-tab"
+        className="p-accordion__panel"
+        id="status"
+        role="tabpanel"
+      >
+        <p>
+          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </section>
+    </li>
+    <li
+      className="p-accordion__group"
+    >
+      <button
+        aria-controls="#status"
+        aria-expanded={false}
+        className="p-accordion__tab"
+        id="status-tab"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+      >
+        Title of Item 2
+      </button>
+      <section
+        aria-hidden={true}
+        aria-labelledby="status-tab"
+        className="p-accordion__panel"
+        id="status"
+        role="tabpanel"
+      >
+        <p>
+          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </section>
+    </li>
+    <li
+      className="p-accordion__group"
+    >
+      <button
+        aria-controls="#status"
+        aria-expanded={false}
+        className="p-accordion__tab"
+        id="status-tab"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+      >
+        Title of Item 3
+      </button>
+      <section
+        aria-hidden={true}
+        aria-labelledby="status-tab"
+        className="p-accordion__panel"
+        id="status"
+        role="tabpanel"
+      >
+        <p>
+          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </section>
+    </li>
+  </ul>
+</aside>
+`;

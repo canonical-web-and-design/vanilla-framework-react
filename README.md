@@ -2,14 +2,11 @@
 
 This is a simple implementation of Vanilla Framework using React.
 
-Note: This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
 In the project directory, you can run:
 
-### `npm start`
+### `npm run storybook`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This will start up an interactive development & testing environment listing all components.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.

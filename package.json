@@ -13,7 +13,8 @@
     "react-scripts": "1.0.14",
     "@storybook/react": "^3.2.13",
     "@storybook/addon-actions": "^3.2.13",
-    "@storybook/addon-links": "^3.2.13"
+    "@storybook/addon-links": "^3.2.13",
+    "@storybook/addon-info": "^3.2.14"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",

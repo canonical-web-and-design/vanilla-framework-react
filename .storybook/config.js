@@ -14,3 +14,5 @@ configure(
 );
 
 configure(loadStories, module);
+
+serializeStories(getStorybook);

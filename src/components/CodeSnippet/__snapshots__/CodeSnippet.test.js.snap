@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CodeSnippet component should compare with a snapshot 1`] = `
+<div
+  className="p-code-snippet"
+>
+  <input
+    className="p-code-snippet__input"
+    readOnly="readonly"
+    value="sudo apt-get update"
+  />
+  <button
+    className="p-code-snippet__action"
+  >
+    Copy to clipboard
+  </button>
+</div>
+`;

@@ -29,7 +29,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "serve": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
+    "build": "build-storybook -s public",
     "snapshot": "build-storybook -s public && percy-storybook --widths=320,1280"
   },
   "devDependencies": {

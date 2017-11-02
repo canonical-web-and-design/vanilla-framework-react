@@ -21,7 +21,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
+    "build": "npm run build-css && react-scripts build && build-storybook -s public",
     "pretest": "npm run build-css",
     "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "eject": "react-scripts eject",
@@ -29,7 +29,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "serve": "start-storybook -p 9009 -s public",
-    "build": "build-storybook -s public",
     "snapshot": "build-storybook -s public && percy-storybook --widths=320,1280"
   },
   "devDependencies": {

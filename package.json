@@ -11,29 +11,35 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14",
-    "react-router-dom": "^4.2.2"
+    "@storybook/react": "^3.2.13",
+    "@storybook/addon-actions": "^3.2.13",
+    "@storybook/addon-links": "^3.2.13",
+    "@storybook/addon-info": "^3.2.14"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
+    "build": "npm run build-css && react-scripts build && build-storybook -s public",
     "pretest": "npm run build-css",
     "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "eject": "react-scripts eject",
     "lint": "node_modules/.bin/eslint ./src",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "serve": "start-storybook -p 9009 -s public",
+    "snapshot": "build-storybook -s public && percy-storybook --widths=320,1280"
   },
   "devDependencies": {
+    "@percy-io/percy-storybook": "^1.2.5",
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.4.0",
-    "react-test-renderer": "^16.0.0",
     "gh-pages": "^1.0.0",
+    "react-test-renderer": "^16.0.0",
     "vanilla-framework": "^1.5.4"
   }
 }

@@ -11,6 +11,5 @@ const Root = () => (
   </Router>
 );
 
-
 ReactDOM.render(<Root />, document.getElementById('root'));
 registerServiceWorker();

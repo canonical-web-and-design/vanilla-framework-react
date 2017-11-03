@@ -1,15 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-import './index.css';
-import App from './components/App/App';
-import registerServiceWorker from './registerServiceWorker';
-
-const Root = () => (
-  <Router>
-    <App />
-  </Router>
-);
-
-ReactDOM.render(<Root />, document.getElementById('root'));
-registerServiceWorker();
+export { default as Accordion } from './lib/components/Accordion/Accordion';
+export { default as Button } from './lib/components/Button/Button';
+export { default as Card } from './lib/components/Card/Card';
+export { default as Switch } from './lib/components/Switch/Switch';

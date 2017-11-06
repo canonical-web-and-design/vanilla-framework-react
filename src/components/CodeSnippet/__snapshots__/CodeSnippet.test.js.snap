@@ -6,11 +6,13 @@ exports[`CodeSnippet component should compare with a snapshot 1`] = `
 >
   <input
     className="p-code-snippet__input"
+    onClick={[Function]}
     readOnly="readonly"
     value="sudo apt-get update"
   />
   <button
     className="p-code-snippet__action"
+    onClick={[Function]}
   >
     Copy to clipboard
   </button>

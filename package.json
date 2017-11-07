@@ -28,6 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "node-sass-chokidar": "^0.0.3",
+    "react-test-renderer": "^16.0.0",
     "vanilla-framework": "^1.5.4"
   },
   "devDependencies": {

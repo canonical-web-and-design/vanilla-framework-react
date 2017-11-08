@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-//import './Accordion.css';
+import './Accordion.css';
 
 class AccordionItem extends React.Component {
   constructor() {

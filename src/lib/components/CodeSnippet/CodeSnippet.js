@@ -18,7 +18,7 @@ class CodeSnippet extends React.Component {
     try {
       document.execCommand('copy');
     } catch (err) {
-      console.warn('Unable to copy');
+      console.warn('Unable to copy'); // eslint-disable-line no-console
     }
   }
 

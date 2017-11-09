@@ -28,6 +28,10 @@
   "homepage": "https://github.com/vanilla-framework/create-react-library#readme",
   "license": "MIT",
   "dependencies": {
+    "@storybook/addon-actions": "^3.2.14",
+    "@storybook/addon-info": "^3.2.14",
+    "@storybook/addon-links": "^3.2.14",
+    "@storybook/react": "^3.2.14",
     "node-sass-chokidar": "^0.0.3",
     "prop-types": "^15.6.0",
     "react-test-renderer": "^16.0.0",
@@ -35,10 +39,6 @@
   },
   "devDependencies": {
     "@percy-io/percy-storybook": "^1.2.5",
-    "@storybook/addon-actions": "^3.2.14",
-    "@storybook/addon-info": "^3.2.14",
-    "@storybook/addon-links": "^3.2.14",
-    "@storybook/react": "^3.2.14",
     "autoprefixer": "7.1.2",
     "babel-cli": "^6.26.0",
     "babel-core": "6.25.0",

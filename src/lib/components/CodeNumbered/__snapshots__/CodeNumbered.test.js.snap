@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CodeNumbered component should compare with a snapshot 1`] = `
+<pre
+  className="p-code-numbered"
+>
+  <code>
+    <span
+      className="code-line"
+    >
+      this is a code sample line 1
+    </span>
+    <span
+      className="code-line"
+    >
+      this is another code sample line 2 this is another code sample line 2 this is another code sample line 2
+    </span>
+    <span
+      className="code-line"
+    >
+      this is the last code sample 3, and everyone knows this is the best code sample
+    </span>
+  </code>
+</pre>
+`;

@@ -11,6 +11,7 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "node scripts/test.js --env=jsdom",
+    "preserve": "yarn install && yarn run build",
     "serve": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "snapshot": "build-storybook -s public && percy-storybook --widths=320,1280",

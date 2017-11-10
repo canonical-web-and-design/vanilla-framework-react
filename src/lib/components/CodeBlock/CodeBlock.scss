@@ -9,5 +9,14 @@
 
   .code-line {
     margin-top: 0;
+    min-height: 2rem;
+
+    &:only-child {
+      min-height: 4rem;
+
+      &::before {
+        min-height: 4rem;
+      }
+    }
   }
 }

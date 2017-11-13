@@ -7,22 +7,22 @@ exports[`Switch component should compare with a snapshot 1`] = `
     id="switch-on-label"
   >
     Turn On/Off
+    <button
+      aria-checked={false}
+      aria-labelledby="switch-on-label"
+      className="p-switch"
+      id="switch-on"
+      onClick={[Function]}
+      role="switch"
+      type="button"
+    >
+      <span>
+        On
+      </span>
+      <span>
+        Off
+      </span>
+    </button>
   </label>
-  <button
-    aria-checked={false}
-    aria-labelledby="switch-on-label"
-    className="p-switch"
-    id="switch-on"
-    onClick={[Function]}
-    role="switch"
-    type="button"
-  >
-    <span>
-      On
-    </span>
-    <span>
-      Off
-    </span>
-  </button>
 </span>
 `;

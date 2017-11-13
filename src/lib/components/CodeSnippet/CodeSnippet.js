@@ -17,8 +17,8 @@ class CodeSnippet extends React.Component {
     this.textInput.select();
     try {
       document.execCommand('copy');
-    } catch(err) {
-      console.warn('Unable to copy');
+    } catch (err) {
+      console.warn('Unable to copy'); // eslint-disable-line no-console
     }
   }
 
@@ -30,10 +30,13 @@ class CodeSnippet extends React.Component {
           value={this.props.value}
           readOnly="readonly"
           onClick={this.handleInputClick}
-          ref={(input) => { this.textInput = input; }} />
+          ref={(input) => { this.textInput = input; }}
+        />
         <button
           className="p-code-snippet__action"
-          onClick={this.handleButtonClick}>Copy to clipboard</button>
+          onClick={this.handleButtonClick}
+        >Copy to clipboard
+        </button>
       </div>
     );
   }

@@ -19,19 +19,20 @@ class Switch extends React.Component {
   render() {
     return (
       <span>
-        <label id="switch-on-label" htmlFor="switch-on">{ this.props.label }</label>
-        <button
-          id="switch-on"
-          className="p-switch"
-          type="button"
-          role="switch"
-          aria-checked={this.state.checked}
-          aria-labelledby="switch-on-label"
-          onClick={() => this.switchToggle(this)}
-        >
-          <span>On</span>
-          <span>Off</span>
-        </button>
+        <label id="switch-on-label" htmlFor="switch-on">{ this.props.label }
+          <button
+            id="switch-on"
+            className="p-switch"
+            type="button"
+            role="switch"
+            aria-checked={this.state.checked}
+            aria-labelledby="switch-on-label"
+            onClick={() => this.switchToggle(this)}
+          >
+            <span>On</span>
+            <span>Off</span>
+          </button>
+        </label>
       </span>
     );
   }

@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CodeBlock component should display a single blank line if component is empty 1`] = `
+<pre
+  className={null}
+>
+  <code>
+    
+  </code>
+</pre>
+`;
+
+exports[`CodeBlock component should render markup correctly 1`] = `
+<pre
+  className={null}
+>
+  <code>
+    &lt;head&gt;
+  &lt;title&gt;Markup Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div&gt;This is an example of using markup in the CodeBlock component&lt;/div&gt;
+  &lt;div&gt;This &amp; should escape&lt;/div&gt;
+&lt;/body&gt;
+  </code>
+</pre>
+`;
+
+exports[`CodeBlock component should render multiple lines of code correctly 1`] = `
+<pre
+  className={null}
+>
+  <code>
+    this is code sample line 1
+this is code sample line 2
+this is code sample line 3
+  </code>
+</pre>
+`;
+
+exports[`CodeBlock component should render multiple lines of code correctly with numbered modifier 1`] = `
+<pre
+  className="p-code-numbered"
+>
+  <code>
+    <span
+      className="code-line"
+    >
+      this is code sample line 1
+    </span>
+    <span
+      className="code-line"
+    >
+      this is code sample line 2
+    </span>
+    <span
+      className="code-line"
+    >
+      this is code sample line 3
+    </span>
+  </code>
+</pre>
+`;
+
+exports[`CodeBlock component should render one line of code correctly 1`] = `
+<pre
+  className={null}
+>
+  <code>
+    this is a single line of code
+  </code>
+</pre>
+`;
+
+exports[`CodeBlock component should render one line of code correctly with numbered modifier 1`] = `
+<pre
+  className="p-code-numbered"
+>
+  <code>
+    <span
+      className="code-line"
+    >
+      this is a single line of code
+    </span>
+  </code>
+</pre>
+`;

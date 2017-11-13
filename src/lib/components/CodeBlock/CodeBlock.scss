@@ -1,0 +1,22 @@
+@import 'vanilla-framework/scss/base';
+@import 'vanilla-framework/scss/patterns_code-numbered';
+@include vf-b-box-sizing;
+@include vf-b-code;
+@include vf-p-code-numbered;
+
+.p-code-numbered {
+  padding: 0;
+
+  .code-line {
+    margin-top: 0;
+    min-height: 2rem;
+
+    &:only-child {
+      min-height: 4rem;
+
+      &::before {
+        min-height: 4rem;
+      }
+    }
+  }
+}

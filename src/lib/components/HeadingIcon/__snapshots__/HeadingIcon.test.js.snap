@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeadingIcon component should render an icon and title without children correctly 1`] = `
+<div
+  className="p-heading-icon"
+>
+  <div
+    className="p-heading-icon__header"
+  >
+    <img
+      alt="Lorem ipsum dolor"
+      className="p-heading-icon__img"
+      src="https://assets.ubuntu.com/v1/a4d31b28-icon-quote.svg"
+    />
+    <h3
+      className="p-heading-icon__title"
+    >
+      Lorem ipsum dolor
+    </h3>
+  </div>
+  
+</div>
+`;
+
+exports[`HeadingIcon component should render children correctly 1`] = `
+<div
+  className="p-heading-icon"
+>
+  <div
+    className="p-heading-icon__header"
+  >
+    <img
+      alt="Lorem ipsum dolor"
+      className="p-heading-icon__img"
+      src="https://assets.ubuntu.com/v1/a4d31b28-icon-quote.svg"
+    />
+    <h3
+      className="p-heading-icon__title"
+    >
+      Lorem ipsum dolor
+    </h3>
+  </div>
+  <p>
+    sit amet, consectetur adipisicing elit. Enim excepturi, repudiandae blanditiis odio perferendis voluptatibus dolorum, dicta illum quae ipsa voluptatum, sunt quasi? Nulla reiciendis magnam nostrum aliquam, beatae doloribus.
+  </p>
+</div>
+`;

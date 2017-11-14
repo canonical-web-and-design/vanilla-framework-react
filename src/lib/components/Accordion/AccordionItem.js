@@ -5,15 +5,11 @@ import './Accordion.css';
 class AccordionItem extends React.Component {
   constructor() {
     super();
-    this.accordionItemToggle = this.accordionItemToggle.bind(this);
-    this.state = {
-      hidden: true,
-    };
+    this.onClick = this.onClick.bind(this);
   }
 
-  accordionItemToggle() {
-    const currentState = this.state.hidden;
-    this.setState({ hidden: !currentState });
+  onClick() {
+    this.props.onClick(this.props.index);
   }
 
   render() {
@@ -24,9 +20,9 @@ class AccordionItem extends React.Component {
           id="status-tab"
           role="tab"
           aria-controls="#status"
-          aria-expanded={!this.state.hidden}
-          onClick={() => this.accordionItemToggle(this)}
-          onKeyDown={() => this.accordionItemToggle(this)}
+          aria-expanded={this.props.isOpen}
+          onClick={this.onClick}
+          onKeyDown={this.onClick}
         >
           { this.props.title }
         </button>
@@ -34,7 +30,7 @@ class AccordionItem extends React.Component {
           className="p-accordion__panel"
           id="status"
           role="tabpanel"
-          aria-hidden={this.state.hidden}
+          aria-hidden={!this.props.isOpen}
           aria-labelledby="status-tab"
         >
           { this.props.children }
@@ -44,9 +40,18 @@ class AccordionItem extends React.Component {
   }
 }
 
+AccordionItem.defaultProps = {
+  index: 0,
+  isOpen: false,
+  onClick: () => 1,
+};
+
 AccordionItem.propTypes = {
+  index: PropTypes.number,
   title: PropTypes.string.isRequired,
   children: PropTypes.element.isRequired,
+  isOpen: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 export default AccordionItem;

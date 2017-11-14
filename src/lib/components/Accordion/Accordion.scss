@@ -1,3 +1,4 @@
 @import 'vanilla-framework/scss/base';
 @import 'vanilla-framework/scss/patterns_accordion';
+@include vf-base;
 @include vf-p-accordion;

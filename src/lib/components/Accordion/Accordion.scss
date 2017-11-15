@@ -1,4 +1,9 @@
 @import 'vanilla-framework/scss/base';
 @import 'vanilla-framework/scss/patterns_accordion';
-@include vf-base;
+@include vf-b-typography;
+@include vf-b-button;
 @include vf-p-accordion;
+
+.p-accordion__panel > :first-child {
+  margin-top: 0;
+}

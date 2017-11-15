@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component should render a divided list correctly 1`] = `
+<ul
+  className="p-list--divided"
+>
+  <li
+    className="p-list__item"
+  >
+    Lorem
+  </li>
+  <li
+    className="p-list__item"
+  >
+    Ipsum
+  </li>
+  <li
+    className="p-list__item"
+  >
+    Dolor
+  </li>
+</ul>
+`;
+
+exports[`List component should render a middot list correctly 1`] = `
+<ul
+  className="p-inline-list--middot"
+>
+  <li
+    className="p-inline-list__item"
+  >
+    Lorem
+  </li>
+  <li
+    className="p-inline-list__item"
+  >
+    Ipsum
+  </li>
+  <li
+    className="p-inline-list__item"
+  >
+    Dolor
+  </li>
+</ul>
+`;
+
+exports[`List component should render a simple list correctly 1`] = `
+<ul
+  className="p-list"
+>
+  <li
+    className="p-list__item"
+  >
+    Lorem
+  </li>
+  <li
+    className="p-list__item"
+  >
+    Ipsum
+  </li>
+  <li
+    className="p-list__item"
+  >
+    Dolor
+  </li>
+</ul>
+`;
+
+exports[`List component should render a split list correctly 1`] = `
+<ul
+  className="p-list--divided is-split"
+>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Lorem
+  </li>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec ipsum augue. Ut arcu erat, lacinia sit ametjusto quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </li>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Dolor
+  </li>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Aenean nec ipsum augue. Ut arcu erat, lacinia sit amet justo quis.
+  </li>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Ipsum
+  </li>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Ut arcu erat, lacinia sit amet justo quis.
+  </li>
+</ul>
+`;
+
+exports[`List component should render a ticked and divided list correctly 1`] = `
+<ul
+  className="p-list--divided"
+>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Lorem
+  </li>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Ipsum
+  </li>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Dolor
+  </li>
+</ul>
+`;
+
+exports[`List component should render a ticked list correctly 1`] = `
+<ul
+  className="p-list"
+>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Lorem
+  </li>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Ipsum
+  </li>
+  <li
+    className="p-list__item is-ticked"
+  >
+    Dolor
+  </li>
+</ul>
+`;
+
+exports[`List component should render an inline list correctly 1`] = `
+<ul
+  className="p-inline-list"
+>
+  <li
+    className="p-inline-list__item"
+  >
+    Lorem
+  </li>
+  <li
+    className="p-inline-list__item"
+  >
+    Ipsum
+  </li>
+  <li
+    className="p-inline-list__item"
+  >
+    Dolor
+  </li>
+</ul>
+`;

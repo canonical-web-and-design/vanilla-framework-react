@@ -13,7 +13,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "preserve": "yarn install && yarn run build",
     "serve": "npm-run-all -p watch-css serve-storybook",
-    "serve-storybook": "start-storybook -p 6006",
+    "serve-storybook": "start-storybook -p ${PORT:-8102}",
     "snapshot": "build-storybook -s public && percy-storybook --widths=320,1280",
     "test": "node scripts/test.js --env=jsdom"
   },

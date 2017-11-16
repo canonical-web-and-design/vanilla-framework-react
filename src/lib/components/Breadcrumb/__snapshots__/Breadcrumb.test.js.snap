@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb component should render a Breadcrumb without links 1`] = `
+<ul
+  className="p-breadcrumbs"
+>
+  <li
+    className="p-breadcrumbs__item"
+  >
+    <a
+      href="#a"
+    >
+      Lorem
+    </a>
+  </li>
+  <li
+    className="p-breadcrumbs__item"
+  >
+    <a
+      href="#b"
+    >
+      Ipsum
+    </a>
+  </li>
+  <li
+    className="p-breadcrumbs__item"
+  >
+    Dolor
+  </li>
+</ul>
+`;
+
+exports[`Breadcrumb component should render a simple Breadcrumb correctly 1`] = `
+<ul
+  className="p-breadcrumbs"
+>
+  <li
+    className="p-breadcrumbs__item"
+  >
+    <a
+      href="#a"
+    >
+      Lorem
+    </a>
+  </li>
+  <li
+    className="p-breadcrumbs__item"
+  >
+    <a
+      href="#b"
+    >
+      Ipsum
+    </a>
+  </li>
+  <li
+    className="p-breadcrumbs__item"
+  >
+    <a
+      href="#c"
+    >
+      Dolor
+    </a>
+  </li>
+</ul>
+`;

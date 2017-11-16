@@ -16,10 +16,11 @@ class Accordion extends React.Component {
   }
 
   render() {
+    const { open } = this.state;
     const accordionItems = React.Children.map(this.props.children,
       (child, index) => React.cloneElement(child, {
         index,
-        isOpen: this.state.open === index,
+        isOpen: open === index,
         onClick: this.toggleSection,
       }),
     );

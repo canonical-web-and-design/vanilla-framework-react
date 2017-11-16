@@ -12,11 +12,12 @@ class Switch extends React.Component {
   }
 
   switchToggle() {
-    const currentState = this.state.checked;
-    this.setState({ checked: !currentState });
+    const { checked } = this.state;
+    this.setState({ checked: !checked });
   }
 
   render() {
+    const { checked } = this.state;
     return (
       <span>
         <label id="switch-on-label" htmlFor="switch-on">{ this.props.label }
@@ -25,7 +26,7 @@ class Switch extends React.Component {
             className="p-switch"
             type="button"
             role="switch"
-            aria-checked={this.state.checked}
+            aria-checked={checked}
             aria-labelledby="switch-on-label"
             onClick={() => this.switchToggle(this)}
           >

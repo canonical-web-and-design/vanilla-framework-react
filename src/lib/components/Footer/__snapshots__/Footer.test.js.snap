@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should render FooterNavContainer and FooterNav components correctly 1`] = `
+<footer
+  className="p-footer"
+>
+  <p>
+    © 2017 Company name and logo are registered trademarks of Company Ltd.
+  </p>
+  <nav
+    className="p-footer__nav"
+  >
+    <ul
+      className="p-footer__links"
+    >
+      <li
+        className="p-footer__item"
+      >
+        <a
+          className="p-footer__link"
+          href="#"
+        >
+          Footer link 1
+        </a>
+      </li>
+      <li
+        className="p-footer__item"
+      >
+        <a
+          className="p-footer__link"
+          href="#"
+        >
+          Footer link 2
+        </a>
+      </li>
+      <li
+        className="p-footer__item"
+      >
+        <a
+          className="p-footer__link"
+          href="#"
+        >
+          Footer link 3
+        </a>
+      </li>
+      <li
+        className="p-footer__item"
+      >
+        <a
+          className="p-footer__link"
+          href="#"
+        >
+          Footer link 4
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+`;
+
+exports[`Footer component should render basic HTML elements correctly 1`] = `
+<footer
+  className="p-footer"
+>
+  <h1>
+    Heading 1
+  </h1>
+  <p>
+    © 2017 Company name and logo are registered trademarks of Company Ltd.
+  </p>
+  <ul>
+    <li>
+      List Item 1
+    </li>
+    <li>
+      List Item 2
+    </li>
+  </ul>
+</footer>
+`;

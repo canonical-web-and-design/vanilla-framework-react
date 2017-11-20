@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SteppedList component should accept generic list items 1`] = `
+<ol
+  className="p-list-step"
+>
+  <li
+    detailed={false}
+    index={0}
+  >
+    One
+  </li>
+  <li
+    detailed={false}
+    index={1}
+  >
+    Two
+  </li>
+  <li
+    detailed={false}
+    index={2}
+  >
+    Three
+  </li>
+</ol>
+`;
+
+exports[`SteppedList component should not render anything if no children present 1`] = `null`;
+
+exports[`SteppedList component should render a detailed stepped list correctly 1`] = `
+<ol
+  className="p-stepped-list--detailed"
+>
+  <li
+    className="p-list-step__item"
+  >
+    <h3
+      className="p-list-step__title"
+    >
+      <span
+        className="p-list-step__bullet"
+      >
+        1
+      </span>
+      First step
+    </h3>
+    <p
+      className="p-list-step__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus lorem, dictum vel dolor eu, tincidunt suscipit magna. Suspendisse dignissim nisl vitae turpis iaculis, ut tempor enim gravida.
+    </p>
+  </li>
+  <li
+    className="p-list-step__item"
+  >
+    <h3
+      className="p-list-step__title"
+    >
+      <span
+        className="p-list-step__bullet"
+      >
+        2
+      </span>
+      Second step
+    </h3>
+    <p
+      className="p-list-step__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus lorem, dictum vel dolor eu, tincidunt suscipit magna. Suspendisse dignissim nisl vitae turpis iaculis, ut tempor enim gravida.
+    </p>
+  </li>
+  <li
+    className="p-list-step__item"
+  >
+    <h3
+      className="p-list-step__title"
+    >
+      <span
+        className="p-list-step__bullet"
+      >
+        3
+      </span>
+      Third step
+    </h3>
+    <p
+      className="p-list-step__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus lorem, dictum vel dolor eu, tincidunt suscipit magna. Suspendisse dignissim nisl vitae turpis iaculis, ut tempor enim gravida.
+    </p>
+  </li>
+  <li
+    className="p-list-step__item"
+  >
+    <h3
+      className="p-list-step__title"
+    >
+      <span
+        className="p-list-step__bullet"
+      >
+        99
+      </span>
+      Last but not least
+    </h3>
+    <p
+      className="p-list-step__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus lorem, dictum vel dolor eu, tincidunt suscipit magna. Suspendisse dignissim nisl vitae turpis iaculis, ut tempor enim gravida.
+    </p>
+  </li>
+</ol>
+`;
+
+exports[`SteppedList component should render a simple stepped list correctly 1`] = `
+<ol
+  className="p-list-step"
+>
+  <li
+    className="p-list-step__item"
+  >
+    <h3
+      className="p-list-step__title"
+    >
+      <span
+        className="p-list-step__bullet"
+      >
+        1
+      </span>
+      First step
+    </h3>
+    <p
+      className={null}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus lorem, dictum vel dolor eu, tincidunt suscipit magna. Suspendisse dignissim nisl vitae turpis iaculis, ut tempor enim gravida.
+    </p>
+  </li>
+  <li
+    className="p-list-step__item"
+  >
+    <h3
+      className="p-list-step__title"
+    >
+      <span
+        className="p-list-step__bullet"
+      >
+        2
+      </span>
+      Second step
+    </h3>
+    <p
+      className={null}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus lorem, dictum vel dolor eu, tincidunt suscipit magna. Suspendisse dignissim nisl vitae turpis iaculis, ut tempor enim gravida.
+    </p>
+  </li>
+  <li
+    className="p-list-step__item"
+  >
+    <h3
+      className="p-list-step__title"
+    >
+      <span
+        className="p-list-step__bullet"
+      >
+        3
+      </span>
+      Third step
+    </h3>
+    <p
+      className={null}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus lorem, dictum vel dolor eu, tincidunt suscipit magna. Suspendisse dignissim nisl vitae turpis iaculis, ut tempor enim gravida.
+    </p>
+  </li>
+  <li
+    className="p-list-step__item"
+  >
+    <h3
+      className="p-list-step__title"
+    >
+      <span
+        className="p-list-step__bullet"
+      >
+        99
+      </span>
+      Last but not least
+    </h3>
+    <p
+      className={null}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus lorem, dictum vel dolor eu, tincidunt suscipit magna. Suspendisse dignissim nisl vitae turpis iaculis, ut tempor enim gravida.
+    </p>
+  </li>
+</ol>
+`;

@@ -7,4 +7,5 @@ export { default as Footer } from './lib/components/Footer/Footer';
 export { default as HeadingIcon } from './lib/components/HeadingIcon/HeadingIcon';
 export { default as Link } from './lib/components/Link/Link';
 export { default as List } from './lib/components/List/List';
+export { default as SteppedList } from './lib/components/SteppedList/SteppedList';
 export { default as Switch } from './lib/components/Switch/Switch';

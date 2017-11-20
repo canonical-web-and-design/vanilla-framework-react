@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InlineImages component should render the InlineImages component correctly 1`] = `
+<ul
+  className="p-inline-images"
+>
+  <li
+    className="p-inline-images__item"
+  >
+    <img
+      alt=""
+      className="p-image--bordered"
+      src="http://placekitten.com/g/200/200"
+    />
+  </li>
+  <li
+    className="p-inline-images__item"
+  >
+    <img
+      alt=""
+      className="p-image--bordered"
+      src="http://placekitten.com/g/400/400"
+    />
+  </li>
+  <li
+    className="p-inline-images__item"
+  >
+    <img
+      alt=""
+      className="p-image--bordered"
+      src="http://placekitten.com/g/300/300"
+    />
+  </li>
+  <li
+    className="p-inline-images__item"
+  >
+    <img
+      alt=""
+      className="p-image--bordered"
+      src="http://placekitten.com/g/500/500"
+    />
+  </li>
+  <li
+    className="p-inline-images__item"
+  >
+    <img
+      alt=""
+      className="p-image--bordered"
+      src="http://placekitten.com/g/800/800"
+    />
+  </li>
+  <li
+    className="p-inline-images__item"
+  >
+    <img
+      alt=""
+      className="p-image--bordered"
+      src="http://placekitten.com/g/700/700"
+    />
+  </li>
+</ul>
+`;

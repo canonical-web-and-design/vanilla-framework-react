@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link component should accept modifiers correctly 1`] = `
+<div>
+  <a
+    className="p-link--external"
+    href="https://vanillaframework.io/"
+  >
+    External Link
+  </a>
+  <a
+    className="p-link--soft"
+    href="https://vanilla-framework.github.io/vanilla-framework-react/"
+  >
+    Soft Link
+  </a>
+  <a
+    className="p-link--strong"
+    href="https://vanilla-framework.github.io/vanilla-framework-react/"
+  >
+    Strong Link
+  </a>
+  <a
+    className="p-link--inverted"
+    href="https://vanilla-framework.github.io/vanilla-framework-react/"
+  >
+    Inverted Link
+  </a>
+  <div
+    className="p-top"
+  >
+    <a
+      className=" p-top__link"
+      href="https://vanilla-framework.github.io/vanilla-framework-react/"
+    >
+      Back to top
+    </a>
+  </div>
+  <a
+    className="p-link--external p-link--strong"
+    href="https://vanillaframework.io/"
+  >
+    External/Strong Link
+  </a>
+  <a
+    className="p-link--external p-link--soft"
+    href="https://vanillaframework.io/"
+  >
+    External/Soft Link
+  </a>
+  <div
+    className="p-top"
+  >
+    <a
+      className="p-link--strong p-top__link"
+      href="https://vanilla-framework.github.io/vanilla-framework-react/"
+    >
+      Strong/Back to top Link
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Link component should render a simple link correctly 1`] = `
+<a
+  className=""
+  href="https://vanilla-framework.github.io/vanilla-framework-react/"
+>
+  Default Link
+</a>
+`;

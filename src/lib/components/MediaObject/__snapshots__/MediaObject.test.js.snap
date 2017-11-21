@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MediaObject component should not render anything if props object is empty 1`] = `
+<div
+  className="p-media-object"
+>
+  <div
+    className="p-media-object__details"
+  />
+</div>
+`;
+
+exports[`MediaObject component should render a MediaObject with several optional props correctly 1`] = `
+<div
+  className="p-media-object--large"
+>
+  <div
+    className="p-media-object__details"
+  >
+    <h3
+      className="p-media-object__title"
+    >
+      <a
+        href="#"
+      >
+        Event Title
+      </a>
+    </h3>
+    <p
+      className="p-media-object__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <ul
+      className="p-media-object__meta-list"
+    >
+      <li
+        className="p-media-object__meta-list-item"
+      >
+        CSS frameworks
+      </li>
+      <li
+        className="p-media-object__meta-list-item--date"
+      >
+        21 - 23 February 2017
+      </li>
+      <li
+        className="p-media-object__meta-list-item--venue"
+      >
+        Venue 360
+      </li>
+      <li
+        className="p-media-object__meta-list-item--location"
+      >
+        Santa Clara, CA
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`MediaObject component should render default style correctly 1`] = `
+<div
+  className="p-media-object"
+>
+  <div
+    className="p-media-object__details"
+  >
+    <h3
+      className="p-media-object__title"
+    >
+      Event Title
+    </h3>
+    <p
+      className="p-media-object__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`MediaObject component should render image correctly 1`] = `
+<div
+  className="p-media-object"
+>
+  <img
+    alt=""
+    className="p-media-object__image"
+    src="http://placehold.it/72x72"
+  />
+  <div
+    className="p-media-object__details"
+  >
+    <h3
+      className="p-media-object__title"
+    >
+      <a
+        href="#"
+      >
+        Event Title
+      </a>
+    </h3>
+    <p
+      className="p-media-object__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`MediaObject component should render large prop correctly 1`] = `
+<div
+  className="p-media-object--large"
+>
+  <div
+    className="p-media-object__details"
+  >
+    <h3
+      className="p-media-object__title"
+    >
+      Event Title
+    </h3>
+    <p
+      className="p-media-object__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`MediaObject component should render metadata correctly 1`] = `
+<div
+  className="p-media-object"
+>
+  <div
+    className="p-media-object__details"
+  >
+    <h3
+      className="p-media-object__title"
+    >
+      <a
+        href="#"
+      >
+        Event Title
+      </a>
+    </h3>
+    <p
+      className="p-media-object__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <ul
+      className="p-media-object__meta-list"
+    >
+      <li
+        className="p-media-object__meta-list-item"
+      >
+        CSS frameworks
+      </li>
+      <li
+        className="p-media-object__meta-list-item--date"
+      >
+        21 - 23 February 2017
+      </li>
+      <li
+        className="p-media-object__meta-list-item--venue"
+      >
+        Venue 360
+      </li>
+      <li
+        className="p-media-object__meta-list-item--location"
+      >
+        Santa Clara, CA
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`MediaObject component should render round prop correctly 1`] = `
+<div
+  className="p-media-object"
+>
+  <div
+    className="p-media-object__details"
+  >
+    <h3
+      className="p-media-object__title"
+    >
+      Event Title
+    </h3>
+    <p
+      className="p-media-object__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`MediaObject component should render title link correctly 1`] = `
+<div
+  className="p-media-object"
+>
+  <div
+    className="p-media-object__details"
+  >
+    <h3
+      className="p-media-object__title"
+    >
+      <a
+        href="#"
+      >
+        Event Title
+      </a>
+    </h3>
+    <p
+      className="p-media-object__content"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+</div>
+`;

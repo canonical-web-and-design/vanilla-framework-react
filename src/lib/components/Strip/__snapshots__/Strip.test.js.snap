@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Strip component should render Columns correctly 1`] = `
+<section
+  className="p-strip--light"
+  style={Object {}}
+>
+  <div
+    className="row"
+    style={Object {}}
+  >
+    <div
+      className="col-6"
+      style={Object {}}
+    >
+      6 columns
+    </div>
+    <div
+      className="col-2"
+      style={Object {}}
+    >
+      2 columns
+    </div>
+    <div
+      className="col-4"
+      style={Object {}}
+    >
+      4 columns
+    </div>
+  </div>
+  <div
+    className="row"
+    style={Object {}}
+  >
+    <div
+      className="col-3"
+      style={Object {}}
+    >
+      3 columns
+    </div>
+    <div
+      className="col-9"
+      style={Object {}}
+    >
+      9 columns
+    </div>
+  </div>
+  <div
+    className="row"
+    style={Object {}}
+  >
+    <div
+      className="col-2"
+      style={Object {}}
+    >
+      2 columns
+    </div>
+    <div
+      className="col-7"
+      style={Object {}}
+    >
+      7 columns
+    </div>
+    <div
+      className="col-3"
+      style={Object {}}
+    >
+      3 columns
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Strip component should render a bordered Strip correctly 1`] = `
+<section
+  className="p-strip--light is-bordered"
+  style={Object {}}
+>
+  <div
+    className="row"
+    style={Object {}}
+  >
+    <p>
+      This is a bordered Strip
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Strip component should render a dark Strip correctly 1`] = `
+<section
+  className="p-strip--dark"
+  style={Object {}}
+>
+  <div
+    className="row"
+    style={Object {}}
+  >
+    <p>
+      This is a dark Strip
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Strip component should render a deep Strip correctly 1`] = `
+<section
+  className="p-strip--light is-deep"
+  style={Object {}}
+>
+  <div
+    className="row"
+    style={Object {}}
+  >
+    <p>
+      This is a deep Strip
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Strip component should render a shallow Strip correctly 1`] = `
+<section
+  className="p-strip--light is-shallow"
+  style={Object {}}
+>
+  <div
+    className="row"
+    style={Object {}}
+  >
+    <p>
+      This is a shallow Strip
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Strip component should render a simple Strip correctly 1`] = `
+<section
+  className="p-strip--light"
+  style={Object {}}
+>
+  <div
+    className="row"
+    style={Object {}}
+  >
+    <p>
+      This is a light Strip
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Strip component should render an accented Strip correctly 1`] = `
+<section
+  className="p-strip--accent"
+  style={Object {}}
+>
+  <div
+    className="row"
+    style={Object {}}
+  >
+    <p>
+      This is an accented Strip
+    </p>
+  </div>
+</section>
+`;
+
+exports[`Strip component should render an image Strip correctly 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "1030px",
+    }
+  }
+>
+  <section
+    className="p-strip--light p-strip--image is-light"
+    style={
+      Object {
+        "backgroundImage": "url(https://assets.ubuntu.com/v1/974c4e8c-background-origami.png?w=600)",
+      }
+    }
+  >
+    <div
+      className="row"
+      style={Object {}}
+    >
+      <p>
+        This is an image Strip that has a light image
+      </p>
+    </div>
+  </section>
+  <section
+    className="p-strip--light p-strip--image is-dark"
+    style={
+      Object {
+        "backgroundImage": "url(https://assets.ubuntu.com/v1/ab1a7e82-background.png?w=600)",
+      }
+    }
+  >
+    <div
+      className="row"
+      style={Object {}}
+    >
+      <p>
+        This is an image Strip that has a dark image
+      </p>
+    </div>
+  </section>
+</div>
+`;

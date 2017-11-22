@@ -1,6 +1,6 @@
 {
   "name": "vanilla-framework-react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Vanilla Framework, built using React",
   "main": "build/index.js",
   "scripts": {
@@ -20,9 +20,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/udiliaInc/create-react-library.git"
+    "url": "git+https://github.com/vanilla-framework/vanilla-framework-react.git"
   },
-  "author": "Dimitri Mikadze <dimitri@udilia.com>",
   "bugs": {
     "url": "https://github.com/vanilla-framework/create-react-library/issues"
   },

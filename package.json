@@ -22,10 +22,6 @@
     "type": "git",
     "url": "git+https://github.com/vanilla-framework/vanilla-framework-react.git"
   },
-<<<<<<< HEAD
-=======
-  "author": "Canonical webteam <webteam@canonical.com>",
->>>>>>> Update package.json author and URLs
   "bugs": {
     "url": "https://github.com/vanilla-framework/vanilla-framework-react/issues"
   },

@@ -31,4 +31,6 @@ SteppedList.propTypes = {
   detailed: PropTypes.bool,
 };
 
+SteppedList.displayName = 'SteppedList';
+
 export default SteppedList;

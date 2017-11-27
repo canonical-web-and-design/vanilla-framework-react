@@ -43,4 +43,6 @@ Switch.propTypes = {
   label: PropTypes.string.isRequired,
 };
 
+Switch.displayName = 'Switch';
+
 export default Switch;

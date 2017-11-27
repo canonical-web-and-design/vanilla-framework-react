@@ -30,4 +30,6 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
+Card.displayName = 'Card';
+
 export default Card;

@@ -46,4 +46,6 @@ CodeSnippet.propTypes = {
   value: PropTypes.string.isRequired,
 };
 
+CodeSnippet.displayName = 'CodeSnippet';
+
 export default CodeSnippet;

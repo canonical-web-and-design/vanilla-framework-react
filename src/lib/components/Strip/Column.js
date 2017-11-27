@@ -24,4 +24,6 @@ Column.propTypes = {
   style: PropTypes.object,
 };
 
+Column.displayName = 'Column';
+
 export default Column;

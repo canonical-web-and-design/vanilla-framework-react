@@ -41,4 +41,6 @@ CodeBlock.propTypes = {
   modifier: PropTypes.string,
 };
 
+CodeBlock.displayName = 'CodeBlock';
+
 export default CodeBlock;

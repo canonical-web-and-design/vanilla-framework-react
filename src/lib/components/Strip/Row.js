@@ -17,4 +17,6 @@ Row.propTypes = {
   style: PropTypes.object,
 };
 
+Row.displayName = 'Row';
+
 export default Row;

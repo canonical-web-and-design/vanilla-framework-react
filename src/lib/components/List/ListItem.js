@@ -31,4 +31,6 @@ ListItem.propTypes = {
   modifier: PropTypes.string,
 };
 
+ListItem.displayName = 'ListItem';
+
 export default ListItem;

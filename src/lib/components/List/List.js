@@ -42,4 +42,6 @@ List.propTypes = {
   modifier: PropTypes.oneOf(['divided', 'inline', 'middot', 'split']),
 };
 
+List.displayName = 'List';
+
 export default List;

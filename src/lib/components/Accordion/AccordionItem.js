@@ -54,4 +54,6 @@ AccordionItem.propTypes = {
   onClick: PropTypes.func,
 };
 
+AccordionItem.displayName = 'AccordionItem';
+
 export default AccordionItem;

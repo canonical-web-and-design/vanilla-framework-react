@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlockQuote component should render a basic blockquote correctly 1`] = `
+<blockquote>
+  <p>
+    <span>
+      "
+    </span>
+    Ubuntu is an ancient African word meaning 'humanity to others'. Ubuntu is an ancient African word meaning 'humanity to others'.
+    <span>
+      "
+    </span>
+  </p>
+  <p>
+    <cite>
+      
+    </cite>
+  </p>
+</blockquote>
+`;
+
+exports[`BlockQuote component should render a basic blockquote with citation correctly 1`] = `
+<blockquote>
+  <p>
+    <span>
+      "
+    </span>
+    Ubuntu is an ancient African word meaning 'humanity to others'. Ubuntu is an ancient African word meaning 'humanity to others'.
+    <span>
+      "
+    </span>
+  </p>
+  <p>
+    <cite>
+      Canonical
+    </cite>
+  </p>
+</blockquote>
+`;
+
+exports[`BlockQuote component should render a pull quote correctly 1`] = `
+<blockquote
+  className="p-pull-quote"
+>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  </p>
+  <cite
+    className="p-pull-quote__citation"
+  >
+    A. N. Author
+  </cite>
+</blockquote>
+`;

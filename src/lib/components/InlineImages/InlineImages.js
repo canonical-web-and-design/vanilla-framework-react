@@ -23,4 +23,6 @@ InlineImages.propTypes = {
   ]).isRequired,
 };
 
+InlineImages.displayName = 'InlineImages';
+
 export default InlineImages;

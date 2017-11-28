@@ -14,4 +14,6 @@ FooterNavContainer.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
+FooterNavContainer.displayName = 'FooterNavContainer';
+
 export default FooterNavContainer;

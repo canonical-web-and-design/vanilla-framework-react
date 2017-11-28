@@ -12,4 +12,6 @@ Footer.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
+Footer.displayName = 'Footer';
+
 export default Footer;

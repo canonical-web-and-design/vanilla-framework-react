@@ -44,4 +44,6 @@ Accordion.propTypes = {
   selected: PropTypes.number,
 };
 
+Accordion.displayName = 'Accordion';
+
 export default Accordion;

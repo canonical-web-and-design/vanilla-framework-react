@@ -30,4 +30,6 @@ Image.propTypes = {
   shadowed: PropTypes.bool,
 };
 
+Image.displayName = 'Image';
+
 export default Image;

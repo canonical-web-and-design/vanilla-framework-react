@@ -12,4 +12,6 @@ BreadcrumbItem.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
+BreadcrumbItem.displayName = 'BreadcrumbItem';
+
 export default BreadcrumbItem;

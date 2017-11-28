@@ -17,4 +17,6 @@ Button.propTypes = {
   value: PropTypes.string.isRequired,
 };
 
+Button.displayName = 'Button';
+
 export default Button;

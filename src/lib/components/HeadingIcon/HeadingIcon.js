@@ -24,4 +24,6 @@ HeadingIcon.propTypes = {
   children: PropTypes.node,
 };
 
+HeadingIcon.displayName = 'HeadingIcon';
+
 export default HeadingIcon;

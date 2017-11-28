@@ -29,4 +29,6 @@ SteppedListItem.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
+SteppedListItem.displayName = 'SteppedListItem';
+
 export default SteppedListItem;

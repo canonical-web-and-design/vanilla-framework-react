@@ -13,4 +13,6 @@ FooterNav.propTypes = {
   link: PropTypes.string.isRequired,
 };
 
+FooterNav.displayName = 'FooterNav';
+
 export default FooterNav;

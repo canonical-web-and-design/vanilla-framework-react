@@ -64,4 +64,6 @@ Strip.propTypes = {
   style: PropTypes.object,
 };
 
+Strip.displayName = 'Strip';
+
 export default Strip;

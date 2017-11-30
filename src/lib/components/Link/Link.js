@@ -3,11 +3,25 @@ import PropTypes from 'prop-types';
 import './Link.scss';
 
 const Link = (props) => {
-  let classString = '';
+  let classArray = [];
 
-  if (props.modifier) {
-    classString = props.modifier.split(/,?\s/).map(modifier => `p-link--${modifier}`).join(' ');
+  if (props.soft) {
+    classArray = [...classArray, 'p-link--soft'];
   }
+
+  if (props.strong) {
+    classArray = [...classArray, 'p-link--strong'];
+  }
+
+  if (props.inverted) {
+    classArray = [...classArray, 'p-link--inverted'];
+  }
+
+  if (props.external) {
+    classArray = [...classArray, 'p-link--external'];
+  }
+
+  const classString = classArray.join(' ');
 
   if (props.top) {
     return (
@@ -23,14 +37,20 @@ const Link = (props) => {
 };
 
 Link.defaultProps = {
-  modifier: null,
+  soft: false,
+  strong: false,
+  inverted: false,
+  external: false,
   top: false,
 };
 
 Link.propTypes = {
   children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
-  modifier: PropTypes.node,
+  soft: PropTypes.bool,
+  strong: PropTypes.bool,
+  inverted: PropTypes.bool,
+  external: PropTypes.bool,
   top: PropTypes.bool,
 };
 

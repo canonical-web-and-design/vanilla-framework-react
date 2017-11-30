@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Footer.css';
+import './Footer.scss';
 
 const FooterNav = props => (
   <li className="p-footer__item">

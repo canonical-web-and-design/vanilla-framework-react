@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Strip.css';
+import './Strip.scss';
 
 const Row = props => (
   <div className="row" style={props.style}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './MediaObject.css';
+import './MediaObject.scss';
 
 const MediaObject = (props) => {
   let image;

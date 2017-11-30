@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './HeadingIcon.css';
+import './HeadingIcon.scss';
 
 const HeadingIcon = props => (
   <div className="p-heading-icon">

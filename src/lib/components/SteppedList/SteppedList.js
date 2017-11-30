@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './SteppedList.css';
+import './SteppedList.scss';
 
 const SteppedList = (props) => {
   if (!props.children) {

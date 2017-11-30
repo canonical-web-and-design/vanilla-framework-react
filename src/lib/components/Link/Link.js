@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Link.css';
+import './Link.scss';
 
 const Link = (props) => {
   let classString = '';

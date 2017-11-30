@@ -144,7 +144,7 @@ module.exports = {
               {
                 loader: "sass-loader",
                 options: {
-                  includePaths: [paths.appSrc]
+                  includePaths: [paths.appSrc, paths.appNodeModules]
                 }
               },
               // "postcss" loader applies autoprefixer to our CSS.

@@ -4,16 +4,13 @@
   "description": "Vanilla Framework, built using React",
   "main": "build/index.js",
   "scripts": {
-    "build": "npm-run-all build-css build-js",
-    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "build": "npm-run-all build-js",
     "build-js": "react-scripts build",
     "build-storybook": "build-storybook",
     "clean": "rm -rf node_modules && rm -rf build",
     "lint": "eslint ./src/",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "preserve": "yarn install && yarn run build",
-    "serve": "npm-run-all -p watch-css serve-storybook",
-    "serve-storybook": "start-storybook -p ${PORT:-8102}",
+    "serve": "start-storybook -p ${PORT:-8102}",
     "snapshot": "build-storybook -s public && percy-storybook --widths=320,1280",
     "test": "node scripts/test.js --env=jsdom"
   },

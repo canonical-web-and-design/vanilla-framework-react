@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Image.css';
+import './Image.scss';
 
 const Image = (props) => {
   let classArray = [];

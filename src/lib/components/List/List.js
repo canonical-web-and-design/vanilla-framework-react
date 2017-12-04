@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './List.css';
+import './List.scss';
 
 const getClassName = (modifier) => {
   switch (modifier) {

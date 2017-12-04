@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListTree component should render a basic ListTree correctly 1`] = `
+<ul
+  aria-multiselectable="true"
+  className="p-list-tree"
+  role="tablist"
+>
+  <li
+    className="p-list-tree__item p-list-tree__item--group"
+  >
+    <button
+      aria-controls="listtree-0"
+      aria-expanded={false}
+      className="p-list-tree__toggle"
+      id="listtree-0-btn"
+      onClick={[Function]}
+      role="tab"
+    >
+      /group
+    </button>
+    <ul
+      aria-hidden={true}
+      aria-labelledby="listtree-0-btn"
+      className="p-list-tree"
+      id="listtree-0"
+      role="tabpanel"
+    >
+      <li
+        className="p-list-tree__item"
+      >
+        file
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
+
+exports[`ListTree component should render a nested ListTree correctly 1`] = `
+<ul
+  aria-multiselectable="true"
+  className="p-list-tree"
+  role="tablist"
+>
+  <li
+    className="p-list-tree__item p-list-tree__item--group"
+  >
+    <button
+      aria-controls="listtree-0"
+      aria-expanded={false}
+      className="p-list-tree__toggle"
+      id="listtree-0-btn"
+      onClick={[Function]}
+      role="tab"
+    >
+      /depth1
+    </button>
+    <ul
+      aria-hidden={true}
+      aria-labelledby="listtree-0-btn"
+      className="p-list-tree"
+      id="listtree-0"
+      role="tabpanel"
+    >
+      <li
+        className="p-list-tree__item p-list-tree__item--group"
+      >
+        <button
+          aria-controls="listtree-0-0"
+          aria-expanded={false}
+          className="p-list-tree__toggle"
+          id="listtree-0-0-btn"
+          onClick={[Function]}
+          role="tab"
+        >
+          /depth2
+        </button>
+        <ul
+          aria-hidden={true}
+          aria-labelledby="listtree-0-0-btn"
+          className="p-list-tree"
+          id="listtree-0-0"
+          role="tabpanel"
+        >
+          <li
+            className="p-list-tree__item p-list-tree__item--group"
+          >
+            <button
+              aria-controls="listtree-0-0-0"
+              aria-expanded={false}
+              className="p-list-tree__toggle"
+              id="listtree-0-0-0-btn"
+              onClick={[Function]}
+              role="tab"
+            >
+              /depth3
+            </button>
+            <ul
+              aria-hidden={true}
+              aria-labelledby="listtree-0-0-0-btn"
+              className="p-list-tree"
+              id="listtree-0-0-0"
+              role="tabpanel"
+            >
+              <li
+                className="p-list-tree__item"
+              >
+                file
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+`;

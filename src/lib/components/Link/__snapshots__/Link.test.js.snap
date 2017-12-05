@@ -37,13 +37,13 @@ exports[`Link component should accept modifiers correctly 1`] = `
     </a>
   </div>
   <a
-    className="p-link--external p-link--strong"
+    className="p-link--strong p-link--external"
     href="https://vanillaframework.io/"
   >
     External/Strong Link
   </a>
   <a
-    className="p-link--external p-link--soft"
+    className="p-link--soft p-link--external"
     href="https://vanillaframework.io/"
   >
     External/Soft Link

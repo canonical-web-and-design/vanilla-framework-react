@@ -13,26 +13,26 @@ storiesOf('Link', module)
 
   .add('External',
     withInfo('The "external" modifier should be used on Link components that go to a different domain than the current one. ')(() => (
-      <Link modifier="external" href="https://vanillaframework.io/">External Link</Link>),
+      <Link external href="https://vanillaframework.io/">External Link</Link>),
     ),
   )
 
   .add('Soft',
     withInfo('The "soft" modifier should be used on Link components where many links are grouped together, such as a link cloud.')(() => (
-      <Link modifier="soft" href="https://vanilla-framework.github.io/vanilla-framework-react/">Soft Link</Link>),
+      <Link soft href="https://vanilla-framework.github.io/vanilla-framework-react/">Soft Link</Link>),
     ),
   )
 
   .add('Strong',
     withInfo('The "strong" modifier should be used on Link components that require emphasis or on a dark background.')(() => (
-      <Link modifier="strong" href="https://vanilla-framework.github.io/vanilla-framework-react/">Strong Link</Link>),
+      <Link strong href="https://vanilla-framework.github.io/vanilla-framework-react/">Strong Link</Link>),
     ),
   )
 
   .add('Inverted',
     withInfo('The "inverted" modifier should be used where Link components are placed on a dark background.')(() => (
       <div style={{ backgroundColor: '#333' }}>
-        <Link modifier="inverted" href="https://vanilla-framework.github.io/vanilla-framework-react/">Inverted Link</Link>
+        <Link inverted href="https://vanilla-framework.github.io/vanilla-framework-react/">Inverted Link</Link>
       </div>),
     ),
   )
@@ -44,11 +44,11 @@ storiesOf('Link', module)
   )
 
   .add('Combination',
-    withInfo('You can combine Link modifiers in the modifier prop, either space or comma-separated.')(() => (
+    withInfo('You can combine Link modifiers.')(() => (
       <div>
-        <p><Link modifier="external strong" href="https://vanillaframework.io/">External/Strong Link</Link></p>
-        <p><Link modifier="external, soft" href="https://vanillaframework.io/">External/Soft Link</Link></p>
-        <p><Link top modifier="strong" href="https://vanilla-framework.github.io/vanilla-framework-react/">Strong/Back to top Link</Link></p>
+        <p><Link external strong href="https://vanillaframework.io/">External/Strong Link</Link></p>
+        <p><Link external soft href="https://vanillaframework.io/">External/Soft Link</Link></p>
+        <p><Link top strong href="https://vanilla-framework.github.io/vanilla-framework-react/">Strong/Back to top Link</Link></p>
       </div>),
     ),
   );

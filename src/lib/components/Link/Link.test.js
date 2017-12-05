@@ -14,14 +14,14 @@ describe('Link component', () => {
   it('should accept modifiers correctly', () => {
     const link = ReactTestRenderer.create(
       <div>
-        <Link modifier="external" href="https://vanillaframework.io/">External Link</Link>
-        <Link modifier="soft" href="https://vanilla-framework.github.io/vanilla-framework-react/">Soft Link</Link>
-        <Link modifier="strong" href="https://vanilla-framework.github.io/vanilla-framework-react/">Strong Link</Link>
-        <Link modifier="inverted" href="https://vanilla-framework.github.io/vanilla-framework-react/">Inverted Link</Link>
+        <Link external href="https://vanillaframework.io/">External Link</Link>
+        <Link soft href="https://vanilla-framework.github.io/vanilla-framework-react/">Soft Link</Link>
+        <Link strong href="https://vanilla-framework.github.io/vanilla-framework-react/">Strong Link</Link>
+        <Link inverted href="https://vanilla-framework.github.io/vanilla-framework-react/">Inverted Link</Link>
         <Link top href="https://vanilla-framework.github.io/vanilla-framework-react/">Back to top</Link>
-        <Link modifier="external strong" href="https://vanillaframework.io/">External/Strong Link</Link>
-        <Link modifier="external, soft" href="https://vanillaframework.io/">External/Soft Link</Link>
-        <Link top modifier="strong" href="https://vanilla-framework.github.io/vanilla-framework-react/">Strong/Back to top Link</Link>
+        <Link external strong href="https://vanillaframework.io/">External/Strong Link</Link>
+        <Link external soft href="https://vanillaframework.io/">External/Soft Link</Link>
+        <Link top strong href="https://vanilla-framework.github.io/vanilla-framework-react/">Strong/Back to top Link</Link>
       </div>,
     );
     const json = link.toJSON();

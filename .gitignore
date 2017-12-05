@@ -42,7 +42,6 @@ package-lock.json
 /prime/
 /stage/
 .snapcraft/
-*.snap
 _site/
 *.*.map
 

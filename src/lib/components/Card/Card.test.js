@@ -3,15 +3,57 @@ import ReactTestRenderer from 'react-test-renderer';
 import Card from './Card';
 
 describe('Card component', () => {
-  it('should compare with a snapshot', () => {
-    const image = {
-      src: 'http://placekitten.com/g/64/64',
-      alt: 'Placeholder',
-    };
-
+  it('should render a basic Card correctly', () => {
     const card = ReactTestRenderer.create(
-      <Card className="p-card" title="Title" image={image}>
-        Lorem ipsum dolor sit amet
+      <Card title="Card title">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </Card>);
+    const json = card.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('should render Card with an image correctly', () => {
+    const card = ReactTestRenderer.create(
+      <Card
+        title="Card title"
+        image={{
+          src: 'http://placekitten.com/g/64/64',
+          alt: 'Placeholder',
+        }}
+      >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </Card>);
+    const json = card.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('should render a highlighted Card correctly', () => {
+    const card = ReactTestRenderer.create(
+      <Card
+        highlighted
+        title="Card title"
+        image={{
+          src: 'http://placekitten.com/g/64/64',
+          alt: 'Placeholder',
+        }}
+      >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </Card>);
+    const json = card.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('should render an overlay Card correctly', () => {
+    const card = ReactTestRenderer.create(
+      <Card
+        overlay
+        title="Card title"
+        image={{
+          src: 'http://placekitten.com/g/64/64',
+          alt: 'Placeholder',
+        }}
+      >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
       </Card>);
     const json = card.toJSON();
     expect(json).toMatchSnapshot();

@@ -16,3 +16,4 @@ export { default as MutedHeading } from './lib/components/MutedHeading/MutedHead
 export { default as SteppedList } from './lib/components/SteppedList/SteppedList';
 export { default as Strip } from './lib/components/Strip/Strip';
 export { default as Switch } from './lib/components/Switch/Switch';
+export { default as Table } from './lib/components/Table/Table';

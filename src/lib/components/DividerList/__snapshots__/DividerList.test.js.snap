@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DividerList component should render four children correctly 1`] = `
+<div
+  className="p-divider"
+>
+  <div
+    className="col-3 p-divider__block"
+  >
+    One
+  </div>
+  <div
+    className="col-3 p-divider__block"
+  >
+    Two
+  </div>
+  <div
+    className="col-3 p-divider__block"
+  >
+    Three
+  </div>
+  <div
+    className="col-3 p-divider__block"
+  >
+    Four
+  </div>
+</div>
+`;
+
+exports[`DividerList component should render three children correctly 1`] = `
+<div
+  className="p-divider"
+>
+  <div
+    className="col-4 p-divider__block"
+  >
+    One
+  </div>
+  <div
+    className="col-4 p-divider__block"
+  >
+    Two
+  </div>
+  <div
+    className="col-4 p-divider__block"
+  >
+    Three
+  </div>
+</div>
+`;
+
+exports[`DividerList component should render two children correctly 1`] = `
+<div
+  className="p-divider"
+>
+  <div
+    className="col-6 p-divider__block"
+  >
+    One
+  </div>
+  <div
+    className="col-6 p-divider__block"
+  >
+    Two
+  </div>
+</div>
+`;

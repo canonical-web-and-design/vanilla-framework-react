@@ -3,15 +3,38 @@ import PropTypes from 'prop-types';
 import './Card.scss';
 
 class Card extends React.Component {
+  constructor() {
+    super();
+    this.getClassString = this.getClassString.bind(this);
+    this.renderHeader = this.renderHeader.bind(this);
+  }
+
+  getClassString() {
+    let classString = 'p-card';
+
+    if (this.props.highlighted) classString = `${classString} p-card--highlighted`;
+    if (this.props.overlay) classString = `${classString} p-card--overlay`;
+
+    return classString;
+  }
+
+  renderHeader() {
+    const { header, image } = this.props;
+
+    return (
+      <header className="p-card__header">
+        {image ? <img src={image.src} alt={image.alt} /> : <h1>{header}</h1>}
+      </header>
+    );
+  }
+
   render() {
     return (
-      <div className={this.props.modifier ? `p-card--${this.props.modifier}` : 'p-card'}>
-        { this.props.image.src.length > 0 &&
-          <header className="p-card__header">
-            <img src={this.props.image.src} alt={this.props.image.alt} />
-          </header>
+      <div className={this.getClassString()}>
+        { (this.props.header || this.props.image) && this.renderHeader() }
+        { this.props.title &&
+          <h3 className="p-card__title">{this.props.title}</h3>
         }
-        <h3 className="p-card__title">{this.props.title}</h3>
         { this.props.children }
       </div>
     );
@@ -19,15 +42,23 @@ class Card extends React.Component {
 }
 
 Card.defaultProps = {
-  modifier: '',
-  image: {},
+  header: null,
+  highlighted: false,
+  image: null,
+  overlay: false,
+  title: null,
 };
 
 Card.propTypes = {
   children: PropTypes.node.isRequired,
-  image: PropTypes.object,
-  modifier: PropTypes.string,
-  title: PropTypes.string.isRequired,
+  header: PropTypes.string,
+  highlighted: PropTypes.bool,
+  image: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string,
+  }),
+  overlay: PropTypes.bool,
+  title: PropTypes.string,
 };
 
 Card.displayName = 'Card';

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card component should compare with a snapshot 1`] = `
+exports[`Card component should render Card with an image correctly 1`] = `
 <div
   className="p-card"
 >
@@ -15,8 +15,71 @@ exports[`Card component should compare with a snapshot 1`] = `
   <h3
     className="p-card__title"
   >
-    Title
+    Card title
   </h3>
-  Lorem ipsum dolor sit amet
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing.
+  </p>
+</div>
+`;
+
+exports[`Card component should render a basic Card correctly 1`] = `
+<div
+  className="p-card"
+>
+  <h3
+    className="p-card__title"
+  >
+    Card title
+  </h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing.
+  </p>
+</div>
+`;
+
+exports[`Card component should render a highlighted Card correctly 1`] = `
+<div
+  className="p-card p-card--highlighted"
+>
+  <header
+    className="p-card__header"
+  >
+    <img
+      alt="Placeholder"
+      src="http://placekitten.com/g/64/64"
+    />
+  </header>
+  <h3
+    className="p-card__title"
+  >
+    Card title
+  </h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing.
+  </p>
+</div>
+`;
+
+exports[`Card component should render an overlay Card correctly 1`] = `
+<div
+  className="p-card p-card--overlay"
+>
+  <header
+    className="p-card__header"
+  >
+    <img
+      alt="Placeholder"
+      src="http://placekitten.com/g/64/64"
+    />
+  </header>
+  <h3
+    className="p-card__title"
+  >
+    Card title
+  </h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing.
+  </p>
 </div>
 `;

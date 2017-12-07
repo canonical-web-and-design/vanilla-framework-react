@@ -1,8 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component should compare with a snapshot 1`] = `
+exports[`Button component should render a modified Button correctly 1`] = `
+<div>
+  <button
+    className="p-button--neutral"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Neutral
+  </button>
+  <button
+    className="p-button--negative"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Negative
+  </button>
+  <button
+    className="p-button--positive"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Positive
+  </button>
+  <button
+    className="p-button--brand"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Brand
+  </button>
+  <button
+    className="p-button--base is-inline"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Inline
+  </button>
+  <button
+    className="p-button--base"
+    disabled={true}
+    onClick={[Function]}
+  >
+    Disabled
+  </button>
+</div>
+`;
+
+exports[`Button component should render a simple Button correctly 1`] = `
 <button
   className="p-button--base"
+  disabled={false}
+  onClick={[Function]}
 >
   Submit
 </button>

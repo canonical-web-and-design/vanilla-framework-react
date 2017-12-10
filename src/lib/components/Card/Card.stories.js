@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Card from './Card';
@@ -7,19 +8,29 @@ import Column from '../Strip/Column';
 import Row from '../Strip/Row';
 import Strip from '../Strip/Strip';
 
-storiesOf('Card', module)
+storiesOf('Card', module).addDecorator(withKnobs)
   .add('Default',
     withInfo('The purpose of the basic card is to display information, without user interaction.')(() => (
-      <Card title="Card title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <Card
+        highlighted={boolean('Highlighted', false)}
+        overlay={boolean('Overlay', false)}
+        header={text('Header')}
+        title={text('Title', 'Card title')}
+      >
+        <p>{text('Text', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')}</p>
       </Card>),
     ),
   )
 
   .add('With Header',
     withInfo('Card components accept either a header or image prop for an optional header.')(() => (
-      <Card header="Card header" title="Card title">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <Card
+        highlighted={boolean('Highlighted', false)}
+        overlay={boolean('Overlay', false)}
+        header={text('Header', 'Card header')}
+        title={text('Title', 'Card title')}
+      >
+        <p>{text('Text', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')}</p>
       </Card>),
     ),
   )
@@ -27,13 +38,15 @@ storiesOf('Card', module)
   .add('With Image',
     withInfo('Card components accept either a header or image prop for an optional header.')(() => (
       <Card
-        title="Card title"
+        highlighted={boolean('Highlighted', false)}
+        overlay={boolean('Overlay', false)}
+        title={text('Title', 'Card title')}
         image={{
           src: 'http://placekitten.com/g/64/64',
           alt: 'Placeholder',
         }}
       >
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <p>{text('Text', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')}</p>
       </Card>),
     ),
   )
@@ -41,14 +54,15 @@ storiesOf('Card', module)
   .add('Highlighted',
     withInfo('The highlighted card should be used when you can interact with the content.')(() => (
       <Card
-        highlighted
-        title="Card title"
+        highlighted={boolean('Highlighted', true)}
+        overlay={boolean('Overlay', false)}
+        title={text('Title', 'Card title')}
         image={{
           src: 'http://placekitten.com/g/64/64',
           alt: 'Placeholder',
         }}
       >
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <p>{text('Text', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')}</p>
       </Card>),
     ),
   )
@@ -64,14 +78,15 @@ storiesOf('Card', module)
           <Column size={6}><div /></Column>
           <Column size={6}>
             <Card
-              overlay
-              title="Card title"
+              highlighted={boolean('Highlighted', false)}
+              overlay={boolean('Overlay', true)}
+              title={text('Title', 'Card title')}
               image={{
                 src: 'http://placekitten.com/g/64/64',
                 alt: 'Placeholder',
               }}
             >
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              <p>{text('Text', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')}</p>
             </Card>
           </Column>
         </Row>

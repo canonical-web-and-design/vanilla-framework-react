@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, boolean, text, select } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Strip from './Strip';
@@ -8,13 +9,25 @@ import Column from './Column';
 import Button from '../Button/Button';
 import Image from '../Image/Image';
 
-storiesOf('Strip', module)
+const stripColours = ['light', 'dark', 'accent'];
+const imageColours = ['light', 'dark'];
+const images = [
+  'https://assets.ubuntu.com/v1/974c4e8c-background-origami.png?w=600',
+  'https://assets.ubuntu.com/v1/ab1a7e82-background.png?w=600',
+];
+const paddings = [null, 'shallow', 'deep'];
+
+storiesOf('Strip', module).addDecorator(withKnobs)
   .add('Light',
     withInfo('The Strip component provides a full width container in which to wrap Row components. The default colour is "light".')(() => (
       <div style={{ maxWidth: '1030px' }}>
-        <Strip>
+        <Strip
+          bordered={boolean('Bordered', false)}
+          colour={select('Colour', stripColours, 'light')}
+          padding={select('Padding', paddings, null)}
+        >
           <Row>
-            <p>This is a light Strip</p>
+            <p>{text('Text', 'This is a light Strip')}</p>
           </Row>
         </Strip>
       </div>),
@@ -24,9 +37,13 @@ storiesOf('Strip', module)
   .add('Dark',
     withInfo('The Strip component provides a full width container in which to wrap Row components. An alternative colour is "dark".')(() => (
       <div style={{ maxWidth: '1030px' }}>
-        <Strip colour="dark">
+        <Strip
+          bordered={boolean('Bordered', false)}
+          colour={select('Colour', stripColours, 'dark')}
+          padding={select('Padding', paddings, null)}
+        >
           <Row>
-            <p>This is a dark Strip</p>
+            <p>{text('Text', 'This is a dark Strip')}</p>
           </Row>
         </Strip>
       </div>),
@@ -36,34 +53,51 @@ storiesOf('Strip', module)
   .add('Accent',
     withInfo('The purpose of the "accent" colour is to display content with a highlighted site accent style.')(() => (
       <div style={{ maxWidth: '1030px' }}>
-        <Strip colour="accent">
+        <Strip
+          bordered={boolean('Bordered', false)}
+          colour={select('Colour', stripColours, 'accent')}
+          padding={select('Padding', paddings, null)}
+        >
           <Row>
-            <p>This is an accented Strip</p>
+            <p>{text('Text', 'This is an accented Strip')}</p>
           </Row>
         </Strip>
       </div>),
     ),
   )
 
-  .add('Image',
+  .add('Light Image',
     withInfo('The "image" prop allows for an image to appear as the background on a Strip. The image prop object can also be described with a "colour" key (with light or dark value). This will then override the text colour to ensure it remains visible.')(() => (
       <div style={{ maxWidth: '1030px' }}>
-        <Strip image={{
-          src: 'https://assets.ubuntu.com/v1/974c4e8c-background-origami.png?w=600',
-          colour: 'light',
+        <Strip
+          bordered={boolean('Bordered', false)}
+          padding={select('Padding', paddings, null)}
+          image={{
+            src: select('Image Src', images, 'https://assets.ubuntu.com/v1/974c4e8c-background-origami.png?w=600'),
+            colour: select('Image Colour', imageColours, 'light'),
           }}
         >
           <Row>
-            <p>This is an image Strip that has a light image</p>
+            <p>{text('Text', 'This is an image Strip with a light background')}</p>
           </Row>
         </Strip>
-        <Strip image={{
-          src: 'https://assets.ubuntu.com/v1/ab1a7e82-background.png?w=600',
-          colour: 'dark',
+      </div>),
+    ),
+  )
+
+  .add('Dark Image',
+    withInfo('The "image" prop allows for an image to appear as the background on a Strip. The image prop object can also be described with a "colour" key (with light or dark value). This will then override the text colour to ensure it remains visible.')(() => (
+      <div style={{ maxWidth: '1030px' }}>
+        <Strip
+          bordered={boolean('Bordered', false)}
+          padding={select('Padding', paddings, null)}
+          image={{
+            src: select('Image Src', images, 'https://assets.ubuntu.com/v1/ab1a7e82-background.png?w=600'),
+            colour: select('Image Colour', imageColours, 'dark'),
           }}
         >
           <Row>
-            <p>This is an image Strip that has a dark image</p>
+            <p>{text('Text', 'This is an image Strip with a dark background')}</p>
           </Row>
         </Strip>
       </div>),
@@ -73,9 +107,13 @@ storiesOf('Strip', module)
   .add('Bordered',
     withInfo('The "bordered" prop is used to add a dividing border at the bottom of the Strip. Note: This should be used when two Strips of the same type are used after each other.')(() => (
       <div style={{ maxWidth: '1030px' }}>
-        <Strip bordered>
+        <Strip
+          bordered={boolean('Bordered', true)}
+          colour={select('Colour', stripColours, 'light')}
+          padding={select('Padding', paddings, null)}
+        >
           <Row>
-            <p>This is a bordered Strip</p>
+            <p>{text('Text', 'This is a light Strip')}</p>
           </Row>
         </Strip>
       </div>),
@@ -85,9 +123,13 @@ storiesOf('Strip', module)
   .add('Shallow',
     withInfo('The padding prop with value "shallow" gives the Strip smaller vertical padding.')(() => (
       <div style={{ maxWidth: '1030px' }}>
-        <Strip colour="accent" padding="shallow">
+        <Strip
+          bordered={boolean('Bordered', false)}
+          colour={select('Colour', stripColours, 'light')}
+          padding={select('Padding', paddings, 'shallow')}
+        >
           <Row>
-            <p>This is a shallow Strip</p>
+            <p>{text('Text', 'This is a light Strip')}</p>
           </Row>
         </Strip>
       </div>),
@@ -97,9 +139,13 @@ storiesOf('Strip', module)
   .add('Deep',
     withInfo('The padding prop with value "deep" gives the Strip larger vertical padding.')(() => (
       <div style={{ maxWidth: '1030px' }}>
-        <Strip colour="accent" padding="deep">
+        <Strip
+          bordered={boolean('Bordered', false)}
+          colour={select('Colour', stripColours, 'light')}
+          padding={select('Padding', paddings, 'deep')}
+        >
           <Row>
-            <p>This is a deep Strip</p>
+            <p>{text('Text', 'This is a light Strip')}</p>
           </Row>
         </Strip>
       </div>),

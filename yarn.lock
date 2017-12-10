@@ -129,6 +129,12 @@
   dependencies:
     "@storybook/addons" "^3.2.17"
 
+"@storybook/addon-options@^3.2.17":
+  version "3.2.17"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.2.17.tgz#1ca1de1f3cf8ac7ec99bcdd534d6e034f9ee4f20"
+  dependencies:
+    "@storybook/addons" "^3.2.17"
+
 "@storybook/addons@^3.2.17":
   version "3.2.17"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.2.17.tgz#5c2ece24c5f7fbf7cedf4cfe503c5e356543e62d"
@@ -8798,7 +8804,7 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
 
-vanilla-framework@1.6.3:
+vanilla-framework@^1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/vanilla-framework/-/vanilla-framework-1.6.3.tgz#92271d5dc765d7563659684ed4797e3919160f01"
 

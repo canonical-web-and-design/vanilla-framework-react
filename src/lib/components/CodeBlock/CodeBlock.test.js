@@ -27,7 +27,7 @@ describe('CodeBlock component', () => {
 
   it('should render one line of code correctly with numbered modifier', () => {
     const codeBlock = ReactTestRenderer.create(
-      <CodeBlock modifier="numbered">
+      <CodeBlock numbered>
         {'this is a single line of code'}
       </CodeBlock>,
     );
@@ -37,7 +37,7 @@ describe('CodeBlock component', () => {
 
   it('should render multiple lines of code correctly with numbered modifier', () => {
     const codeBlock = ReactTestRenderer.create(
-      <CodeBlock modifier="numbered">
+      <CodeBlock numbered>
         {`this is code sample line 1
           this is code sample line 2
           this is code sample line 3`}

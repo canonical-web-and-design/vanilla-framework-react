@@ -1,5 +1,9 @@
 @import 'vanilla-framework/scss/base';
 @import 'vanilla-framework/scss/patterns_lists';
+@import 'vanilla-framework/scss/patterns_grid';
+@import 'vanilla-framework/scss/utilities_clearfix';
 @include vf-b-typography;
 @include vf-b-lists;
 @include vf-p-lists;
+@include vf-p-grid;
+@include vf-u-clearfix;

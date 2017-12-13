@@ -1,27 +1,38 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Image from './Image';
 
-storiesOf('Image', module)
+storiesOf('Image', module).addDecorator(withKnobs)
   .add('Default',
     withInfo('Default Image component.')(() => (
-      <Image src="http://placekitten.com/g/300/300" alt="" />),
+      <Image
+        bordered={boolean('Bordered', false)}
+        shadowed={boolean('Shadowed', false)}
+        src={text('src', 'http://placekitten.com/g/300/300')}
+        alt={text('alt', 'cat')}
+      />),
     ),
   )
   .add('Bordered',
     withInfo('Bordered Image component.')(() => (
-      <Image bordered src="http://placekitten.com/g/300/300" alt="" />),
+      <Image
+        bordered={boolean('Bordered', true)}
+        shadowed={boolean('Shadowed', false)}
+        src={text('src', 'http://placekitten.com/g/300/300')}
+        alt={text('alt', 'cat')}
+      />),
     ),
   )
   .add('Shadowed',
     withInfo('Image component with drop-shadow.')(() => (
-      <Image shadowed src="http://placekitten.com/g/300/300" alt="" />),
-    ),
-  )
-  .add('Bordered and shadowed',
-    withInfo('Image component with both border and drop-shadow.')(() => (
-      <Image bordered shadowed src="http://placekitten.com/g/300/300" alt="" />),
+      <Image
+        bordered={boolean('Bordered', false)}
+        shadowed={boolean('Shadowed', true)}
+        src={text('src', 'http://placekitten.com/g/300/300')}
+        alt={text('alt', 'cat')}
+      />),
     ),
   );

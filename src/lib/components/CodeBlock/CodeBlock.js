@@ -6,8 +6,8 @@ import pretty from 'pretty';
 import './CodeBlock.scss';
 
 const CodeBlock = (props) => {
+  const { numbered } = props;
   let code = props.children;
-  const mod = props.modifier;
 
   if (typeof code === 'string') {
     code = dedent(code);
@@ -15,7 +15,7 @@ const CodeBlock = (props) => {
     code = pretty(ReactDOMServer.renderToStaticMarkup(code), { ocd: true });
   }
 
-  if (mod === 'numbered') {
+  if (numbered) {
     const codeArray = code.split(/\r?\n/);
     code = codeArray.map((line, i) => (
       <span key={line} className="code-line">{ codeArray[i] }</span>
@@ -23,7 +23,7 @@ const CodeBlock = (props) => {
   }
 
   return (
-    <pre className={mod ? `p-code-${mod}` : null}>
+    <pre className={numbered ? 'p-code-numbered' : null}>
       <code>
         { code }
       </code>
@@ -33,12 +33,12 @@ const CodeBlock = (props) => {
 
 CodeBlock.defaultProps = {
   children: '',
-  modifier: '',
+  numbered: false,
 };
 
 CodeBlock.propTypes = {
   children: PropTypes.node,
-  modifier: PropTypes.string,
+  numbered: PropTypes.bool,
 };
 
 CodeBlock.displayName = 'CodeBlock';

@@ -1,3 +1,5 @@
+import * as VanillaReact from '.';
+
 export { default as Accordion } from './components/Accordion/Accordion';
 export { default as AccordionItem } from './components/Accordion/AccordionItem';
 export { default as BlockQuote } from './components/BlockQuote/BlockQuote';
@@ -32,3 +34,5 @@ export { default as Switch } from './components/Switch/Switch';
 export { default as Table } from './components/Table/Table';
 export { default as TableCell } from './components/Table/TableCell';
 export { default as TableRow } from './components/Table/TableRow';
+
+export default VanillaReact;

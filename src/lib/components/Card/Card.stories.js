@@ -4,9 +4,9 @@ import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Card from './Card';
-import Column from '../Strip/Column';
-import Row from '../Strip/Row';
 import Strip from '../Strip/Strip';
+import StripColumn from '../Strip/StripColumn';
+import StripRow from '../Strip/StripRow';
 
 storiesOf('Card', module).addDecorator(withKnobs)
   .add('Default',
@@ -74,9 +74,9 @@ storiesOf('Card', module).addDecorator(withKnobs)
         colour: 'dark',
         }}
       >
-        <Row>
-          <Column size={6}><div /></Column>
-          <Column size={6}>
+        <StripRow>
+          <StripColumn size={6}><div /></StripColumn>
+          <StripColumn size={6}>
             <Card
               highlighted={boolean('Highlighted', false)}
               overlay={boolean('Overlay', true)}
@@ -88,8 +88,8 @@ storiesOf('Card', module).addDecorator(withKnobs)
             >
               <p>{text('Text', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')}</p>
             </Card>
-          </Column>
-        </Row>
+          </StripColumn>
+        </StripRow>
       </Strip>),
     ),
   );

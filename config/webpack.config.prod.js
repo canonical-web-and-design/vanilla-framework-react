@@ -89,7 +89,7 @@ module.exports = {
             {
               loader: "sass-loader",
               options: {
-                includePaths: [paths.appSrc, paths.appNodeModules]
+                includePaths: [paths.appSrc, paths.appNodeModules, paths.appLibSrc],
               }
             }, {
               loader: require.resolve('postcss-loader'),

@@ -1,7 +1,5 @@
 @import 'vanilla-framework/scss/base';
 @import 'vanilla-framework/scss/patterns_code-numbered';
-@include vf-b-box-sizing;
-@include vf-b-code;
 @include vf-p-code-numbered;
 
 .p-code-numbered {

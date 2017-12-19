@@ -1,6 +1,6 @@
 {
   "name": "vanilla-framework-react",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Vanilla Framework, built using React",
   "main": "build/index.js",
   "scripts": {

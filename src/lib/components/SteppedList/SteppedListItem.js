@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './SteppedList.scss';
 
 const SteppedListItem = props => (
   <li className="p-list-step__item">

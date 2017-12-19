@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './DividerList.scss';
 
 const DividerListItem = props => (
   <div className={`col-${12 / props.items} p-divider__block`}>

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './ListTree.scss';
 
 class ListTreeGroup extends React.Component {
   constructor() {

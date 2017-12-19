@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './ListTree.scss';
 
 const ListTree = (props) => {
   const listTreeChildren = React.Children.map(props.children, (child, index) =>

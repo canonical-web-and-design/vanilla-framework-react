@@ -3,7 +3,6 @@ import ReactDOMServer from 'react-dom/server';
 import PropTypes from 'prop-types';
 import dedent from 'dedent-js';
 import pretty from 'pretty';
-import './CodeBlock.scss';
 
 const CodeBlock = (props) => {
   const { numbered } = props;

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Strip.scss';
 
 const StripColumn = (props) => {
   if (props.size < 1 || props.size > 12) {

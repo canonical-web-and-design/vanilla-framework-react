@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Strip component should render Columns correctly 1`] = `
+exports[`Strip component should render StripColumns correctly 1`] = `
 <section
   className="p-strip--light"
   style={Object {}}

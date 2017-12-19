@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './CodeSnippet.scss';
 
 class CodeSnippet extends React.Component {
   constructor(props) {

@@ -1,38 +1,41 @@
-import * as VanillaReact from '.';
+import Accordion from './components/Accordion/Accordion';
+import AccordionItem from './components/Accordion/AccordionItem';
+import BlockQuote from './components/BlockQuote/BlockQuote';
+import Breadcrumb from './components/Breadcrumb/Breadcrumb';
+import BreadcrumbItem from './components/Breadcrumb/BreadcrumbItem';
+import Button from './components/Button/Button';
+import Card from './components/Card/Card';
+import CodeBlock from './components/CodeBlock/CodeBlock';
+import CodeSnippet from './components/CodeSnippet/CodeSnippet';
+import DividerList from './components/DividerList/DividerList';
+import DividerListItem from './components/DividerList/DividerListItem';
+import Footer from './components/Footer/Footer';
+import FooterNav from './components/Footer/FooterNav';
+import FooterNavContainer from './components/Footer/FooterNavContainer';
+import HeadingIcon from './components/HeadingIcon/HeadingIcon';
+import Image from './components/Image/Image';
+import InlineImages from './components/InlineImages/InlineImages';
+import Link from './components/Link/Link';
+import List from './components/List/List';
+import ListItem from './components/List/ListItem';
+import ListTree from './components/ListTree/ListTree';
+import ListTreeGroup from './components/ListTree/ListTreeGroup';
+import ListTreeItem from './components/ListTree/ListTreeItem';
+import MediaObject from './components/MediaObject/MediaObject';
+import MutedHeading from './components/MutedHeading/MutedHeading';
+import SteppedList from './components/SteppedList/SteppedList';
+import SteppedListItem from './components/SteppedList/SteppedListItem';
+import Strip from './components/Strip/Strip';
+import StripColumn from './components/Strip/StripColumn';
+import StripRow from './components/Strip/StripRow';
+import Switch from './components/Switch/Switch';
+import Table from './components/Table/Table';
+import TableCell from './components/Table/TableCell';
+import TableRow from './components/Table/TableRow';
 
-export { default as Accordion } from './components/Accordion/Accordion';
-export { default as AccordionItem } from './components/Accordion/AccordionItem';
-export { default as BlockQuote } from './components/BlockQuote/BlockQuote';
-export { default as Breadcrumb } from './components/Breadcrumb/Breadcrumb';
-export { default as BreadcrumbItem } from './components/Breadcrumb/BreadcrumbItem';
-export { default as Button } from './components/Button/Button';
-export { default as Card } from './components/Card/Card';
-export { default as CodeBlock } from './components/CodeBlock/CodeBlock';
-export { default as CodeSnippet } from './components/CodeSnippet/CodeSnippet';
-export { default as DividerList } from './components/DividerList/DividerList';
-export { default as DividerListItem } from './components/DividerList/DividerListItem';
-export { default as Footer } from './components/Footer/Footer';
-export { default as FooterNav } from './components/Footer/FooterNav';
-export { default as FooterNavContainer } from './components/Footer/FooterNavContainer';
-export { default as HeadingIcon } from './components/HeadingIcon/HeadingIcon';
-export { default as Image } from './components/Image/Image';
-export { default as InlineImages } from './components/InlineImages/InlineImages';
-export { default as Link } from './components/Link/Link';
-export { default as List } from './components/List/List';
-export { default as ListItem } from './components/List/ListItem';
-export { default as ListTree } from './components/ListTree/ListTree';
-export { default as ListTreeGroup } from './components/ListTree/ListTreeGroup';
-export { default as ListTreeItem } from './components/ListTree/ListTreeItem';
-export { default as MediaObject } from './components/MediaObject/MediaObject';
-export { default as MutedHeading } from './components/MutedHeading/MutedHeading';
-export { default as SteppedList } from './components/SteppedList/SteppedList';
-export { default as SteppedListItem } from './components/SteppedList/SteppedListItem';
-export { default as Strip } from './components/Strip/Strip';
-export { default as StripColumn } from './components/Strip/StripColumn';
-export { default as StripRow } from './components/Strip/StripRow';
-export { default as Switch } from './components/Switch/Switch';
-export { default as Table } from './components/Table/Table';
-export { default as TableCell } from './components/Table/TableCell';
-export { default as TableRow } from './components/Table/TableRow';
-
-export default VanillaReact;
+export {
+  Accordion, AccordionItem, BlockQuote, Breadcrumb, BreadcrumbItem, Button, Card, CodeBlock,
+  CodeSnippet, DividerList, DividerListItem, Footer, FooterNav, FooterNavContainer, HeadingIcon,
+  Image, InlineImages, Link, List, ListItem, ListTree, ListTreeGroup, ListTreeItem, MediaObject,
+  MutedHeading, SteppedList, SteppedListItem, Strip, StripColumn, StripRow, Switch, Table,
+  TableCell, TableRow };

@@ -4,8 +4,8 @@ import { withKnobs, boolean, text, select } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Strip from './Strip';
-import Row from './Row';
-import Column from './Column';
+import StripRow from './StripRow';
+import StripColumn from './StripColumn';
 import Button from '../Button/Button';
 import Image from '../Image/Image';
 
@@ -19,32 +19,32 @@ const paddings = [null, 'shallow', 'deep'];
 
 storiesOf('Strip', module).addDecorator(withKnobs)
   .add('Light',
-    withInfo('The Strip component provides a full width container in which to wrap Row components. The default colour is "light".')(() => (
+    withInfo('The Strip component provides a full width container in which to wrap StripRow components. The default colour is "light".')(() => (
       <div style={{ maxWidth: '1030px' }}>
         <Strip
           bordered={boolean('Bordered', false)}
           colour={select('Colour', stripColours, 'light')}
           padding={select('Padding', paddings, null)}
         >
-          <Row>
+          <StripRow>
             <p>{text('Text', 'This is a light Strip')}</p>
-          </Row>
+          </StripRow>
         </Strip>
       </div>),
     ),
   )
 
   .add('Dark',
-    withInfo('The Strip component provides a full width container in which to wrap Row components. An alternative colour is "dark".')(() => (
+    withInfo('The Strip component provides a full width container in which to wrap StripRow components. An alternative colour is "dark".')(() => (
       <div style={{ maxWidth: '1030px' }}>
         <Strip
           bordered={boolean('Bordered', false)}
           colour={select('Colour', stripColours, 'dark')}
           padding={select('Padding', paddings, null)}
         >
-          <Row>
+          <StripRow>
             <p>{text('Text', 'This is a dark Strip')}</p>
-          </Row>
+          </StripRow>
         </Strip>
       </div>),
     ),
@@ -58,9 +58,9 @@ storiesOf('Strip', module).addDecorator(withKnobs)
           colour={select('Colour', stripColours, 'accent')}
           padding={select('Padding', paddings, null)}
         >
-          <Row>
+          <StripRow>
             <p>{text('Text', 'This is an accented Strip')}</p>
-          </Row>
+          </StripRow>
         </Strip>
       </div>),
     ),
@@ -77,9 +77,9 @@ storiesOf('Strip', module).addDecorator(withKnobs)
             colour: select('Image Colour', imageColours, 'light'),
           }}
         >
-          <Row>
+          <StripRow>
             <p>{text('Text', 'This is an image Strip with a light background')}</p>
-          </Row>
+          </StripRow>
         </Strip>
       </div>),
     ),
@@ -96,9 +96,9 @@ storiesOf('Strip', module).addDecorator(withKnobs)
             colour: select('Image Colour', imageColours, 'dark'),
           }}
         >
-          <Row>
+          <StripRow>
             <p>{text('Text', 'This is an image Strip with a dark background')}</p>
-          </Row>
+          </StripRow>
         </Strip>
       </div>),
     ),
@@ -112,9 +112,9 @@ storiesOf('Strip', module).addDecorator(withKnobs)
           colour={select('Colour', stripColours, 'light')}
           padding={select('Padding', paddings, null)}
         >
-          <Row>
+          <StripRow>
             <p>{text('Text', 'This is a light Strip')}</p>
-          </Row>
+          </StripRow>
         </Strip>
       </div>),
     ),
@@ -128,9 +128,9 @@ storiesOf('Strip', module).addDecorator(withKnobs)
           colour={select('Colour', stripColours, 'light')}
           padding={select('Padding', paddings, 'shallow')}
         >
-          <Row>
+          <StripRow>
             <p>{text('Text', 'This is a light Strip')}</p>
-          </Row>
+          </StripRow>
         </Strip>
       </div>),
     ),
@@ -144,50 +144,50 @@ storiesOf('Strip', module).addDecorator(withKnobs)
           colour={select('Colour', stripColours, 'light')}
           padding={select('Padding', paddings, 'deep')}
         >
-          <Row>
+          <StripRow>
             <p>{text('Text', 'This is a light Strip')}</p>
-          </Row>
+          </StripRow>
         </Strip>
       </div>),
     ),
   )
 
-  .add('Columns',
-    withInfo('The Row component accepts Column components as children. Vanilla uses a 12 column grid, so the sum of all column sizes must be 12. The default size is 12.')(() => {
+  .add('StripColumns',
+    withInfo('The StripRow component accepts StripColumn components as children. Vanilla uses a 12 column grid, so the sum of all column sizes must be 12. The default size is 12.')(() => {
       const style = { border: '1px solid #cdcdcd', textAlign: 'center' };
       return (
         <div style={{ maxWidth: '1030px' }}>
           <Strip>
-            <Row>
-              <Column size={6} style={style}>
+            <StripRow>
+              <StripColumn size={6} style={style}>
                 6 columns
-              </Column>
-              <Column size={2} style={style}>
+              </StripColumn>
+              <StripColumn size={2} style={style}>
                 2 columns
-              </Column>
-              <Column size={4} style={style}>
+              </StripColumn>
+              <StripColumn size={4} style={style}>
                 4 columns
-              </Column>
-            </Row>
-            <Row>
-              <Column size={3} style={style}>
+              </StripColumn>
+            </StripRow>
+            <StripRow>
+              <StripColumn size={3} style={style}>
                 3 columns
-              </Column>
-              <Column size={9} style={style}>
+              </StripColumn>
+              <StripColumn size={9} style={style}>
                 9 columns
-              </Column>
-            </Row>
-            <Row>
-              <Column size={2} style={style}>
+              </StripColumn>
+            </StripRow>
+            <StripRow>
+              <StripColumn size={2} style={style}>
                 2 columns
-              </Column>
-              <Column size={7} style={style}>
+              </StripColumn>
+              <StripColumn size={7} style={style}>
                 7 columns
-              </Column>
-              <Column size={3} style={style}>
+              </StripColumn>
+              <StripColumn size={3} style={style}>
                 3 columns
-              </Column>
-            </Row>
+              </StripColumn>
+            </StripRow>
           </Strip>
         </div>
       );
@@ -195,7 +195,7 @@ storiesOf('Strip', module).addDecorator(withKnobs)
   )
 
   .add('Example',
-    withInfo('Example of a Strip component with Rows and Columns.')(() => (
+    withInfo('Example of a Strip component with StripRows and StripColumns.')(() => (
       <Strip
         deep
         image={{
@@ -204,19 +204,19 @@ storiesOf('Strip', module).addDecorator(withKnobs)
         }}
         style={{ backgroundPosition: '77% 0%' }}
       >
-        <Row style={{ display: 'flex', alignItems: 'center', color: '#fff' }}>
-          <Column size={6}>
+        <StripRow style={{ display: 'flex', alignItems: 'center', color: '#fff' }}>
+          <StripColumn size={6}>
             <h2>Ubuntu Enterprise Summit</h2>
             <h3>5 &mdash; 6 December 2017</h3>
             <h5>Find out how the world&lsquo;s top companies use Ubuntu to succeed</h5>
             <p>
-              <Button value="Sign up now" modifier="positive" />
+              <Button positive value="Sign up now" />
             </p>
-          </Column>
-          <Column size={6}>
+          </StripColumn>
+          <StripColumn size={6}>
             <Image src="https://assets.ubuntu.com/v1/9c1315fb-IOT_Ubuntu_devices_inforgrapic+v3.svg" alt="Ubuntu devices infographic" />
-          </Column>
-        </Row>
+          </StripColumn>
+        </StripRow>
       </Strip>),
     ),
   );

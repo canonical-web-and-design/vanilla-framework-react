@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './ListTree.scss';
 
 const ListTreeItem = props => (
   <li key={props.index} className="p-list-tree__item">

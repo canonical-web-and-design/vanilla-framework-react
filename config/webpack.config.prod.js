@@ -19,7 +19,8 @@ module.exports = {
   output: {
     path: paths.appBuild,
     filename: 'index.js',
-    libraryTarget: 'umd'
+    library: 'VanillaFrameworkReact',
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
@@ -88,7 +89,7 @@ module.exports = {
             {
               loader: "sass-loader",
               options: {
-                includePaths: [paths.appSrc, paths.appNodeModules]
+                includePaths: [paths.appSrc, paths.appNodeModules, paths.appLibSrc],
               }
             }, {
               loader: require.resolve('postcss-loader'),
@@ -115,6 +116,10 @@ module.exports = {
             test: /\.css$/,
             include: /node_modules/,
             loaders: ['style-loader', 'css-loader'],
+          },
+          {
+            test: [/\.stories.js$/, /\.test.js$/],
+            loader: 'ignore-loader',
           },
           // "file" loader makes sure assets end up in the `build` folder.
           // When you `import` an asset, you get its filename.

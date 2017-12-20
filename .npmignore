@@ -1,0 +1,15 @@
+.storybook/
+config/
+public/
+scripts/
+src/
+stories/
+.docker-project
+.package.json*
+.yarn.lock*
+.env
+.eslintrc.json
+.sass-lint.yml
+.travis.yml
+run
+yarn.lock

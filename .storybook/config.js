@@ -20,11 +20,12 @@ setDefaults({
   inline: true, // Displays info inline vs click button to view
 });
 
+// Percy snaps
+serializeStories(getStorybook);
+
 // override option defaults:
 setOptions({
   name: 'Vanilla React',
   url: 'https://github.com/vanilla-framework/vanilla-framework-react',
   downPanelInRight: true,
 });
-
-serializeStories(getStorybook);

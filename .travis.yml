@@ -4,9 +4,11 @@ node_js:
 cache:
   directories:
   - node_modules
+before-script:
+  - yarn build
 script:
   - yarn test
-  - yarn build-storybook
+  - yarn snapshot
 deploy:
   provider: pages
   skip_cleanup: true

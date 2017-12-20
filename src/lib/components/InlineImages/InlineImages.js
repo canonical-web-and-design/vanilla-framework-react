@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './InlineImages.scss';
 
 const InlineImages = (props) => {
   const images = React.Children.map(props.children, child => (

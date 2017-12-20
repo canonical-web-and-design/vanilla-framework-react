@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import naturalCompare from 'natural-compare-lite';
-import './Table.scss';
 
 import TableCell from './TableCell';
 import TableRow from './TableRow';

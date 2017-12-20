@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Footer.scss';
 
 const FooterNavContainer = props => (
   <nav className="p-footer__nav">

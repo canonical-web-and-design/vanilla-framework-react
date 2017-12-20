@@ -1,22 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Strip.scss';
 
-const Row = props => (
+const StripRow = props => (
   <div className="row" style={props.style}>
     {props.children}
   </div>
 );
 
-Row.defaultProps = {
+StripRow.defaultProps = {
   style: {},
 };
 
-Row.propTypes = {
+StripRow.propTypes = {
   children: PropTypes.node.isRequired,
   style: PropTypes.object,
 };
 
-Row.displayName = 'Row';
+StripRow.displayName = 'StripRow';
 
-export default Row;
+export default StripRow;

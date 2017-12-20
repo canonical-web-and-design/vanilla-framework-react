@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Strip.scss';
 
-const Column = (props) => {
+const StripColumn = (props) => {
   if (props.size < 1 || props.size > 12) {
-    return new Error('Column component must have size between 1 and 12');
+    return new Error('StripColumn component must have size between 1 and 12');
   }
   return (
     <div className={`col-${props.size}`} style={props.style}>
@@ -13,17 +12,17 @@ const Column = (props) => {
   );
 };
 
-Column.defaultProps = {
+StripColumn.defaultProps = {
   style: {},
   size: 12,
 };
 
-Column.propTypes = {
+StripColumn.propTypes = {
   children: PropTypes.node.isRequired,
   size: PropTypes.number,
   style: PropTypes.object,
 };
 
-Column.displayName = 'Column';
+StripColumn.displayName = 'StripColumn';
 
-export default Column;
+export default StripColumn;

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './DividerList.scss';
 
 const DividerList = (props) => {
   const dividerItems = React.Children.map(props.children,

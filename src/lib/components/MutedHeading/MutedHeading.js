@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './MutedHeading.scss';
 
 const MutedHeading = props => (
   <h4 className="p-muted-heading">

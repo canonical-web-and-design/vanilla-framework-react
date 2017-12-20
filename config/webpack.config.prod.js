@@ -19,7 +19,7 @@ module.exports = {
   output: {
     path: paths.appBuild,
     filename: 'index.js',
-    library: 'VanillaReact',
+    library: 'VanillaFrameworkReact',
     libraryTarget: 'umd',
   },
   resolve: {

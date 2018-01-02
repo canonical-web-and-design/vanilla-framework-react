@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matrix component should auto-fill to have a multiple of three MatrixItem children 1`] = `
+<ul
+  className="p-matrix u-clearfix"
+>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Matrix component should convert title to link when href prop provided 1`] = `
+<ul
+  className="p-matrix u-clearfix"
+>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      <h3
+        className="p-matrix__title"
+      >
+        <a
+          className="p-matrix__link"
+          href="#"
+        >
+          Title
+        </a>
+      </h3>
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Matrix component should render a Matrix with multiple MatrixItem correctly 1`] = `
+<ul
+  className="p-matrix u-clearfix"
+>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Matrix component should render a Matrix with one MatrixItem correctly 1`] = `
+<ul
+  className="p-matrix u-clearfix"
+>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Matrix component should render a title when title prop provided 1`] = `
+<ul
+  className="p-matrix u-clearfix"
+>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      <h3
+        className="p-matrix__title"
+      >
+        Title
+      </h3>
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Matrix component should render an image when img prop provided 1`] = `
+<ul
+  className="p-matrix u-clearfix"
+>
+  <li
+    className="p-matrix__item"
+  >
+    <img
+      alt="icon"
+      className="p-matrix__img"
+      src="http://placehold.it/60x60"
+    />
+    <div
+      className="p-matrix__content"
+    >
+      <h3
+        className="p-matrix__title"
+      >
+        <a
+          className="p-matrix__link"
+          href="#"
+        >
+          Title
+        </a>
+      </h3>
+      <p
+        className="p-matrix__desc"
+      >
+        description
+      </p>
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+  <li
+    className="p-matrix__item"
+  >
+    <div
+      className="p-matrix__content"
+    >
+      
+      <p
+        className="p-matrix__desc"
+      />
+    </div>
+  </li>
+</ul>
+`;

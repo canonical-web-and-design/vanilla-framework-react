@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs component should render a Tabs component with a different TabItem selected if prop is provided 1`] = `
+<nav
+  className="p-tabs"
+>
+  <ul
+    className="p-tabs__list"
+    role="tablist"
+  >
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-0"
+        aria-selected={false}
+        className="p-tabs__link"
+        href={null}
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={1}
+      >
+        Tab 1
+      </a>
+    </li>
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-1"
+        aria-selected={false}
+        className="p-tabs__link"
+        href={null}
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={2}
+      >
+        Tab 2
+      </a>
+    </li>
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-2"
+        aria-selected={true}
+        className="p-tabs__link"
+        href={null}
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={3}
+      >
+        Tab 3
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Tabs component should render a Tabs component with more than one TabsItem and autoselect the first tab 1`] = `
+<nav
+  className="p-tabs"
+>
+  <ul
+    className="p-tabs__list"
+    role="tablist"
+  >
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-0"
+        aria-selected={true}
+        className="p-tabs__link"
+        href={null}
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={1}
+      >
+        Tab 1
+      </a>
+    </li>
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-1"
+        aria-selected={false}
+        className="p-tabs__link"
+        href={null}
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={2}
+      >
+        Tab 2
+      </a>
+    </li>
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-2"
+        aria-selected={false}
+        className="p-tabs__link"
+        href={null}
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={3}
+      >
+        Tab 3
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Tabs component should render a Tabs component with one TabsItem and autoselect it 1`] = `
+<nav
+  className="p-tabs"
+>
+  <ul
+    className="p-tabs__list"
+    role="tablist"
+  >
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-0"
+        aria-selected={true}
+        className="p-tabs__link"
+        href={null}
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={1}
+      >
+        Tab 1
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Tabs component should render anchor tags if href prop is provided 1`] = `
+<nav
+  className="p-tabs"
+>
+  <ul
+    className="p-tabs__list"
+    role="tablist"
+  >
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-0"
+        aria-selected={true}
+        className="p-tabs__link"
+        href="/link1"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={1}
+      >
+        Tab 1
+      </a>
+    </li>
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-1"
+        aria-selected={false}
+        className="p-tabs__link"
+        href="/link2"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={2}
+      >
+        Tab 2
+      </a>
+    </li>
+    <li
+      className="p-tabs__item"
+      role="presentation"
+    >
+      <a
+        aria-controls="tab-2"
+        aria-selected={false}
+        className="p-tabs__link"
+        href="/link3"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="tab"
+        tabIndex={3}
+      >
+        Tab 3
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

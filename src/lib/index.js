@@ -35,10 +35,12 @@ import Switch from './components/Switch/Switch';
 import Table from './components/Table/Table';
 import TableCell from './components/Table/TableCell';
 import TableRow from './components/Table/TableRow';
+import Tabs from './components/Tabs/Tabs';
+import TabsItem from './components/Tabs/TabsItem';
 
 export {
   Accordion, AccordionItem, BlockQuote, Breadcrumb, BreadcrumbItem, Button, Card, CodeBlock,
   CodeSnippet, DividerList, DividerListItem, Footer, FooterNav, FooterNavContainer, HeadingIcon,
   Image, InlineImages, Link, List, ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix,
   MatrixItem, MediaObject, Modal, MutedHeading, SteppedList, SteppedListItem, Strip, StripColumn,
-  StripRow, Switch, Table, TableCell, TableRow };
+  StripRow, Switch, Table, TableCell, TableRow, Tabs, TabsItem };

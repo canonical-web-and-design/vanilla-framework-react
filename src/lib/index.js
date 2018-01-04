@@ -21,6 +21,8 @@ import ListItem from './components/List/ListItem';
 import ListTree from './components/ListTree/ListTree';
 import ListTreeGroup from './components/ListTree/ListTreeGroup';
 import ListTreeItem from './components/ListTree/ListTreeItem';
+import Matrix from './components/Matrix/Matrix';
+import MatrixItem from './components/Matrix/MatrixItem';
 import MediaObject from './components/MediaObject/MediaObject';
 import MutedHeading from './components/MutedHeading/MutedHeading';
 import SteppedList from './components/SteppedList/SteppedList';
@@ -36,6 +38,6 @@ import TableRow from './components/Table/TableRow';
 export {
   Accordion, AccordionItem, BlockQuote, Breadcrumb, BreadcrumbItem, Button, Card, CodeBlock,
   CodeSnippet, DividerList, DividerListItem, Footer, FooterNav, FooterNavContainer, HeadingIcon,
-  Image, InlineImages, Link, List, ListItem, ListTree, ListTreeGroup, ListTreeItem, MediaObject,
-  MutedHeading, SteppedList, SteppedListItem, Strip, StripColumn, StripRow, Switch, Table,
-  TableCell, TableRow };
+  Image, InlineImages, Link, List, ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix,
+  MatrixItem, MediaObject, MutedHeading, SteppedList, SteppedListItem, Strip, StripColumn, StripRow,
+  Switch, Table, TableCell, TableRow };

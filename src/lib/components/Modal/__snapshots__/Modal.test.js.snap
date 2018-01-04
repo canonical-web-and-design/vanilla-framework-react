@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component should be hidden if show prop is false 1`] = `
+<div
+  className="p-modal"
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+>
+  <div
+    aria-describedby="modal-description"
+    aria-labelledby="modal-title"
+    className="p-modal__dialog"
+    role="dialog"
+  >
+    <header
+      className="p-modal__header"
+    >
+      <h2
+        className="p-modal__title"
+      />
+      <button
+        aria-label="Close active modal"
+        className="p-modal__close"
+        onClick={[Function]}
+      >
+        Close
+      </button>
+    </header>
+    <p>
+      Modal text
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Modal component should display a title if prop is provided 1`] = `
+<div
+  className="p-modal"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <div
+    aria-describedby="modal-description"
+    aria-labelledby="modal-title"
+    className="p-modal__dialog"
+    role="dialog"
+  >
+    <header
+      className="p-modal__header"
+    >
+      <h2
+        className="p-modal__title"
+      >
+        Modal title
+      </h2>
+      <button
+        aria-label="Close active modal"
+        className="p-modal__close"
+        onClick={[Function]}
+      >
+        Close
+      </button>
+    </header>
+    <p>
+      Modal text
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Modal component should show if show prop is true 1`] = `
+<div
+  className="p-modal"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <div
+    aria-describedby="modal-description"
+    aria-labelledby="modal-title"
+    className="p-modal__dialog"
+    role="dialog"
+  >
+    <header
+      className="p-modal__header"
+    >
+      <h2
+        className="p-modal__title"
+      />
+      <button
+        aria-label="Close active modal"
+        className="p-modal__close"
+        onClick={[Function]}
+      >
+        Close
+      </button>
+    </header>
+    <p>
+      Modal text
+    </p>
+  </div>
+</div>
+`;

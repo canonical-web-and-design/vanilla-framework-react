@@ -13,7 +13,14 @@ const Image = (props) => {
 
   const classString = classArray.join(' ');
 
-  return <img style={props.style} className={classString} src={props.src} alt={props.alt} />;
+  return (
+    <img
+      style={props.style}
+      className={classString}
+      src={props.src}
+      alt={props.alt}
+    />
+  );
 };
 
 Image.defaultProps = {

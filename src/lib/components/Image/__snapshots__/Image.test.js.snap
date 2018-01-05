@@ -5,6 +5,7 @@ exports[`Image component should render a default Image correctly 1`] = `
   alt=""
   className=""
   src="http://placekitten.com/g/300/300"
+  style={null}
 />
 `;
 
@@ -13,6 +14,7 @@ exports[`Image component should render bordered prop correctly 1`] = `
   alt=""
   className="p-image--bordered"
   src="http://placekitten.com/g/300/300"
+  style={null}
 />
 `;
 
@@ -21,6 +23,7 @@ exports[`Image component should render both bordered and shadowed props correctl
   alt=""
   className="p-image--bordered p-image--shadowed"
   src="http://placekitten.com/g/300/300"
+  style={null}
 />
 `;
 
@@ -29,5 +32,6 @@ exports[`Image component should render shadowed prop correctly 1`] = `
   alt=""
   className="p-image--shadowed"
   src="http://placekitten.com/g/300/300"
+  style={null}
 />
 `;

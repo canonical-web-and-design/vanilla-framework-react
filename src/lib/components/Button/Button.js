@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import getClassName from '../../utils/getClassName';
 
 class Button extends React.Component {
   constructor() {
@@ -23,19 +23,20 @@ class Button extends React.Component {
 
   render() {
     const {
-      children, value, disabled, neutral, brand, negative, positive, inline, href,
+      children, value, disabled, href, positive, negative, brand, neutral, inline,
     } = this.props;
-
     const Tag = href ? 'a' : 'button';
 
-    const className = classNames({
-      'p-button--base': !(positive || negative || neutral || brand),
+    const customClasses = this.props.className;
+    const className = getClassName({
+      'p-button--base': !(positive || negative || brand || neutral),
+      'p-button--neutral': neutral,
       'p-button--positive': positive,
       'p-button--negative': negative,
-      'p-button--neutral': neutral,
       'p-button--brand': brand,
       'is-inline': inline,
-      'is--disabled': (Tag === 'a' && disabled),
+      'is--disabled': disabled,
+      [`${customClasses}`]: customClasses,
     });
 
     return (
@@ -54,6 +55,7 @@ class Button extends React.Component {
 Button.defaultProps = {
   brand: false,
   children: null,
+  className: null,
   disabled: false,
   href: null,
   inline: false,
@@ -67,6 +69,7 @@ Button.defaultProps = {
 Button.propTypes = {
   brand: PropTypes.bool,
   children: PropTypes.node,
+  className: PropTypes.string,
   disabled: PropTypes.bool,
   href: PropTypes.string,
   inline: PropTypes.bool,

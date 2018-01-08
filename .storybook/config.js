@@ -25,7 +25,7 @@ serializeStories(getStorybook);
 
 // override option defaults:
 setOptions({
-  name: 'Vanilla React',
+  name: 'Vanilla Framework React',
   url: 'https://github.com/vanilla-framework/vanilla-framework-react',
   downPanelInRight: true,
 });

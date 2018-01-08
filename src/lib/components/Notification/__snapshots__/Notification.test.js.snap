@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification component should render a caution Notification 1`] = `
+<div
+  className="p-notification--caution"
+>
+  <p
+    className="p-notification__response"
+  >
+    This is a caution Notification
+  </p>
+</div>
+`;
+
+exports[`Notification component should render a default Notification 1`] = `
+<div
+  className="p-notification"
+>
+  <p
+    className="p-notification__response"
+  >
+    This is a default Notification
+  </p>
+</div>
+`;
+
+exports[`Notification component should render a negative Notification 1`] = `
+<div
+  className="p-notification--negative"
+>
+  <p
+    className="p-notification__response"
+  >
+    This is a negative Notification
+  </p>
+</div>
+`;
+
+exports[`Notification component should render a positive Notification 1`] = `
+<div
+  className="p-notification--positive"
+>
+  <p
+    className="p-notification__response"
+  >
+    This is a positive Notification
+  </p>
+</div>
+`;
+
+exports[`Notification component should render a status if prop is provided 1`] = `
+<div
+  className="p-notification"
+>
+  <p
+    className="p-notification__response"
+  >
+    <span
+      className="p-notification__status"
+    >
+      Status:
+    </span>
+    This is a Notification with a status
+  </p>
+</div>
+`;
+
+exports[`Notification component should render an action if prop is provided 1`] = `
+<div
+  className="p-notification"
+>
+  <p
+    className="p-notification__response"
+  >
+    This is a Notification with an action
+    <a
+      className="p-notification__action"
+      href="#"
+    >
+      Action
+    </a>
+  </p>
+</div>
+`;
+
+exports[`Notification component should render an information Notification 1`] = `
+<div
+  className="p-notification--information"
+>
+  <p
+    className="p-notification__response"
+  >
+    This is an information Notification
+  </p>
+</div>
+`;

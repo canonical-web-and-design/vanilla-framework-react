@@ -26,6 +26,7 @@ import MatrixItem from './components/Matrix/MatrixItem';
 import MediaObject from './components/MediaObject/MediaObject';
 import Modal from './components/Modal/Modal';
 import MutedHeading from './components/MutedHeading/MutedHeading';
+import Notification from './components/Notification/Notification';
 import SteppedList from './components/SteppedList/SteppedList';
 import SteppedListItem from './components/SteppedList/SteppedListItem';
 import Strip from './components/Strip/Strip';
@@ -42,5 +43,5 @@ export {
   Accordion, AccordionItem, BlockQuote, Breadcrumb, BreadcrumbItem, Button, Card, CodeBlock,
   CodeSnippet, DividerList, DividerListItem, Footer, FooterNav, FooterNavContainer, HeadingIcon,
   Image, InlineImages, Link, List, ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix,
-  MatrixItem, MediaObject, Modal, MutedHeading, SteppedList, SteppedListItem, Strip, StripColumn,
-  StripRow, Switch, Table, TableCell, TableRow, Tabs, TabsItem };
+  MatrixItem, MediaObject, Modal, MutedHeading, Notification, SteppedList, SteppedListItem, Strip,
+  StripColumn, StripRow, Switch, Table, TableCell, TableRow, Tabs, TabsItem };

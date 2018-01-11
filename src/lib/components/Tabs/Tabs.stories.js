@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, number } from '@storybook/addon-knobs';
+import { text, number } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Tabs from './Tabs';
@@ -13,7 +13,7 @@ const options = {
   step: 1,
 };
 
-storiesOf('Tabs', module).addDecorator(withKnobs)
+storiesOf('Tabs', module)
   .add('Default',
     withInfo('Use the Tabs component when there are multiple categories/views/panes of content, but there is the need to only show one pane at a time. Don’t use Tabs for pagination of content or cases involve viewing content, not navigating between groups of content.')(() => (
       <Tabs

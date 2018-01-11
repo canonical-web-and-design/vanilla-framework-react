@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Card from './Card';
@@ -8,7 +8,7 @@ import Strip from '../Strip/Strip';
 import StripColumn from '../Strip/StripColumn';
 import StripRow from '../Strip/StripRow';
 
-storiesOf('Card', module).addDecorator(withKnobs)
+storiesOf('Card', module)
   .add('Default',
     withInfo('The purpose of the basic card is to display information, without user interaction.')(() => (
       <Card

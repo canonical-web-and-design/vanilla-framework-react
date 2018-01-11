@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean, text } from '@storybook/addon-knobs';
+import { boolean, text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Modal from './Modal';
@@ -36,7 +36,7 @@ class ModalExample extends React.Component {
   }
 }
 
-storiesOf('Modal', module).addDecorator(withKnobs)
+storiesOf('Modal', module)
   .add('Default',
     withInfo('The Modal component can be useful to overlay an area of the screen which can contain a prompt, dialog or interaction. Note that opening and closing the Modal requires props from a parent component, for example by adjusting it in the Knobs panel in Storybook.')(() => (
       <div>

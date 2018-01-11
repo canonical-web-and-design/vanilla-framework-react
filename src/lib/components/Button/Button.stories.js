@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Button from './Button';
 
-storiesOf('Buttons', module).addDecorator(withKnobs)
+storiesOf('Buttons', module)
   .add('Base',
     withInfo('A base button is usually used alongside a neutral button. Precedence for button type is: base < neutral < brand < negative < positive.')(() => (
       <Button

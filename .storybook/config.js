@@ -1,19 +1,18 @@
 import React from 'react';
-import { configure, addDecorator, getStorybook, setAddon } from '@storybook/react';
+import { configure, getStorybook, setAddon, addDecorator } from '@storybook/react';
 import { setDefaults } from '@storybook/addon-info';
+import { withKnobs } from '@storybook/addon-knobs';
 import { setOptions } from '@storybook/addon-options';
 import createPercyAddon from '@percy-io/percy-storybook';
 
-const { percyAddon, serializeStories } = createPercyAddon();
-setAddon(percyAddon);
+function loadStories() {
+  addDecorator(withKnobs);
 
-configure(
-  () => {
-    const req = require.context('../src', true, /.stories.js$/);
-    req.keys().forEach((filename) => req(filename));
-  },
-  module
-);
+  const req = require.context('../src', true, /.stories.js$/);
+  req.keys().forEach((filename) => req(filename));
+}
+
+configure(loadStories, module);
 
 // addon-info
 setDefaults({
@@ -21,6 +20,8 @@ setDefaults({
 });
 
 // Percy snaps
+const { percyAddon, serializeStories } = createPercyAddon();
+setAddon(percyAddon);
 serializeStories(getStorybook);
 
 // override option defaults:

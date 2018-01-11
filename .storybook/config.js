@@ -5,7 +5,21 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { setOptions } from '@storybook/addon-options';
 import createPercyAddon from '@percy-io/percy-storybook';
 
+const storybookStyling = (storyFn) => {
+  const style = {
+    padding: '0 1.25rem',
+  }
+
+  return (
+    <div style= {style}>
+      { storyFn() }
+    </div>
+  )
+}
+
 function loadStories() {
+  // Set custom global decorators
+  addDecorator(storybookStyling);
   addDecorator(withKnobs);
 
   const req = require.context('../src', true, /.stories.js$/);

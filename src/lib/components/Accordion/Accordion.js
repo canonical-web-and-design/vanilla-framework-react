@@ -1,17 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import AccordionItem from './AccordionItem';
+
 class Accordion extends React.Component {
   constructor(props) {
     super(props);
     this.toggleSection = this.toggleSection.bind(this);
-    this.state = {
-      open: props.selected,
-    };
+
+    this.state = { open: props.selected };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({ open: nextProps.selected });
   }
 
   toggleSection(index) {
-    this.setState({ open: this.state.open === index ? null : index });
+    const { allowMultiple } = this.props;
+    let newOpenArray = [...this.state.open];
+
+    if (newOpenArray.includes(index)) {
+      newOpenArray = newOpenArray.filter(item => item !== index);
+    } else {
+      newOpenArray = allowMultiple ? [...newOpenArray, index] : [index];
+    }
+
+    this.setState({ open: newOpenArray });
   }
 
   render() {
@@ -19,7 +33,7 @@ class Accordion extends React.Component {
     const accordionItems = React.Children.map(this.props.children,
       (child, index) => React.cloneElement(child, {
         index,
-        isOpen: open === index,
+        isOpen: open.includes(index),
         onClick: this.toggleSection,
       }),
     );
@@ -35,12 +49,26 @@ class Accordion extends React.Component {
 }
 
 Accordion.defaultProps = {
-  selected: null,
+  children: null,
+  selected: [],
+  allowMultiple: false,
 };
 
 Accordion.propTypes = {
-  children: PropTypes.node.isRequired,
-  selected: PropTypes.number,
+  children: (props, propName, componentName) => {
+    const prop = props[propName];
+    let error = null;
+
+    React.Children.forEach(prop, (child) => {
+      if (child.type !== AccordionItem) {
+        error = new Error(`${componentName} children should be of type "AccordionItem".`);
+      }
+    });
+
+    return error;
+  },
+  selected: PropTypes.arrayOf(PropTypes.number),
+  allowMultiple: PropTypes.bool,
 };
 
 Accordion.displayName = 'Accordion';

@@ -1,43 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class AccordionItem extends React.Component {
-  constructor() {
-    super();
-    this.onClick = this.onClick.bind(this);
-  }
+const AccordionItem = (props) => {
+  const {
+    isOpen, onClick, index, title, children,
+  } = props;
 
-  onClick() {
-    this.props.onClick(this.props.index);
-  }
-
-  render() {
-    return (
-      <li className="p-accordion__group">
-        <button
-          className="p-accordion__tab"
-          id="status-tab"
-          role="tab"
-          aria-controls="#status"
-          aria-expanded={this.props.isOpen}
-          onClick={this.onClick}
-          onKeyDown={this.onClick}
-        >
-          { this.props.title }
-        </button>
-        <section
-          className="p-accordion__panel"
-          id="status"
-          role="tabpanel"
-          aria-hidden={!this.props.isOpen}
-          aria-labelledby="status-tab"
-        >
-          { this.props.children }
-        </section>
-      </li>
-    );
-  }
-}
+  return (
+    <li className="p-accordion__group">
+      <button
+        className="p-accordion__tab"
+        id={`accordion-button-${index}`}
+        role="tab"
+        aria-controls={`accordion-content-${index}`}
+        aria-expanded={isOpen}
+        onClick={() => onClick(index)}
+        onKeyDown={key => key === 'Enter' && onClick(index)}
+      >
+        { title }
+      </button>
+      <section
+        className="p-accordion__panel"
+        id={`accordion-content-${index}`}
+        role="tabpanel"
+        aria-hidden={!isOpen}
+        aria-labelledby={`accordion-button-${index}`}
+      >
+        { children }
+      </section>
+    </li>
+  );
+};
 
 AccordionItem.defaultProps = {
   index: 0,

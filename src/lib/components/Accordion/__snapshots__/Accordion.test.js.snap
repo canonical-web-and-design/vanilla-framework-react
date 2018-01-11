@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Accordion component should compare with a snapshot 1`] = `
+exports[`<Accordion> renders Accordion with AccordionItems correctly 1`] = `
 <aside
   className="p-accordion"
   role="tablist"
@@ -12,10 +12,10 @@ exports[`Accordion component should compare with a snapshot 1`] = `
       className="p-accordion__group"
     >
       <button
-        aria-controls="#status"
+        aria-controls="accordion-content-0"
         aria-expanded={false}
         className="p-accordion__tab"
-        id="status-tab"
+        id="accordion-button-0"
         onClick={[Function]}
         onKeyDown={[Function]}
         role="tab"
@@ -24,9 +24,9 @@ exports[`Accordion component should compare with a snapshot 1`] = `
       </button>
       <section
         aria-hidden={true}
-        aria-labelledby="status-tab"
+        aria-labelledby="accordion-button-0"
         className="p-accordion__panel"
-        id="status"
+        id="accordion-content-0"
         role="tabpanel"
       >
         <p>
@@ -38,10 +38,10 @@ exports[`Accordion component should compare with a snapshot 1`] = `
       className="p-accordion__group"
     >
       <button
-        aria-controls="#status"
+        aria-controls="accordion-content-1"
         aria-expanded={false}
         className="p-accordion__tab"
-        id="status-tab"
+        id="accordion-button-1"
         onClick={[Function]}
         onKeyDown={[Function]}
         role="tab"
@@ -50,9 +50,9 @@ exports[`Accordion component should compare with a snapshot 1`] = `
       </button>
       <section
         aria-hidden={true}
-        aria-labelledby="status-tab"
+        aria-labelledby="accordion-button-1"
         className="p-accordion__panel"
-        id="status"
+        id="accordion-content-1"
         role="tabpanel"
       >
         <p>
@@ -64,10 +64,10 @@ exports[`Accordion component should compare with a snapshot 1`] = `
       className="p-accordion__group"
     >
       <button
-        aria-controls="#status"
+        aria-controls="accordion-content-2"
         aria-expanded={false}
         className="p-accordion__tab"
-        id="status-tab"
+        id="accordion-button-2"
         onClick={[Function]}
         onKeyDown={[Function]}
         role="tab"
@@ -76,9 +76,9 @@ exports[`Accordion component should compare with a snapshot 1`] = `
       </button>
       <section
         aria-hidden={true}
-        aria-labelledby="status-tab"
+        aria-labelledby="accordion-button-2"
         className="p-accordion__panel"
-        id="status"
+        id="accordion-content-2"
         role="tabpanel"
       >
         <p>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Button from './Button';
 
-storiesOf('Buttons', module).addDecorator(withKnobs)
+storiesOf('Buttons', module)
   .add('Base',
     withInfo('Buttons will accept children or a value prop for the inner text. A base button is usually used alongside a neutral button.')(() => (
       <Button

@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Image from './Image';
 
-storiesOf('Image', module).addDecorator(withKnobs)
+storiesOf('Image', module)
   .add('Default',
     withInfo('Default Image component.')(() => (
       <Image

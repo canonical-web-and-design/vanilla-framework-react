@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import BlockQuote from './BlockQuote';
 
-storiesOf('Block Quote', module).addDecorator(withKnobs)
+storiesOf('Block Quote', module)
   .add('Default',
     withInfo('Basic blockquotes and citations.')(() => (
       <BlockQuote

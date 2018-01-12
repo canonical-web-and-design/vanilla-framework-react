@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean, text } from '@storybook/addon-knobs';
+import { boolean, text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Notification from './Notification';
 
-storiesOf('Notification', module).addDecorator(withKnobs)
+storiesOf('Notification', module)
   .add('Default',
     withInfo('Notification components are used to display global information. A Notification will display at the top and fill the full width of the page. It can be default, info, caution, negative or position.')(() => (
       <Notification

@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Link from './Link';
 
-storiesOf('Link', module).addDecorator(withKnobs)
+storiesOf('Link', module)
   .add('Default',
     withInfo('The default Link component.')(() => (
       <Link

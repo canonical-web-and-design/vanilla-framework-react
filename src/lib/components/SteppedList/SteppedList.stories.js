@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import SteppedList from './SteppedList';
 import SteppedListItem from './SteppedListItem';
 
-storiesOf('Stepped List', module).addDecorator(withKnobs)
+storiesOf('Stepped List', module)
   .add('Default',
     withInfo('If you want to display a list of items that form a set of steps — like a tutorial or instructions — you can use the SteppedList component. This component is best used in a <Strip light> component as the description sections are displayed in a white box.')(() => (
       <div style={{ maxWidth: '45em' }}>

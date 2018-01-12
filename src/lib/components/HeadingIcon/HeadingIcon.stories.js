@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import HeadingIcon from './HeadingIcon';
 
-storiesOf('Heading Icon', module).addDecorator(withKnobs)
+storiesOf('Heading Icon', module)
   .add('Default',
     withInfo('The HeadingIcon component can be used to add an icon to a standard header.')(() => (
       <HeadingIcon

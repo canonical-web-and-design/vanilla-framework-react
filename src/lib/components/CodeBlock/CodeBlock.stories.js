@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import CodeBlock from './CodeBlock';
 
-storiesOf('Code Block', module).addDecorator(withKnobs)
+storiesOf('Code Block', module)
   .add('Default',
     withInfo('The Code Block component is used to display a large amount of code. The preferred prop is a single template literal, to preserve formatting. Alternatively, markup can be used but will be formatted automatically. When you refer to code inline with other text, use the <code> tag instead.')(() => (
       <CodeBlock numbered={boolean('Numbered', false)}>

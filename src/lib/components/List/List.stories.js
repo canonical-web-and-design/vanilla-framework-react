@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
+import { text, boolean, select } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import List from './List';
@@ -8,7 +8,7 @@ import ListItem from './ListItem';
 
 const modifiers = [null, 'divided', 'inline', 'middot', 'split'];
 
-storiesOf('List', module).addDecorator(withKnobs)
+storiesOf('List', module)
   .add('Default',
     withInfo('If you want to display lists in a way that is more visually distinctive than the standard <ol> and <ul>, Vanilla has 7 list styles at your disposal.')(() => (
       <List modifier={select('Modifier', modifiers, null)}>

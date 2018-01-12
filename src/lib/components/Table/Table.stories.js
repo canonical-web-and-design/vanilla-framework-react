@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Table from './Table';
@@ -39,7 +39,7 @@ const data = [
   }],
 ];
 
-storiesOf('Table', module).addDecorator(withKnobs)
+storiesOf('Table', module)
   .add('Static Table',
     withInfo('The Table component can be constructed in two ways - either manually using appropriate sub-components (TableRow and TableCell), or dynamically using two object props (data and columns). This is an example of a Static Table built manually.')(() => (
       <Table

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean, text, select } from '@storybook/addon-knobs';
+import { boolean, text, select } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import Strip from './Strip';
@@ -17,7 +17,7 @@ const images = [
 ];
 const paddings = [null, 'shallow', 'deep'];
 
-storiesOf('Strip', module).addDecorator(withKnobs)
+storiesOf('Strip', module)
   .add('Light',
     withInfo('The Strip component provides a full width container in which to wrap StripRow components. The default colour is "light".')(() => (
       <div style={{ maxWidth: '1030px' }}>

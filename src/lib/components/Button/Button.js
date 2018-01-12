@@ -1,63 +1,83 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import getClassName from '../../utils/getClassName';
 
 class Button extends React.Component {
   constructor() {
     super();
     this.onClick = this.onClick.bind(this);
-    this.getClassString = this.getClassString.bind(this);
   }
 
   onClick(event) {
-    if (!this.props.disabled) {
-      this.props.onClick(event);
+    const { disabled, onClick } = this.props;
+
+    if (disabled) {
+      event.preventDefault();
+      return;
+    }
+
+    if (onClick) {
+      onClick(event);
     }
   }
 
-  getClassString() {
-    let classString = 'p-button--base';
-
-    if (this.props.positive) classString = 'p-button--positive';
-    else if (this.props.negative) classString = 'p-button--negative';
-    else if (this.props.brand) classString = 'p-button--brand';
-    else if (this.props.neutral) classString = 'p-button--neutral';
-    if (this.props.inline) classString = `${classString} is-inline`;
-
-    return classString;
-  }
-
   render() {
+    const {
+      children, value, disabled, href, positive, negative, brand, neutral, inline,
+    } = this.props;
+    const Tag = href ? 'a' : 'button';
+
+    const customClasses = this.props.className;
+    const className = getClassName({
+      'p-button--base': !(positive || negative || brand || neutral),
+      'p-button--neutral': neutral,
+      'p-button--positive': positive,
+      'p-button--negative': negative,
+      'p-button--brand': brand,
+      'is-inline': inline,
+      'is--disabled': disabled,
+      [`${customClasses}`]: customClasses,
+    });
+
     return (
-      <button
-        className={this.getClassString()}
-        onClick={this.props.onClick}
-        disabled={this.props.disabled}
+      <Tag
+        className={className}
+        href={Tag === 'a' ? href : undefined}
+        onClick={this.onClick}
+        disabled={disabled}
       >
-        {this.props.value}
-      </button>
+        { value || children }
+      </Tag>
     );
   }
 }
 
 Button.defaultProps = {
-  neutral: false,
   brand: false,
-  negative: false,
-  positive: false,
+  children: null,
+  className: null,
   disabled: false,
+  href: null,
   inline: false,
+  negative: false,
+  neutral: false,
   onClick: () => null,
+  positive: false,
+  value: null,
 };
 
 Button.propTypes = {
-  value: PropTypes.string.isRequired,
-  neutral: PropTypes.bool,
   brand: PropTypes.bool,
-  negative: PropTypes.bool,
-  positive: PropTypes.bool,
-  inline: PropTypes.bool,
+  children: PropTypes.node,
+  className: PropTypes.string,
   disabled: PropTypes.bool,
+  href: PropTypes.string,
+  inline: PropTypes.bool,
+  negative: PropTypes.bool,
+  neutral: PropTypes.bool,
   onClick: PropTypes.func,
+  positive: PropTypes.bool,
+  value: PropTypes.string,
 };
 
 Button.displayName = 'Button';

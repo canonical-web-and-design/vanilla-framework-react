@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component should render a modified Button correctly 1`] = `
+exports[`<Button> should render a modified Button correctly 1`] = `
 <div>
   <button
     className="p-button--neutral"
     disabled={false}
+    href={undefined}
     onClick={[Function]}
   >
     Neutral
@@ -12,6 +13,7 @@ exports[`Button component should render a modified Button correctly 1`] = `
   <button
     className="p-button--negative"
     disabled={false}
+    href={undefined}
     onClick={[Function]}
   >
     Negative
@@ -19,6 +21,7 @@ exports[`Button component should render a modified Button correctly 1`] = `
   <button
     className="p-button--positive"
     disabled={false}
+    href={undefined}
     onClick={[Function]}
   >
     Positive
@@ -26,6 +29,7 @@ exports[`Button component should render a modified Button correctly 1`] = `
   <button
     className="p-button--brand"
     disabled={false}
+    href={undefined}
     onClick={[Function]}
   >
     Brand
@@ -33,13 +37,15 @@ exports[`Button component should render a modified Button correctly 1`] = `
   <button
     className="p-button--base is-inline"
     disabled={false}
+    href={undefined}
     onClick={[Function]}
   >
     Inline
   </button>
   <button
-    className="p-button--base"
+    className="p-button--base is--disabled"
     disabled={true}
+    href={undefined}
     onClick={[Function]}
   >
     Disabled
@@ -47,10 +53,11 @@ exports[`Button component should render a modified Button correctly 1`] = `
 </div>
 `;
 
-exports[`Button component should render a simple Button correctly 1`] = `
+exports[`<Button> should render a simple Button correctly 1`] = `
 <button
   className="p-button--base"
   disabled={false}
+  href={undefined}
   onClick={[Function]}
 >
   Submit

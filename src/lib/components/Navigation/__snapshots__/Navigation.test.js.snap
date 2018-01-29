@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navigation> renders with a logo-based NavigationBanner correctly 1`] = `
+<header
+  className="p-navigation"
+  id="navigation"
+>
+  <div
+    className="p-navigation__banner"
+  >
+    <div
+      className="p-navigation__logo"
+    >
+      <a
+        className="p-navigation__link"
+        href="#"
+      >
+        <img
+          alt=""
+          className="p-navigation__image"
+          src="https://assets.ubuntu.com/v1/d96d86b5-vanilla_black-orange_hex.svg"
+        />
+      </a>
+    </div>
+    <a
+      className="p-navigation__toggle--open"
+      href="#navigation"
+      title="menu"
+    >
+      Menu
+    </a>
+    <a
+      className="p-navigation__toggle--close"
+      href="#navigation-closed"
+      title="close menu"
+    >
+      Close menu
+    </a>
+  </div>
+</header>
+`;
+
+exports[`<Navigation> renders with a single NavigationLink correctly 1`] = `
+<header
+  className="p-navigation"
+  id="navigation"
+>
+  <div
+    className="p-navigation__banner"
+  >
+    <div
+      className="p-navigation__logo"
+    >
+      <a
+        className="p-navigation__link"
+        href="#"
+      >
+        Title
+      </a>
+    </div>
+    <a
+      className="p-navigation__toggle--open"
+      href="#navigation"
+      title="menu"
+    >
+      Menu
+    </a>
+    <a
+      className="p-navigation__toggle--close"
+      href="#navigation-closed"
+      title="close menu"
+    >
+      Close menu
+    </a>
+  </div>
+  <nav
+    className="p-navigation__nav"
+  >
+    <ul
+      className="p-navigation__links"
+      role="menu"
+    >
+      <li
+        className="p-navigation__link"
+        role="menuitem"
+      >
+        <a
+          href="#"
+        >
+          Link1
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`<Navigation> renders with a text-based NavigationBanner correctly 1`] = `
+<header
+  className="p-navigation"
+  id="navigation"
+>
+  <div
+    className="p-navigation__banner"
+  >
+    <div
+      className="p-navigation__logo"
+    >
+      <a
+        className="p-navigation__link"
+        href="#"
+      >
+        Title
+      </a>
+    </div>
+    <a
+      className="p-navigation__toggle--open"
+      href="#navigation"
+      title="menu"
+    >
+      Menu
+    </a>
+    <a
+      className="p-navigation__toggle--close"
+      href="#navigation-closed"
+      title="close menu"
+    >
+      Close menu
+    </a>
+  </div>
+</header>
+`;
+
+exports[`<Navigation> renders with multiple NavigationLinks correctly 1`] = `
+<header
+  className="p-navigation"
+  id="navigation"
+>
+  <div
+    className="p-navigation__banner"
+  >
+    <div
+      className="p-navigation__logo"
+    >
+      <a
+        className="p-navigation__link"
+        href="#"
+      >
+        Title
+      </a>
+    </div>
+    <a
+      className="p-navigation__toggle--open"
+      href="#navigation"
+      title="menu"
+    >
+      Menu
+    </a>
+    <a
+      className="p-navigation__toggle--close"
+      href="#navigation-closed"
+      title="close menu"
+    >
+      Close menu
+    </a>
+  </div>
+  <nav
+    className="p-navigation__nav"
+  >
+    <ul
+      className="p-navigation__links"
+      role="menu"
+    >
+      <li
+        className="p-navigation__link"
+        role="menuitem"
+      >
+        <a
+          href="#"
+        >
+          Link1
+        </a>
+      </li>
+      <li
+        className="p-navigation__link"
+        role="menuitem"
+      >
+        <a
+          href="#"
+        >
+          Link2
+        </a>
+      </li>
+      <li
+        className="p-navigation__link"
+        role="menuitem"
+      >
+        <a
+          href="#"
+        >
+          Link3
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;

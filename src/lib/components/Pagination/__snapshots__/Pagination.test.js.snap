@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination> renders PaginationItem with next prop correctly 1`] = `
+<div
+  className="p-pagination"
+>
+  <a
+    className="p-pagination__link--next"
+    href={null}
+  >
+    <span
+      className="p-pagination__label"
+    >
+      
+    </span>
+    <span
+      className="p-pagination__title"
+    >
+      
+    </span>
+  </a>
+</div>
+`;
+
+exports[`<Pagination> renders PaginationItem with previous prop correctly 1`] = `
+<div
+  className="p-pagination"
+>
+  <a
+    className="p-pagination__link--previous"
+    href={null}
+  >
+    <span
+      className="p-pagination__label"
+    >
+      
+    </span>
+    <span
+      className="p-pagination__title"
+    >
+      
+    </span>
+  </a>
+</div>
+`;
+
+exports[`<Pagination> renders default Pagination with PaginationItem correctly 1`] = `
+<div
+  className="p-pagination"
+>
+  <a
+    className="p-pagination__link"
+    href={null}
+  >
+    <span
+      className="p-pagination__label"
+    >
+      
+    </span>
+    <span
+      className="p-pagination__title"
+    >
+      
+    </span>
+  </a>
+</div>
+`;

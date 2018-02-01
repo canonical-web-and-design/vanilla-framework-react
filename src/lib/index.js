@@ -26,6 +26,9 @@ import MatrixItem from './components/Matrix/MatrixItem';
 import MediaObject from './components/MediaObject/MediaObject';
 import Modal from './components/Modal/Modal';
 import MutedHeading from './components/MutedHeading/MutedHeading';
+import Navigation from './components/Navigation/Navigation';
+import NavigationBanner from './components/Navigation/NavigationBanner';
+import NavigationLink from './components/Navigation/NavigationLink';
 import Notification from './components/Notification/Notification';
 import Pagination from './components/Pagination/Pagination';
 import PaginationItem from './components/Pagination/PaginationItem';
@@ -45,6 +48,6 @@ export {
   Accordion, AccordionItem, BlockQuote, Breadcrumb, BreadcrumbItem, Button, Card, CodeBlock,
   CodeSnippet, DividerList, DividerListItem, Footer, FooterNav, FooterNavContainer, HeadingIcon,
   Image, InlineImages, Link, List, ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix,
-  MatrixItem, MediaObject, Modal, MutedHeading, Notification, Pagination, PaginationItem,
-  SteppedList, SteppedListItem, Strip, StripColumn, StripRow, Switch, Table, TableCell, TableRow,
-  Tabs, TabsItem };
+  MatrixItem, MediaObject, Modal, MutedHeading, Navigation, NavigationBanner, NavigationLink,
+  Notification, Pagination, PaginationItem, SteppedList, SteppedListItem, Strip, StripColumn,
+  StripRow, Switch, Table, TableCell, TableRow, Tabs, TabsItem };

@@ -34,6 +34,7 @@ import Pagination from './components/Pagination/Pagination';
 import PaginationItem from './components/Pagination/PaginationItem';
 import SideNav from './components/SideNav/SideNav';
 import SideNavBanner from './components/SideNav/SideNavBanner';
+import SideNavGroup from './components/SideNav/SideNavGroup';
 import SideNavLink from './components/SideNav/SideNavLink';
 import SteppedList from './components/SteppedList/SteppedList';
 import SteppedListItem from './components/SteppedList/SteppedListItem';
@@ -52,6 +53,7 @@ export {
   CodeSnippet, DividerList, DividerListItem, Footer, FooterNav, FooterNavContainer, HeadingIcon,
   Image, InlineImages, Link, List, ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix,
   MatrixItem, MediaObject, Modal, MutedHeading, Navigation, NavigationBanner, NavigationLink,
-  Notification, Pagination, PaginationItem, SideNav, SideNavBanner, SideNavLink, SteppedList,
-  SteppedListItem, Strip, StripColumn, StripRow, Switch, Table, TableCell, TableRow, Tabs, TabsItem,
+  Notification, Pagination, PaginationItem, SideNav, SideNavBanner, SideNavGroup, SideNavLink,
+  SteppedList, SteppedListItem, Strip, StripColumn, StripRow, Switch, Table, TableCell, TableRow,
+  Tabs, TabsItem,
 };

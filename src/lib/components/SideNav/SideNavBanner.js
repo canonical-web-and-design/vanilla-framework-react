@@ -26,16 +26,21 @@ class SideNavBanner extends React.Component {
             <div className="sidebar__cta mobile-col-2 u-align--right">
               <ul className="p-inline-list u-no-margin--top">
                 <li className="p-inline-list__item">
-                  {/* eslint-disable */}
                   <i
                     className={`p-icon--menu ${open ? 'u-hide' : ''}`}
                     onClick={onClick}
-                    aria-hidden="false"
+                    onKeyDown={key => key === 'Enter' && onClick}
+                    aria-hidden={open ? 'true' : 'false'}
+                    role="button"
+                    tabIndex={0}
                   />
                   <i
                     className={`p-icon--close ${open ? '' : 'u-hide'}`}
                     onClick={onClick}
-                    aria-hidden="true"
+                    onKeyDown={key => key === 'Enter' && onClick}
+                    aria-hidden={open ? 'false' : 'true'}
+                    role="button"
+                    tabIndex={0}
                   />
                 </li>
               </ul>

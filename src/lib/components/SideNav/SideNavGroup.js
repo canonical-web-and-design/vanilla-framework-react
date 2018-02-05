@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import getClassName from '../../utils/getClassName';
 
-import SideNavLink from './SideNavLink';
-
 class SideNavGroup extends React.Component {
   constructor(props) {
     super(props);
@@ -49,18 +47,7 @@ SideNavGroup.defaultProps = {
 };
 
 SideNavGroup.propTypes = {
-  children: (props, propName, componentName) => {
-    const prop = props[propName];
-    let error = null;
-
-    React.Children.forEach(prop, (child) => {
-      if (child.type !== SideNavLink) {
-        error = new Error(`${componentName} children should be of type "SideNavLink".`);
-      }
-    });
-
-    return error;
-  },
+  children: PropTypes.node,
   href: PropTypes.string,
   label: PropTypes.string.isRequired,
   selected: PropTypes.bool,

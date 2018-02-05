@@ -42,11 +42,17 @@ exports[`<SideNav> renders with a SideNavGroup correctly 1`] = `
                 aria-hidden="false"
                 className="p-icon--menu "
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
               <i
                 aria-hidden="true"
                 className="p-icon--close u-hide"
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
             </li>
           </ul>
@@ -138,11 +144,17 @@ exports[`<SideNav> renders with a logo-based SideNavBanner correctly 1`] = `
                 aria-hidden="false"
                 className="p-icon--menu "
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
               <i
                 aria-hidden="true"
                 className="p-icon--close u-hide"
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
             </li>
           </ul>
@@ -202,11 +214,17 @@ exports[`<SideNav> renders with a single SideNavLink correctly 1`] = `
                 aria-hidden="false"
                 className="p-icon--menu "
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
               <i
                 aria-hidden="true"
                 className="p-icon--close u-hide"
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
             </li>
           </ul>
@@ -275,11 +293,17 @@ exports[`<SideNav> renders with a text-based SideNavBanner correctly 1`] = `
                 aria-hidden="false"
                 className="p-icon--menu "
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
               <i
                 aria-hidden="true"
                 className="p-icon--close u-hide"
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
             </li>
           </ul>
@@ -339,11 +363,17 @@ exports[`<SideNav> renders with multiple SideNavGroups correctly 1`] = `
                 aria-hidden="false"
                 className="p-icon--menu "
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
               <i
                 aria-hidden="true"
                 className="p-icon--close u-hide"
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
             </li>
           </ul>
@@ -485,11 +515,17 @@ exports[`<SideNav> renders with multiple SideNavLinks correctly 1`] = `
                 aria-hidden="false"
                 className="p-icon--menu "
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
               <i
                 aria-hidden="true"
                 className="p-icon--close u-hide"
                 onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
               />
             </li>
           </ul>

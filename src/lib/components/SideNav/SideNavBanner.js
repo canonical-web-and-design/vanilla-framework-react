@@ -12,7 +12,7 @@ class SideNavBanner extends React.Component {
     return (
       <header id="sidenav" role="banner">
         <div className="p-navigation__banner">
-          <div className="row">
+          <div className="row u-no-margin--left">
             <div className="mobile-col-2">
               <div className="p-navigation__logo">
                 <Tag className="p-navigation__link" href={href}>

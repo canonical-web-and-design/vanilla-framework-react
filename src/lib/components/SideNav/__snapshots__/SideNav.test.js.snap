@@ -12,7 +12,7 @@ exports[`<SideNav> renders with a SideNavGroup correctly 1`] = `
       className="p-navigation__banner"
     >
       <div
-        className="row"
+        className="row u-no-margin--left"
       >
         <div
           className="mobile-col-2"
@@ -110,7 +110,7 @@ exports[`<SideNav> renders with a logo-based SideNavBanner correctly 1`] = `
       className="p-navigation__banner"
     >
       <div
-        className="row"
+        className="row u-no-margin--left"
       >
         <div
           className="mobile-col-2"
@@ -184,7 +184,7 @@ exports[`<SideNav> renders with a single SideNavLink correctly 1`] = `
       className="p-navigation__banner"
     >
       <div
-        className="row"
+        className="row u-no-margin--left"
       >
         <div
           className="mobile-col-2"
@@ -263,7 +263,7 @@ exports[`<SideNav> renders with a text-based SideNavBanner correctly 1`] = `
       className="p-navigation__banner"
     >
       <div
-        className="row"
+        className="row u-no-margin--left"
       >
         <div
           className="mobile-col-2"
@@ -333,7 +333,7 @@ exports[`<SideNav> renders with multiple SideNavGroups correctly 1`] = `
       className="p-navigation__banner"
     >
       <div
-        className="row"
+        className="row u-no-margin--left"
       >
         <div
           className="mobile-col-2"
@@ -485,7 +485,7 @@ exports[`<SideNav> renders with multiple SideNavLinks correctly 1`] = `
       className="p-navigation__banner"
     >
       <div
-        className="row"
+        className="row u-no-margin--left"
       >
         <div
           className="mobile-col-2"

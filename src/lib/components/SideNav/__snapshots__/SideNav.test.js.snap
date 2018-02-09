@@ -1,0 +1,569 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SideNav> renders with a SideNavGroup correctly 1`] = `
+<div
+  className="p-navigation--sidebar"
+>
+  <header
+    id="sidenav"
+    role="banner"
+  >
+    <div
+      className="p-navigation__banner"
+    >
+      <div
+        className="row u-no-margin--left"
+      >
+        <div
+          className="mobile-col-2"
+        >
+          <div
+            className="p-navigation__logo"
+          >
+            <a
+              className="p-navigation__link"
+              href="#"
+            >
+              Title
+            </a>
+          </div>
+          
+        </div>
+        <div
+          className="sidebar__cta mobile-col-2 u-align--right"
+        >
+          <ul
+            className="p-inline-list u-no-margin--top"
+          >
+            <li
+              className="p-inline-list__item"
+            >
+              <i
+                aria-hidden="false"
+                className="p-icon--menu "
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+              <i
+                aria-hidden="true"
+                className="p-icon--close u-hide"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="sidebar__content u-no-margin--top u-hide"
+  >
+    <ul
+      className="p-list"
+    >
+      <li>
+        <a
+          className="sidebar__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Group
+          <i
+            className="p-icon--plus"
+          />
+          <i
+            className="p-icon--minus"
+          />
+        </a>
+        <ul
+          className="sidebar__second-level"
+        >
+          <li>
+            <a
+              className="sidebar__link"
+              href="#"
+            >
+              Link
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<SideNav> renders with a logo-based SideNavBanner correctly 1`] = `
+<div
+  className="p-navigation--sidebar"
+>
+  <header
+    id="sidenav"
+    role="banner"
+  >
+    <div
+      className="p-navigation__banner"
+    >
+      <div
+        className="row u-no-margin--left"
+      >
+        <div
+          className="mobile-col-2"
+        >
+          <div
+            className="p-navigation__logo"
+          >
+            <a
+              className="p-navigation__link"
+              href="#"
+            >
+              <img
+                alt=""
+                className="p-navigation__image"
+                src="https://assets.ubuntu.com/v1/d96d86b5-vanilla_black-orange_hex.svg"
+              />
+            </a>
+          </div>
+          
+        </div>
+        <div
+          className="sidebar__cta mobile-col-2 u-align--right"
+        >
+          <ul
+            className="p-inline-list u-no-margin--top"
+          >
+            <li
+              className="p-inline-list__item"
+            >
+              <i
+                aria-hidden="false"
+                className="p-icon--menu "
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+              <i
+                aria-hidden="true"
+                className="p-icon--close u-hide"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="sidebar__content u-no-margin--top u-hide"
+  >
+    <ul
+      className="p-list"
+    />
+  </div>
+</div>
+`;
+
+exports[`<SideNav> renders with a single SideNavLink correctly 1`] = `
+<div
+  className="p-navigation--sidebar"
+>
+  <header
+    id="sidenav"
+    role="banner"
+  >
+    <div
+      className="p-navigation__banner"
+    >
+      <div
+        className="row u-no-margin--left"
+      >
+        <div
+          className="mobile-col-2"
+        >
+          <div
+            className="p-navigation__logo"
+          >
+            <a
+              className="p-navigation__link"
+              href="#"
+            >
+              Title
+            </a>
+          </div>
+          
+        </div>
+        <div
+          className="sidebar__cta mobile-col-2 u-align--right"
+        >
+          <ul
+            className="p-inline-list u-no-margin--top"
+          >
+            <li
+              className="p-inline-list__item"
+            >
+              <i
+                aria-hidden="false"
+                className="p-icon--menu "
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+              <i
+                aria-hidden="true"
+                className="p-icon--close u-hide"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="sidebar__content u-no-margin--top u-hide"
+  >
+    <ul
+      className="p-list"
+    >
+      <li>
+        <a
+          className="sidebar__link"
+          href="#"
+        >
+          Link1
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<SideNav> renders with a text-based SideNavBanner correctly 1`] = `
+<div
+  className="p-navigation--sidebar"
+>
+  <header
+    id="sidenav"
+    role="banner"
+  >
+    <div
+      className="p-navigation__banner"
+    >
+      <div
+        className="row u-no-margin--left"
+      >
+        <div
+          className="mobile-col-2"
+        >
+          <div
+            className="p-navigation__logo"
+          >
+            <a
+              className="p-navigation__link"
+              href="#"
+            >
+              Title
+            </a>
+          </div>
+          
+        </div>
+        <div
+          className="sidebar__cta mobile-col-2 u-align--right"
+        >
+          <ul
+            className="p-inline-list u-no-margin--top"
+          >
+            <li
+              className="p-inline-list__item"
+            >
+              <i
+                aria-hidden="false"
+                className="p-icon--menu "
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+              <i
+                aria-hidden="true"
+                className="p-icon--close u-hide"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="sidebar__content u-no-margin--top u-hide"
+  >
+    <ul
+      className="p-list"
+    />
+  </div>
+</div>
+`;
+
+exports[`<SideNav> renders with multiple SideNavGroups correctly 1`] = `
+<div
+  className="p-navigation--sidebar"
+>
+  <header
+    id="sidenav"
+    role="banner"
+  >
+    <div
+      className="p-navigation__banner"
+    >
+      <div
+        className="row u-no-margin--left"
+      >
+        <div
+          className="mobile-col-2"
+        >
+          <div
+            className="p-navigation__logo"
+          >
+            <a
+              className="p-navigation__link"
+              href="#"
+            >
+              Title
+            </a>
+          </div>
+          
+        </div>
+        <div
+          className="sidebar__cta mobile-col-2 u-align--right"
+        >
+          <ul
+            className="p-inline-list u-no-margin--top"
+          >
+            <li
+              className="p-inline-list__item"
+            >
+              <i
+                aria-hidden="false"
+                className="p-icon--menu "
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+              <i
+                aria-hidden="true"
+                className="p-icon--close u-hide"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="sidebar__content u-no-margin--top u-hide"
+  >
+    <ul
+      className="p-list"
+    >
+      <li>
+        <a
+          className="sidebar__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Group1
+          <i
+            className="p-icon--plus"
+          />
+          <i
+            className="p-icon--minus"
+          />
+        </a>
+        <ul
+          className="sidebar__second-level"
+        >
+          <li>
+            <a
+              className="sidebar__link"
+              href="#"
+            >
+              Link1
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a
+          className="sidebar__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Group2
+          <i
+            className="p-icon--plus"
+          />
+          <i
+            className="p-icon--minus"
+          />
+        </a>
+        <ul
+          className="sidebar__second-level"
+        >
+          <li>
+            <a
+              className="sidebar__link"
+              href="#"
+            >
+              Link2
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a
+          className="sidebar__link"
+          href="#"
+          onClick={[Function]}
+        >
+          Group3
+          <i
+            className="p-icon--plus"
+          />
+          <i
+            className="p-icon--minus"
+          />
+        </a>
+        <ul
+          className="sidebar__second-level"
+        >
+          <li>
+            <a
+              className="sidebar__link"
+              href="#"
+            >
+              Link3
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<SideNav> renders with multiple SideNavLinks correctly 1`] = `
+<div
+  className="p-navigation--sidebar"
+>
+  <header
+    id="sidenav"
+    role="banner"
+  >
+    <div
+      className="p-navigation__banner"
+    >
+      <div
+        className="row u-no-margin--left"
+      >
+        <div
+          className="mobile-col-2"
+        >
+          <div
+            className="p-navigation__logo"
+          >
+            <a
+              className="p-navigation__link"
+              href="#"
+            >
+              Title
+            </a>
+          </div>
+          
+        </div>
+        <div
+          className="sidebar__cta mobile-col-2 u-align--right"
+        >
+          <ul
+            className="p-inline-list u-no-margin--top"
+          >
+            <li
+              className="p-inline-list__item"
+            >
+              <i
+                aria-hidden="false"
+                className="p-icon--menu "
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+              <i
+                aria-hidden="true"
+                className="p-icon--close u-hide"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex={0}
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="sidebar__content u-no-margin--top u-hide"
+  >
+    <ul
+      className="p-list"
+    >
+      <li>
+        <a
+          className="sidebar__link"
+          href="#"
+        >
+          Link1
+        </a>
+      </li>
+      <li>
+        <a
+          className="sidebar__link"
+          href="#"
+        >
+          Link2
+        </a>
+      </li>
+      <li>
+        <a
+          className="sidebar__link"
+          href="#"
+        >
+          Link3
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

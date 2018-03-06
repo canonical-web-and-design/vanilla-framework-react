@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolTip component should render a tooltip component 1`] = `
+<button
+  aria-describedby="default-tooltip"
+  className="p-tooltip"
+>
+  Bottom left tooltip
+  <span
+    className="p-tooltip__message"
+    id="default-tooltip"
+    role="tooltip"
+  >
+    Lorem ipsum dolor sit amet
+  </span>
+</button>
+`;
+
+exports[`ToolTip component should render a tooltip component with a bottom center tooltip 1`] = `
+<button
+  aria-describedby="btm-cntr"
+  className="p-tooltip p-tooltip--btm-center"
+>
+  Bottom center tooltip
+  <span
+    className="p-tooltip__message"
+    id="btm-cntr"
+    role="tooltip"
+  >
+    Lorem ipsum dolor sit amet
+  </span>
+</button>
+`;
+
+exports[`ToolTip component should render a tooltip component with a bottomright tooltip 1`] = `
+<button
+  aria-describedby="btm-right"
+  className="p-tooltip p-tooltip--btm-right"
+>
+  Bottom right tooltip
+  <span
+    className="p-tooltip__message"
+    id="btm-right"
+    role="tooltip"
+  >
+    Lorem ipsum dolor sit amet
+  </span>
+</button>
+`;
+
+exports[`ToolTip component should render a tooltip component with a left tooltip 1`] = `
+<button
+  aria-describedby="left"
+  className="p-tooltip p-tooltip--left"
+>
+  Left tooltip
+  <span
+    className="p-tooltip__message"
+    id="left"
+    role="tooltip"
+  >
+    Lorem ipsum dolor sit amet
+  </span>
+</button>
+`;
+
+exports[`ToolTip component should render a tooltip component with a right tooltip 1`] = `
+<button
+  aria-describedby="right"
+  className="p-tooltip p-tooltip--right"
+>
+  Right tooltip
+  <span
+    className="p-tooltip__message"
+    id="right"
+    role="tooltip"
+  >
+    Lorem ipsum dolor sit amet
+  </span>
+</button>
+`;
+
+exports[`ToolTip component should render a tooltip component with a top center tooltip 1`] = `
+<button
+  aria-describedby="tp-cntr"
+  className="p-tooltip p-tooltip--top-center"
+>
+  Top center tooltip
+  <span
+    className="p-tooltip__message"
+    id="tp-cntr"
+    role="tooltip"
+  >
+    Lorem ipsum dolor sit amet
+  </span>
+</button>
+`;
+
+exports[`ToolTip component should render a tooltip component with a top left tooltip 1`] = `
+<button
+  aria-describedby="to-lft"
+  className="p-tooltip p-tooltip--top-left"
+>
+  Top left tooltip
+  <span
+    className="p-tooltip__message"
+    id="to-lft"
+    role="tooltip"
+  >
+    Lorem ipsum dolor sit amet
+  </span>
+</button>
+`;
+
+exports[`ToolTip component should render a tooltip component with a top right tooltip 1`] = `
+<button
+  aria-describedby="tp-right"
+  className="p-tooltip p-tooltip--top-right"
+>
+  Top right tooltip
+  <span
+    className="p-tooltip__message"
+    id="tp-right"
+    role="tooltip"
+  >
+    Lorem ipsum dolor sit amet
+  </span>
+</button>
+`;

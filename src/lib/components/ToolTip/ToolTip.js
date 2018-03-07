@@ -13,22 +13,31 @@ const ToolTip = ({
   }
 
   return (
-    <button className={className} aria-describedby={id}>
+    <span className={className} aria-describedby={id}>
       {children}
       <span className="p-tooltip__message" role="tooltip" id={id}>
         {message}
       </span>
-    </button>
+    </span>
   );
 };
 
 ToolTip.defaultProps = {
-  position: '',
+  position: 'btm-right',
 };
 
 ToolTip.propTypes = {
   children: PropTypes.node.isRequired,
-  position: PropTypes.string,
+  position: PropTypes.oneOf([
+    'left',
+    'right',
+    'top-left',
+    'btm-left',
+    'top-right',
+    'btm-right',
+    'top-center',
+    'btm-center',
+  ]),
   id: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
 };

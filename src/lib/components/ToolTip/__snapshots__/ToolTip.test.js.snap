@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ToolTip component should render a tooltip component 1`] = `
-<button
+<span
   aria-describedby="default-tooltip"
-  className="p-tooltip"
+  className="p-tooltip p-tooltip--btm-right"
 >
   Bottom left tooltip
   <span
@@ -13,11 +13,11 @@ exports[`ToolTip component should render a tooltip component 1`] = `
   >
     Lorem ipsum dolor sit amet
   </span>
-</button>
+</span>
 `;
 
 exports[`ToolTip component should render a tooltip component with a bottom center tooltip 1`] = `
-<button
+<span
   aria-describedby="btm-cntr"
   className="p-tooltip p-tooltip--btm-center"
 >
@@ -29,11 +29,11 @@ exports[`ToolTip component should render a tooltip component with a bottom cente
   >
     Lorem ipsum dolor sit amet
   </span>
-</button>
+</span>
 `;
 
 exports[`ToolTip component should render a tooltip component with a bottomright tooltip 1`] = `
-<button
+<span
   aria-describedby="btm-right"
   className="p-tooltip p-tooltip--btm-right"
 >
@@ -45,11 +45,11 @@ exports[`ToolTip component should render a tooltip component with a bottomright 
   >
     Lorem ipsum dolor sit amet
   </span>
-</button>
+</span>
 `;
 
 exports[`ToolTip component should render a tooltip component with a left tooltip 1`] = `
-<button
+<span
   aria-describedby="left"
   className="p-tooltip p-tooltip--left"
 >
@@ -61,11 +61,11 @@ exports[`ToolTip component should render a tooltip component with a left tooltip
   >
     Lorem ipsum dolor sit amet
   </span>
-</button>
+</span>
 `;
 
 exports[`ToolTip component should render a tooltip component with a right tooltip 1`] = `
-<button
+<span
   aria-describedby="right"
   className="p-tooltip p-tooltip--right"
 >
@@ -77,11 +77,11 @@ exports[`ToolTip component should render a tooltip component with a right toolti
   >
     Lorem ipsum dolor sit amet
   </span>
-</button>
+</span>
 `;
 
 exports[`ToolTip component should render a tooltip component with a top center tooltip 1`] = `
-<button
+<span
   aria-describedby="tp-cntr"
   className="p-tooltip p-tooltip--top-center"
 >
@@ -93,11 +93,11 @@ exports[`ToolTip component should render a tooltip component with a top center t
   >
     Lorem ipsum dolor sit amet
   </span>
-</button>
+</span>
 `;
 
 exports[`ToolTip component should render a tooltip component with a top left tooltip 1`] = `
-<button
+<span
   aria-describedby="to-lft"
   className="p-tooltip p-tooltip--top-left"
 >
@@ -109,11 +109,11 @@ exports[`ToolTip component should render a tooltip component with a top left too
   >
     Lorem ipsum dolor sit amet
   </span>
-</button>
+</span>
 `;
 
 exports[`ToolTip component should render a tooltip component with a top right tooltip 1`] = `
-<button
+<span
   aria-describedby="tp-right"
   className="p-tooltip p-tooltip--top-right"
 >
@@ -125,5 +125,5 @@ exports[`ToolTip component should render a tooltip component with a top right to
   >
     Lorem ipsum dolor sit amet
   </span>
-</button>
+</span>
 `;

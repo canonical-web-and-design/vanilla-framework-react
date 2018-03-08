@@ -47,6 +47,7 @@ import TableCell from './components/Table/TableCell';
 import TableRow from './components/Table/TableRow';
 import Tabs from './components/Tabs/Tabs';
 import TabsItem from './components/Tabs/TabsItem';
+import ToolTip from './components/ToolTip/ToolTip';
 
 export {
   Accordion, AccordionItem, BlockQuote, Breadcrumb, BreadcrumbItem, Button, Card, CodeBlock,
@@ -55,5 +56,5 @@ export {
   MatrixItem, MediaObject, Modal, MutedHeading, Navigation, NavigationBanner, NavigationLink,
   Notification, Pagination, PaginationItem, SideNav, SideNavBanner, SideNavGroup, SideNavLink,
   SteppedList, SteppedListItem, Strip, StripColumn, StripRow, Switch, Table, TableCell, TableRow,
-  Tabs, TabsItem,
+  Tabs, TabsItem, ToolTip,
 };

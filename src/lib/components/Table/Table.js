@@ -24,17 +24,21 @@ class Table extends React.Component {
   }
 
   componentWillMount() {
-    const { columns, data, sortCondition } = this.state;
+    const { expanding } = this.props;
 
-    // If Table is static, convert data to object
-    if (!data || !columns) {
-      this.generateData();
-    }
+    if (!expanding) {
+      const { columns, data, sortCondition } = this.state;
 
-    // Pre-sort Table if sortCondition prop is non-zero
-    if (Object.keys(sortCondition).length === 1) {
-      const columnKey = Object.keys(sortCondition)[0];
-      this.sortData(columnKey);
+      // If Table is static, convert data to object
+      if (!data || !columns) {
+        this.generateData();
+      }
+
+      // Pre-sort Table if sortCondition prop is non-zero
+      if (Object.keys(sortCondition).length === 1) {
+        const columnKey = Object.keys(sortCondition)[0];
+        this.sortData(columnKey);
+      }
     }
   }
 
@@ -131,6 +135,9 @@ class Table extends React.Component {
       <thead>
         <TableRow key="header-row">
           {columnHeaders}
+          {this.props.expanding && (
+            <TableCell className="u-hide" />
+          )}
         </TableRow>
       </thead>
     );
@@ -168,14 +175,28 @@ class Table extends React.Component {
   }
 
   render() {
-    const { hasHeader, sortable } = this.props;
-    const className = sortable ? 'p-table--sortable' : null;
+    const {
+      hasHeader,
+      sortable,
+      expanding,
+      children,
+    } = this.props;
+
+    let className = null;
+
+    if (sortable) {
+      className = 'p-table--sortable';
+    }
+
+    if (expanding) {
+      className = 'p-table-expanding';
+    }
 
     return (
       <table role="grid" className={className}>
         {hasHeader && this.generateHeader()}
         <tbody>
-          {this.generateRows()}
+          {expanding ? children : this.generateRows()}
         </tbody>
       </table>
     );
@@ -186,6 +207,7 @@ Table.defaultProps = {
   children: null,
   columns: null,
   data: null,
+  expanding: false,
   hasHeader: true,
   sortable: false,
   sortCondition: {},
@@ -195,6 +217,7 @@ Table.propTypes = {
   children: PropTypes.node,
   columns: PropTypes.arrayOf(PropTypes.object),
   data: PropTypes.arrayOf(PropTypes.object),
+  expanding: PropTypes.bool,
   hasHeader: PropTypes.bool,
   sortable: PropTypes.bool,
   sortCondition: PropTypes.object,

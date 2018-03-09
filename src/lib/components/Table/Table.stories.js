@@ -6,6 +6,7 @@ import { withInfo } from '@storybook/addon-info';
 import Table from './Table';
 import TableCell from './TableCell';
 import TableRow from './TableRow';
+import TableExpandingRow from './TableExpandingRow';
 
 const columns = [
   [
@@ -19,6 +20,12 @@ const columns = [
     { key: 'users', label: 'Users', align: 'right' },
     { key: 'units', label: 'Units', align: 'right' },
     { key: 'revenue', label: 'Revenue', align: 'right' },
+  ],
+  [
+    { key: 'name', label: 'Name' },
+    { key: 'users', label: 'Users', align: 'right' },
+    { key: 'units', label: 'Units', align: 'right' },
+    { key: 'actions', label: 'Actions', align: 'right' },
   ],
 ];
 
@@ -36,6 +43,52 @@ const data = [
     id: 1, name: 'Melon', users: 12, units: 23, revenue: '$99',
   }, {
     id: 2, name: 'Apple', users: 9, units: 17, revenue: '$120',
+  }],
+  [{
+    id: 0,
+    cellData: [{
+      content: 'Grape',
+      align: 'left',
+    }, {
+      content: 8,
+      align: 'right',
+    }, {
+      content: 18,
+      align: 'right',
+    }, {
+      content: '$70',
+      align: 'right',
+    }],
+  }, {
+    id: 1,
+    cellData: [{
+      content: 'Melon',
+      align: 'left',
+    }, {
+      content: 12,
+      align: 'right',
+    }, {
+      content: 23,
+      align: 'right',
+    }, {
+      content: '$99',
+      align: 'right',
+    }],
+  }, {
+    id: 2,
+    cellData: [{
+      content: 'Apple',
+      align: 'left',
+    }, {
+      content: 9,
+      align: 'right',
+    }, {
+      content: 17,
+      align: 'right',
+    }, {
+      content: '$120',
+      align: 'right',
+    }],
   }],
 ];
 
@@ -116,5 +169,35 @@ storiesOf('Table', module)
         columns={columns[1]}
         data={data[1]}
       />),
+    ),
+  )
+
+  .add('Expanding',
+    withInfo('')(() => (
+      <Table
+        expanding={boolean('Expanding', true)}
+        hasHeader={boolean('Header', true)}
+        columns={columns[2]}
+      >
+        {data[2].map(datum => (
+          <TableExpandingRow data={datum} showText="Show" hideText="Hide" key={`expanding-row-${datum.id}`}>
+            <div className="row">
+              <div className="col-6">
+                <h3>Example table cell</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum dicta
+                  beatae nostrum eligendi similique earum, dolorem fuga quis, sequi voluptates
+                  architecto ipsa dolorum eaque rem expedita inventore voluptas odit aspernatur
+                  alias molestias facere, eum accusamus dolor, assumenda. Eaque, id! Dolorem
+                  perferendis reprehenderit eum, odio minima ad commodi earum non, iste suscipit.
+                </p>
+              </div>
+              <div className="col-6">
+                <img src="https://placehold.it/1024x325" alt="" />
+              </div>
+            </div>
+          </TableExpandingRow>
+        ))}
+      </Table>),
     ),
   );

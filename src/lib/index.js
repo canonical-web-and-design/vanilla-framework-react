@@ -45,6 +45,7 @@ import Switch from './components/Switch/Switch';
 import Table from './components/Table/Table';
 import TableCell from './components/Table/TableCell';
 import TableRow from './components/Table/TableRow';
+import TableExpandingRow from './components/Table/TableExpandingRow';
 import Tabs from './components/Tabs/Tabs';
 import TabsItem from './components/Tabs/TabsItem';
 import ToolTip from './components/ToolTip/ToolTip';
@@ -55,6 +56,6 @@ export {
   Image, InlineImages, Link, List, ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix,
   MatrixItem, MediaObject, Modal, MutedHeading, Navigation, NavigationBanner, NavigationLink,
   Notification, Pagination, PaginationItem, SideNav, SideNavBanner, SideNavGroup, SideNavLink,
-  SteppedList, SteppedListItem, Strip, StripColumn, StripRow, Switch, Table, TableCell, TableRow,
-  Tabs, TabsItem, ToolTip,
+  SteppedList, SteppedListItem, Strip, StripColumn, StripRow, Switch, Table, TableExpandingRow,
+  TableCell, TableRow, Tabs, TabsItem, ToolTip,
 };

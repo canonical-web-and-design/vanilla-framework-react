@@ -9,12 +9,18 @@ import CodeBlock from './components/CodeBlock/CodeBlock';
 import CodeSnippet from './components/CodeSnippet/CodeSnippet';
 import DividerList from './components/DividerList/DividerList';
 import DividerListItem from './components/DividerList/DividerListItem';
+import Form from './components/Form/Form';
+import FormControl from './components/Form/FormControl';
+import FormGroup from './components/Form/FormGroup';
+import FormHelpText from './components/Form/FormHelpText';
 import Footer from './components/Footer/Footer';
 import FooterNav from './components/Footer/FooterNav';
 import FooterNavContainer from './components/Footer/FooterNavContainer';
 import HeadingIcon from './components/HeadingIcon/HeadingIcon';
 import Image from './components/Image/Image';
 import InlineImages from './components/InlineImages/InlineImages';
+import Input from './components/Input/Input';
+import Label from './components/Input/Label';
 import Link from './components/Link/Link';
 import List from './components/List/List';
 import ListItem from './components/List/ListItem';
@@ -51,10 +57,10 @@ import ToolTip from './components/ToolTip/ToolTip';
 
 export {
   Accordion, AccordionItem, BlockQuote, Breadcrumb, BreadcrumbItem, Button, Card, CodeBlock,
-  CodeSnippet, DividerList, DividerListItem, Footer, FooterNav, FooterNavContainer, HeadingIcon,
-  Image, InlineImages, Link, List, ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix,
-  MatrixItem, MediaObject, Modal, MutedHeading, Navigation, NavigationBanner, NavigationLink,
-  Notification, Pagination, PaginationItem, SideNav, SideNavBanner, SideNavGroup, SideNavLink,
-  SteppedList, SteppedListItem, Strip, StripColumn, StripRow, Switch, Table, TableCell, TableRow,
-  Tabs, TabsItem, ToolTip,
+  CodeSnippet, DividerList, DividerListItem, Form, FormControl, FormGroup, FormHelpText, Footer,
+  FooterNav, FooterNavContainer, HeadingIcon, Image, InlineImages, Input, Label, Link, List,
+  ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix, MatrixItem, MediaObject, Modal,
+  MutedHeading, Navigation, NavigationBanner, NavigationLink, Notification, Pagination,
+  PaginationItem, SideNav, SideNavBanner, SideNavGroup, SideNavLink, SteppedList, SteppedListItem,
+  Strip, StripColumn, StripRow, Switch, Table, TableCell, TableRow, Tabs, TabsItem, ToolTip,
 };

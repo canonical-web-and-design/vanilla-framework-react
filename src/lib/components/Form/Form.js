@@ -8,10 +8,10 @@ const Form = (props) => {
   } = props;
 
   const classNames = getClassName({
+    [className]: className,
     'p-form': true,
     'p-form--inline': inline && !stacked,
     'p-form--stacked': stacked && !inline,
-    [`${className}`]: className,
   }) || undefined;
 
   return (

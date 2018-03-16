@@ -10,10 +10,10 @@ const FormControl = (props) => {
   } = props;
 
   const classNames = getClassName({
+    [className]: className,
     'p-form__control': true,
     'p-form-validation': validation.status,
     [`is-${validation.status}`]: validation && validation.status,
-    [`${className}`]: className,
   }) || undefined;
 
   const formControlItems = React.Children.map(children, (child) => {

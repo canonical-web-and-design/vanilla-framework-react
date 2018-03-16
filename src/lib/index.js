@@ -9,6 +9,7 @@ import CodeBlock from './components/CodeBlock/CodeBlock';
 import CodeSnippet from './components/CodeSnippet/CodeSnippet';
 import DividerList from './components/DividerList/DividerList';
 import DividerListItem from './components/DividerList/DividerListItem';
+import FieldSet from './components/Form/FieldSet';
 import Form from './components/Form/Form';
 import FormControl from './components/Form/FormControl';
 import FormGroup from './components/Form/FormGroup';
@@ -57,8 +58,8 @@ import ToolTip from './components/ToolTip/ToolTip';
 
 export {
   Accordion, AccordionItem, BlockQuote, Breadcrumb, BreadcrumbItem, Button, Card, CodeBlock,
-  CodeSnippet, DividerList, DividerListItem, Form, FormControl, FormGroup, FormHelpText, Footer,
-  FooterNav, FooterNavContainer, HeadingIcon, Image, InlineImages, Input, Label, Link, List,
+  CodeSnippet, DividerList, DividerListItem, FieldSet, Form, FormControl, FormGroup, FormHelpText,
+  Footer, FooterNav, FooterNavContainer, HeadingIcon, Image, InlineImages, Input, Label, Link, List,
   ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix, MatrixItem, MediaObject, Modal,
   MutedHeading, Navigation, NavigationBanner, NavigationLink, Notification, Pagination,
   PaginationItem, SideNav, SideNavBanner, SideNavGroup, SideNavLink, SteppedList, SteppedListItem,

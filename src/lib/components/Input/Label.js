@@ -8,8 +8,8 @@ const Label = (props) => {
   } = props;
 
   const classNames = getClassName({
+    [className]: className,
     'p-form__label': true,
-    [`${className}`]: className,
   }) || undefined;
 
   return (

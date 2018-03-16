@@ -6,8 +6,8 @@ const FormHelpText = (props) => {
   const { children, className } = props;
 
   const classNames = getClassName({
+    [className]: className,
     'p-form-help-text': true,
-    [`${className}`]: className,
   }) || undefined;
 
   return (

@@ -6,8 +6,8 @@ const FieldSet = (props) => {
   const { children, className, ...otherProps } = props;
 
   const classNames = getClassName({
-    [`${className}`]: className,
-  });
+    [className]: className,
+  }) || undefined;
 
   return (
     <fieldset className={classNames} {...otherProps}>

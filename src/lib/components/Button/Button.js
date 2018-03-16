@@ -28,8 +28,8 @@ class Button extends React.Component {
     } = this.props;
     const Tag = href ? 'a' : 'button';
 
-    const customClasses = this.props.className;
     const classNames = getClassName({
+      [className]: className,
       'p-button--base': !(positive || negative || brand || neutral),
       'p-button--neutral': neutral,
       'p-button--positive': positive,
@@ -37,8 +37,7 @@ class Button extends React.Component {
       'p-button--brand': brand,
       'is-inline': inline,
       'is--disabled': disabled,
-      [`${customClasses}`]: customClasses,
-    });
+    }) || undefined;
 
     return (
       <Tag

@@ -17,8 +17,8 @@ const Input = (props) => {
   } = props;
 
   const classNames = getClassName({
+    [className]: className,
     'p-form-validation__input': hasValidation,
-    [`${className}`]: className,
   }) || undefined;
 
   const Tag = inputTag(type);

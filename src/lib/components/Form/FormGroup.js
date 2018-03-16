@@ -3,16 +3,15 @@ import PropTypes from 'prop-types';
 import getClassName from '../../utils/getClassName';
 
 const FormGroup = (props) => {
-  const { children } = props;
+  const { children, className } = props;
 
-  const customClasses = props.className;
-  const className = getClassName({
+  const classNames = getClassName({
+    [className]: className,
     'p-form__group': true,
-    [`${customClasses}`]: customClasses,
   }) || undefined;
 
   return (
-    <div className={className}>
+    <div className={classNames}>
       { children }
     </div>
   );

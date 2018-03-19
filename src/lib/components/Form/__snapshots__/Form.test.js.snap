@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form> should match snapshot of Form with FormControl 1`] = `
+<form
+  className="p-form"
+>
+  <div
+    className="p-form__control"
+  >
+    <label
+      className="p-form__label"
+      htmlFor="input"
+    >
+      Label
+    </label>
+    <input
+      className={undefined}
+      id="input"
+      type="text"
+    />
+  </div>
+</form>
+`;
+
+exports[`<Form> should match snapshot of Form with FormControl and help text 1`] = `
+<form
+  className="p-form"
+>
+  <div
+    className="p-form__control"
+  >
+    <label
+      className="p-form__label"
+      htmlFor="input"
+    >
+      Label
+    </label>
+    <input
+      className={undefined}
+      id="input"
+      type="text"
+    />
+    <p
+      className="p-form-help-text"
+    >
+      help text
+    </p>
+  </div>
+</form>
+`;
+
+exports[`<Form> should match snapshot of Form with FormControl and validation 1`] = `
+<form
+  className="p-form"
+>
+  <div
+    className="p-form__control p-form-validation is-success"
+  >
+    <label
+      className="p-form__label"
+      htmlFor="input"
+    >
+      Label
+    </label>
+    <input
+      className="p-form-validation__input"
+      id="input"
+      type="text"
+    />
+    <p
+      className="p-form-validation__message"
+    >
+      <strong>
+        Success: 
+      </strong>
+      Validation message
+    </p>
+  </div>
+</form>
+`;
+
+exports[`<Form> should match snapshot of Form with Label and Input 1`] = `
+<form
+  className="p-form"
+>
+  <label
+    className="p-form__label"
+    htmlFor="input"
+  >
+    Label
+  </label>
+  <input
+    className={undefined}
+    id="input"
+    type="text"
+  />
+</form>
+`;
+
+exports[`<Form> should match snapshot of empty Form 1`] = `
+<form
+  className="p-form"
+/>
+`;

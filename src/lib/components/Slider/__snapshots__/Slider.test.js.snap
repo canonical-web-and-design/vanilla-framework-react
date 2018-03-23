@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slider> should match the default snapshot 1`] = `
+<div
+  className="p-slider__wrapper"
+>
+  <input
+    className="p-slider"
+    disabled={false}
+    max={100}
+    min={0}
+    onChange={[Function]}
+    step={1}
+    style={undefined}
+    type="range"
+    value={0}
+  />
+</div>
+`;
+
+exports[`<Slider> should match the snapshot with disabled prop 1`] = `
+<div
+  className="p-slider__wrapper"
+>
+  <input
+    className="p-slider"
+    disabled={true}
+    max={100}
+    min={0}
+    onChange={[Function]}
+    step={1}
+    style={undefined}
+    type="range"
+    value={0}
+  />
+</div>
+`;
+
+exports[`<Slider> should match the snapshot with showValue prop 1`] = `
+<div
+  className="p-slider__wrapper"
+>
+  <input
+    className="p-slider"
+    disabled={false}
+    max={100}
+    min={0}
+    onChange={[Function]}
+    step={1}
+    style={undefined}
+    type="range"
+    value={0}
+  />
+  <input
+    className="p-slider__input"
+    disabled={false}
+    maxLength={3}
+    onChange={[Function]}
+    type="text"
+    value={0}
+  />
+</div>
+`;

@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const TableRow = (props) => {
-  const tableRow = (
-    <tr role="row">
-      {props.children}
+  const { children, ...otherProps } = props;
+
+  return (
+    <tr role="row" {...otherProps}>
+      {children}
     </tr>
   );
-
-  return tableRow;
 };
 
 TableRow.propTypes = {

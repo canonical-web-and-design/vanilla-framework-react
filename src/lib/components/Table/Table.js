@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import naturalCompare from 'natural-compare-lite';
+import getClassName from '../../utils/getClassName';
 
 import TableCell from './TableCell';
 import TableRow from './TableRow';
+import Button from '../Button/Button';
 
 class Table extends React.Component {
   constructor(props) {
@@ -12,12 +14,16 @@ class Table extends React.Component {
     this.generateData = this.generateData.bind(this);
     this.generateHeader = this.generateHeader.bind(this);
     this.generateRows = this.generateRows.bind(this);
+    this.generateCells = this.generateCells.bind(this);
+    this.generateExpandedCell = this.generateExpandedCell.bind(this);
     this.getNewSortCondition = this.getNewSortCondition.bind(this);
+    this.handleExpand = this.handleExpand.bind(this);
     this.sortData = this.sortData.bind(this);
 
     this.state = {
       columns: props.columns ? [...props.columns] : null,
       data: props.data ? [...props.data] : null,
+      expandedRows: [],
       originalData: props.data ? [...props.data] : null,
       sortCondition: props.sortCondition,
     };
@@ -35,6 +41,12 @@ class Table extends React.Component {
     if (Object.keys(sortCondition).length === 1) {
       const columnKey = Object.keys(sortCondition)[0];
       this.sortData(columnKey);
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.data !== this.props.data) {
+      this.setState({ data: [...nextProps.data], columns: [...nextProps.columns] });
     }
   }
 
@@ -72,6 +84,26 @@ class Table extends React.Component {
     }
   }
 
+  handleExpand(rowId) {
+    const { accordion, expandable } = this.props;
+
+    if (expandable) {
+      const { expandedRows } = this.state;
+      const isExpanded = expandedRows.includes(rowId);
+      let newExpandedRows;
+
+      if (isExpanded) {
+        newExpandedRows = expandedRows.filter(id => id !== rowId);
+      } else if (accordion) {
+        newExpandedRows = [rowId];
+      } else {
+        newExpandedRows = expandedRows.concat(rowId);
+      }
+
+      this.setState({ expandedRows: newExpandedRows });
+    }
+  }
+
   generateData() {
     const { children } = this.props;
     const columns = [];
@@ -95,8 +127,14 @@ class Table extends React.Component {
         data[index].id = rowIndex;
         row.props.children.forEach((cell, cellIndex) => {
           let value = '';
-          if (typeof cell.props.children === 'string') value = cell.props.children;
-          data[index][`column${cellIndex}`] = value;
+          if (typeof cell.props.children === 'string') {
+            value = cell.props.children;
+          }
+          if (cell.props.expandedCell) {
+            data[index].expandedCell = cell.props.children;
+          } else {
+            data[index][`column${cellIndex}`] = value;
+          }
         });
       }
     });
@@ -110,22 +148,32 @@ class Table extends React.Component {
 
   generateHeader() {
     const { columns, sortCondition } = this.state;
-    const { sortable } = this.props;
+    const { expandable, sortable } = this.props;
 
-    const columnHeaders = columns.map((headerData) => {
-      const ariaSort = sortCondition[headerData.key];
-      const onClick = sortable ? () => this.getNewSortCondition(headerData.key) : null;
-      return (
+    let columnHeaders = columns.map(column => (
+      <TableCell
+        columnHeader
+        key={column.key}
+        ariaSort={sortCondition[column.key]}
+        align={column.align}
+        onClick={sortable ? () => this.getNewSortCondition(column.key) : null}
+      >
+        {column.label}
+      </TableCell>),
+    );
+
+    if (expandable) {
+      columnHeaders = columnHeaders.concat([
         <TableCell
           columnHeader
-          key={headerData.key}
-          ariaSort={ariaSort}
-          align={headerData.align}
-          onClick={onClick}
-        >
-          {headerData.label}
-        </TableCell>);
-    });
+          key="expandCol"
+          align="right"
+          style={{ flexBasis: '4rem', flexGrow: '0' }}
+          ariaSort={null}
+        />,
+        <TableCell className="u-hide" key="nullHeader" />,
+      ]);
+    }
 
     const header = (
       <thead>
@@ -140,11 +188,14 @@ class Table extends React.Component {
 
   generateRows() {
     const { data } = this.state;
+    const { expandable } = this.props;
     const rows = data.map((row) => {
       const cells = this.generateCells(row);
+
       return (
         <TableRow key={`row-${row.id}`}>
           {cells}
+          {expandable && this.generateExpandedCell(row.id)}
         </TableRow>
       );
     });
@@ -153,26 +204,75 @@ class Table extends React.Component {
   }
 
   generateCells(row) {
-    const { columns } = this.state;
-    const cells = columns.map(headerData => (
+    const { columns, expandedRows } = this.state;
+    const { expandable } = this.props;
+    const isExpandable = 'expandedCell' in row;
+    const isExpanded = expandedRows.includes(row.id);
+
+    let cells = columns.map(column => (
       <TableCell
-        rowHeader={headerData.header}
-        key={`${headerData.key}-row-${row.id}`}
-        align={headerData.align}
+        rowHeader={column.header}
+        key={`${column.key}-row-${row.id}`}
+        align={column.align}
       >
-        {row[headerData.key]}
+        {row[column.key]}
       </TableCell>),
     );
+
+    if (expandable) {
+      cells = cells.concat(
+        <TableCell
+          key={`expandable-cell-${row.id}`}
+          align="right"
+          style={{ flexBasis: '4rem', flexGrow: '0' }}
+        >
+          {isExpandable ?
+            <Button style={{ marginRight: '0.5rem', padding: '0' }} onClick={() => this.handleExpand(row.id)}>
+              <i className={isExpanded ? 'p-icon--minus' : 'p-icon--plus'} />
+            </Button> :
+            ''
+          }
+        </TableCell>,
+      );
+    }
 
     return cells;
   }
 
-  render() {
-    const { hasHeader, sortable } = this.props;
-    const className = sortable ? 'p-table--sortable' : null;
+  generateExpandedCell(rowId) {
+    const { data, expandedRows } = this.state;
+    const { expandedCell } = data.find(obj => obj.id === rowId);
+    const isExpanded = expandedRows.includes(rowId);
+
+    const classNames = getClassName({
+      'p-table-expanding__panel': true,
+      'u-hide': !expandedCell || !isExpanded,
+    }) || undefined;
 
     return (
-      <table role="grid" className={className}>
+      <TableCell
+        expandedCell
+        className={classNames}
+        aria-hidden={!expandedCell || !isExpanded}
+      >
+        {expandedCell}
+      </TableCell>
+    );
+  }
+
+  render() {
+    const {
+      className, expandable, hasHeader, sortable,
+    } = this.props;
+
+    const classNames = getClassName({
+      [className]: className,
+      'p-table-expanding': expandable,
+      'p-table--sortable': sortable,
+    }) || undefined;
+
+    return (
+      <table role="grid" className={classNames}>
         {hasHeader && this.generateHeader()}
         <tbody>
           {this.generateRows()}
@@ -183,18 +283,24 @@ class Table extends React.Component {
 }
 
 Table.defaultProps = {
+  accordion: false,
   children: null,
+  className: undefined,
   columns: null,
   data: null,
+  expandable: false,
   hasHeader: true,
   sortable: false,
   sortCondition: {},
 };
 
 Table.propTypes = {
+  accordion: PropTypes.bool,
   children: PropTypes.node,
+  className: PropTypes.string,
   columns: PropTypes.arrayOf(PropTypes.object),
   data: PropTypes.arrayOf(PropTypes.object),
+  expandable: PropTypes.bool,
   hasHeader: PropTypes.bool,
   sortable: PropTypes.bool,
   sortCondition: PropTypes.object,

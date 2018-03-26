@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Table component should render a dynamic table correctly 1`] = `
+exports[`<Table> should render a dynamic table correctly 1`] = `
 <table
-  className={null}
+  className={undefined}
   role="grid"
 >
   <thead>
@@ -11,7 +11,7 @@ exports[`Table component should render a dynamic table correctly 1`] = `
     >
       <th
         aria-sort="none"
-        className={null}
+        className={undefined}
         onClick={null}
         role="columnheader"
         scope="col"
@@ -20,7 +20,7 @@ exports[`Table component should render a dynamic table correctly 1`] = `
       </th>
       <th
         aria-sort="none"
-        className={null}
+        className={undefined}
         onClick={null}
         role="columnheader"
         scope="col"
@@ -29,7 +29,7 @@ exports[`Table component should render a dynamic table correctly 1`] = `
       </th>
       <th
         aria-sort="none"
-        className={null}
+        className={undefined}
         onClick={null}
         role="columnheader"
         scope="col"
@@ -52,20 +52,20 @@ exports[`Table component should render a dynamic table correctly 1`] = `
       role="row"
     >
       <th
-        className={null}
+        className={undefined}
         role="rowheader"
         scope="row"
       >
         Header row
       </th>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
       </td>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
@@ -81,20 +81,20 @@ exports[`Table component should render a dynamic table correctly 1`] = `
       role="row"
     >
       <th
-        className={null}
+        className={undefined}
         role="rowheader"
         scope="row"
       >
         Header row
       </th>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
       </td>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
@@ -110,20 +110,20 @@ exports[`Table component should render a dynamic table correctly 1`] = `
       role="row"
     >
       <th
-        className={null}
+        className={undefined}
         role="rowheader"
         scope="row"
       >
         Header row
       </th>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
       </td>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
@@ -139,9 +139,9 @@ exports[`Table component should render a dynamic table correctly 1`] = `
 </table>
 `;
 
-exports[`Table component should render a headerless table correctly 1`] = `
+exports[`<Table> should render a headerless table correctly 1`] = `
 <table
-  className={null}
+  className={undefined}
   role="grid"
 >
   <tbody>
@@ -149,20 +149,20 @@ exports[`Table component should render a headerless table correctly 1`] = `
       role="row"
     >
       <th
-        className={null}
+        className={undefined}
         role="rowheader"
         scope="row"
       >
         Header row
       </th>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
       </td>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
@@ -178,20 +178,20 @@ exports[`Table component should render a headerless table correctly 1`] = `
       role="row"
     >
       <th
-        className={null}
+        className={undefined}
         role="rowheader"
         scope="row"
       >
         Header row
       </th>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
       </td>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
@@ -207,20 +207,20 @@ exports[`Table component should render a headerless table correctly 1`] = `
       role="row"
     >
       <th
-        className={null}
+        className={undefined}
         role="rowheader"
         scope="row"
       >
         Header row
       </th>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
       </td>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
@@ -236,9 +236,9 @@ exports[`Table component should render a headerless table correctly 1`] = `
 </table>
 `;
 
-exports[`Table component should render a pre-sorted table correctly 1`] = `
+exports[`<Table> should render a pre-sorted table correctly 1`] = `
 <table
-  className={null}
+  className={undefined}
   role="grid"
 >
   <thead>
@@ -247,7 +247,7 @@ exports[`Table component should render a pre-sorted table correctly 1`] = `
     >
       <th
         aria-sort="none"
-        className={null}
+        className={undefined}
         onClick={null}
         role="columnheader"
         scope="col"
@@ -288,7 +288,7 @@ exports[`Table component should render a pre-sorted table correctly 1`] = `
       role="row"
     >
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Melon
@@ -316,7 +316,7 @@ exports[`Table component should render a pre-sorted table correctly 1`] = `
       role="row"
     >
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Grape
@@ -344,7 +344,7 @@ exports[`Table component should render a pre-sorted table correctly 1`] = `
       role="row"
     >
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Apple
@@ -372,7 +372,7 @@ exports[`Table component should render a pre-sorted table correctly 1`] = `
 </table>
 `;
 
-exports[`Table component should render a sortable table correctly 1`] = `
+exports[`<Table> should render a sortable table correctly 1`] = `
 <table
   className="p-table--sortable"
   role="grid"
@@ -383,7 +383,7 @@ exports[`Table component should render a sortable table correctly 1`] = `
     >
       <th
         aria-sort="none"
-        className={null}
+        className={undefined}
         onClick={[Function]}
         role="columnheader"
         scope="col"
@@ -424,7 +424,7 @@ exports[`Table component should render a sortable table correctly 1`] = `
       role="row"
     >
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Grape
@@ -452,7 +452,7 @@ exports[`Table component should render a sortable table correctly 1`] = `
       role="row"
     >
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Melon
@@ -480,7 +480,7 @@ exports[`Table component should render a sortable table correctly 1`] = `
       role="row"
     >
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Apple
@@ -508,9 +508,9 @@ exports[`Table component should render a sortable table correctly 1`] = `
 </table>
 `;
 
-exports[`Table component should render a static table correctly 1`] = `
+exports[`<Table> should render a static table correctly 1`] = `
 <table
-  className={null}
+  className={undefined}
   role="grid"
 >
   <thead>
@@ -519,7 +519,7 @@ exports[`Table component should render a static table correctly 1`] = `
     >
       <th
         aria-sort="none"
-        className={null}
+        className={undefined}
         onClick={null}
         role="columnheader"
         scope="col"
@@ -528,7 +528,7 @@ exports[`Table component should render a static table correctly 1`] = `
       </th>
       <th
         aria-sort="none"
-        className={null}
+        className={undefined}
         onClick={null}
         role="columnheader"
         scope="col"
@@ -537,7 +537,7 @@ exports[`Table component should render a static table correctly 1`] = `
       </th>
       <th
         aria-sort="none"
-        className={null}
+        className={undefined}
         onClick={null}
         role="columnheader"
         scope="col"
@@ -560,20 +560,20 @@ exports[`Table component should render a static table correctly 1`] = `
       role="row"
     >
       <th
-        className={null}
+        className={undefined}
         role="rowheader"
         scope="row"
       >
         Header row
       </th>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
       </td>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
@@ -589,20 +589,20 @@ exports[`Table component should render a static table correctly 1`] = `
       role="row"
     >
       <th
-        className={null}
+        className={undefined}
         role="rowheader"
         scope="row"
       >
         Header row
       </th>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
       </td>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
@@ -618,20 +618,20 @@ exports[`Table component should render a static table correctly 1`] = `
       role="row"
     >
       <th
-        className={null}
+        className={undefined}
         role="rowheader"
         scope="row"
       >
         Header row
       </th>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
       </td>
       <td
-        className={null}
+        className={undefined}
         role="gridcell"
       >
         Table cell
@@ -641,6 +641,231 @@ exports[`Table component should render a static table correctly 1`] = `
         role="gridcell"
       >
         333
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`<Table> should render an expandable table correctly 1`] = `
+<table
+  className="p-table-expanding"
+  role="grid"
+>
+  <thead>
+    <tr
+      role="row"
+    >
+      <th
+        aria-sort="none"
+        className={undefined}
+        onClick={null}
+        role="columnheader"
+        scope="col"
+      >
+        Username
+      </th>
+      <th
+        aria-sort="none"
+        className={undefined}
+        onClick={null}
+        role="columnheader"
+        scope="col"
+      >
+        Email
+      </th>
+      <th
+        aria-sort="none"
+        className="u-align--right"
+        onClick={null}
+        role="columnheader"
+        scope="col"
+      >
+        Height (cm)
+      </th>
+      <th
+        aria-sort={null}
+        className="u-align--right"
+        role="columnheader"
+        scope="col"
+        style={
+          Object {
+            "flexGrow": "0.5",
+          }
+        }
+      >
+        Expand
+      </th>
+      <td
+        className="u-hide"
+        role="gridcell"
+      />
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      role="row"
+    >
+      <td
+        className={undefined}
+        role="gridcell"
+      >
+        aeinstein
+      </td>
+      <td
+        className={undefined}
+        role="gridcell"
+      >
+        albert.einstein@yahoo.com
+      </td>
+      <td
+        className="u-align--right"
+        role="gridcell"
+      >
+        175
+      </td>
+      <td
+        className="u-align--right"
+        role="gridcell"
+        style={
+          Object {
+            "flexGrow": "0.5",
+          }
+        }
+      >
+        <button
+          className="p-button--base"
+          disabled={false}
+          href={undefined}
+          onClick={[Function]}
+          style={
+            Object {
+              "padding": "0.5rem",
+            }
+          }
+        >
+          <i
+            className="p-icon--plus"
+          />
+        </button>
+      </td>
+      <td
+        aria-hidden={true}
+        className="p-table-expanding__panel u-hide"
+        expandedCell={true}
+        role="gridcell"
+      >
+        Hello
+      </td>
+    </tr>
+    <tr
+      role="row"
+    >
+      <td
+        className={undefined}
+        role="gridcell"
+      >
+        shawking
+      </td>
+      <td
+        className={undefined}
+        role="gridcell"
+      >
+        stephen.hawking@hotmail.com
+      </td>
+      <td
+        className="u-align--right"
+        role="gridcell"
+      >
+        183
+      </td>
+      <td
+        className="u-align--right"
+        role="gridcell"
+        style={
+          Object {
+            "flexGrow": "0.5",
+          }
+        }
+      >
+        <button
+          className="p-button--base"
+          disabled={false}
+          href={undefined}
+          onClick={[Function]}
+          style={
+            Object {
+              "padding": "0.5rem",
+            }
+          }
+        >
+          <i
+            className="p-icon--plus"
+          />
+        </button>
+      </td>
+      <td
+        aria-hidden={true}
+        className="p-table-expanding__panel u-hide"
+        expandedCell={true}
+        role="gridcell"
+      >
+        Hello
+      </td>
+    </tr>
+    <tr
+      role="row"
+    >
+      <td
+        className={undefined}
+        role="gridcell"
+      >
+        mcurie
+      </td>
+      <td
+        className={undefined}
+        role="gridcell"
+      >
+        marie.curie@gmail.com
+      </td>
+      <td
+        className="u-align--right"
+        role="gridcell"
+      >
+        158
+      </td>
+      <td
+        className="u-align--right"
+        role="gridcell"
+        style={
+          Object {
+            "flexGrow": "0.5",
+          }
+        }
+      >
+        <button
+          className="p-button--base"
+          disabled={false}
+          href={undefined}
+          onClick={[Function]}
+          style={
+            Object {
+              "padding": "0.5rem",
+            }
+          }
+        >
+          <i
+            className="p-icon--plus"
+          />
+        </button>
+      </td>
+      <td
+        aria-hidden={true}
+        className="p-table-expanding__panel u-hide"
+        expandedCell={true}
+        role="gridcell"
+      >
+        Hello
       </td>
     </tr>
   </tbody>

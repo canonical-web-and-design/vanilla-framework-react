@@ -11,23 +11,21 @@ import MediaObject from '../MediaObject/MediaObject';
 const ExpandedCellExample = (props) => {
   const { name, location } = props; // eslint-disable-line
   return (
-    <div className="p-strip is-shallow">
-      <div className="row">
-        <div className="col-6 prefix-1">
-          <MediaObject
-            round
-            img={{ src: 'http://placehold.it/120x120', alt: '' }}
-            title={{ name }}
-            description="Lorem ipsum dolor sit amet"
-            metadata={{ location }}
-          />
-        </div>
-        <div className="col-4">
-          <h3>About me</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum dicta
-            nostrum eligendi similique earum.
-          </p>
-        </div>
+    <div className="row" style={{ padding: '0.25rem 0' }}>
+      <div className="col-4">
+        <MediaObject
+          round
+          img={{ src: 'http://placehold.it/120x120', alt: '' }}
+          title={{ name }}
+          description="Lorem ipsum dolor sit amet"
+          metadata={{ location }}
+        />
+      </div>
+      <div className="col-4">
+        <h3>About me</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum dicta
+          nostrum eligendi similique earum.
+        </p>
       </div>
     </div>
   );

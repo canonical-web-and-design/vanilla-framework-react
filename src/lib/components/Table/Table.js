@@ -252,6 +252,7 @@ class Table extends React.Component {
     return (
       <TableCell
         expandedCell
+        style={{ borderTop: '0' }}
         className={classNames}
         aria-hidden={!expandedCell || !isExpanded}
       >

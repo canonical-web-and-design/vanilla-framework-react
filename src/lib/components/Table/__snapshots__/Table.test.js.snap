@@ -690,12 +690,11 @@ exports[`<Table> should render an expandable table correctly 1`] = `
         scope="col"
         style={
           Object {
-            "flexGrow": "0.5",
+            "flexBasis": "4rem",
+            "flexGrow": "0",
           }
         }
-      >
-        Expand
-      </th>
+      />
       <td
         className="u-hide"
         role="gridcell"
@@ -729,7 +728,8 @@ exports[`<Table> should render an expandable table correctly 1`] = `
         role="gridcell"
         style={
           Object {
-            "flexGrow": "0.5",
+            "flexBasis": "4rem",
+            "flexGrow": "0",
           }
         }
       >
@@ -740,7 +740,8 @@ exports[`<Table> should render an expandable table correctly 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "padding": "0.5rem",
+              "marginRight": "0.5rem",
+              "padding": "0",
             }
           }
         >
@@ -754,6 +755,11 @@ exports[`<Table> should render an expandable table correctly 1`] = `
         className="p-table-expanding__panel u-hide"
         expandedCell={true}
         role="gridcell"
+        style={
+          Object {
+            "borderTop": "0",
+          }
+        }
       >
         Hello
       </td>
@@ -784,7 +790,8 @@ exports[`<Table> should render an expandable table correctly 1`] = `
         role="gridcell"
         style={
           Object {
-            "flexGrow": "0.5",
+            "flexBasis": "4rem",
+            "flexGrow": "0",
           }
         }
       >
@@ -795,7 +802,8 @@ exports[`<Table> should render an expandable table correctly 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "padding": "0.5rem",
+              "marginRight": "0.5rem",
+              "padding": "0",
             }
           }
         >
@@ -809,6 +817,11 @@ exports[`<Table> should render an expandable table correctly 1`] = `
         className="p-table-expanding__panel u-hide"
         expandedCell={true}
         role="gridcell"
+        style={
+          Object {
+            "borderTop": "0",
+          }
+        }
       >
         Hello
       </td>
@@ -839,7 +852,8 @@ exports[`<Table> should render an expandable table correctly 1`] = `
         role="gridcell"
         style={
           Object {
-            "flexGrow": "0.5",
+            "flexBasis": "4rem",
+            "flexGrow": "0",
           }
         }
       >
@@ -850,7 +864,8 @@ exports[`<Table> should render an expandable table correctly 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "padding": "0.5rem",
+              "marginRight": "0.5rem",
+              "padding": "0",
             }
           }
         >
@@ -864,6 +879,11 @@ exports[`<Table> should render an expandable table correctly 1`] = `
         className="p-table-expanding__panel u-hide"
         expandedCell={true}
         role="gridcell"
+        style={
+          Object {
+            "borderTop": "0",
+          }
+        }
       >
         Hello
       </td>

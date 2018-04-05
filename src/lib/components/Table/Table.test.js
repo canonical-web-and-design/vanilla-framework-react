@@ -17,30 +17,50 @@ const columns = [
     { key: 'units', label: 'Units', align: 'right' },
     { key: 'revenue', label: 'Revenue', align: 'right' },
   ],
+  [
+    { key: 'username', label: 'Username' },
+    { key: 'email', label: 'Email' },
+    { key: 'height', label: 'Height (cm)', align: 'right' },
+  ],
 ];
 
 const data = [
   [{
     id: 0, header: 'Header row', column1: 'Table cell', column2: 'Table cell', column3: 111,
-  },
-  {
+  }, {
     id: 1, header: 'Header row', column1: 'Table cell', column2: 'Table cell', column3: 222,
-  },
-  {
+  }, {
     id: 2, header: 'Header row', column1: 'Table cell', column2: 'Table cell', column3: 333,
   }],
   [{
     id: 0, name: 'Grape', users: 8, units: 19, revenue: '$70',
-  },
-  {
+  }, {
     id: 1, name: 'Melon', users: 12, units: 23, revenue: '$99',
-  },
-  {
+  }, {
     id: 2, name: 'Apple', users: 9, units: 17, revenue: '$120',
+  }],
+  [{
+    id: 0,
+    username: 'aeinstein',
+    email: 'albert.einstein@yahoo.com',
+    height: 175,
+    expandedCell: 'Hello',
+  }, {
+    id: 1,
+    username: 'shawking',
+    email: 'stephen.hawking@hotmail.com',
+    height: 183,
+    expandedCell: 'Hello',
+  }, {
+    id: 2,
+    username: 'mcurie',
+    email: 'marie.curie@gmail.com',
+    height: 158,
+    expandedCell: 'Hello',
   }],
 ];
 
-describe('Table component', () => {
+describe('<Table>', () => {
   it('should render a static table correctly', () => {
     const table = ReactTestRenderer.create(
       <Table>
@@ -115,6 +135,18 @@ describe('Table component', () => {
         sortCondition={{ units: 'descending' }}
         columns={columns[1]}
         data={data[1]}
+      />,
+    );
+    const json = table.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('should render an expandable table correctly', () => {
+    const table = ReactTestRenderer.create(
+      <Table
+        expandable
+        columns={columns[2]}
+        data={data[2]}
       />,
     );
     const json = table.toJSON();

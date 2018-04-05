@@ -1,11 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import getClassName from '../../utils/getClassName';
 
 const TableCell = (props) => {
   const {
-    align, ariaSort, children, columnHeader, onClick, role, rowHeader,
+    align, ariaSort, children, className, columnHeader, role, rowHeader, ...otherProps
   } = props;
-  const className = align ? `u-align--${align}` : null;
+
+  const classNames = getClassName({
+    [className]: className,
+    [`u-align--${align}`]: align,
+  }) || undefined;
 
   if (columnHeader) {
     return (
@@ -13,8 +18,8 @@ const TableCell = (props) => {
         scope="col"
         role="columnheader"
         aria-sort={ariaSort}
-        className={className}
-        onClick={onClick}
+        className={classNames}
+        {...otherProps}
       >
         {children}
       </th>);
@@ -25,7 +30,8 @@ const TableCell = (props) => {
       <th
         scope="row"
         role="rowheader"
-        className={className}
+        className={classNames}
+        {...otherProps}
       >
         {children}
       </th>);
@@ -34,7 +40,8 @@ const TableCell = (props) => {
   return (
     <td
       role={role}
-      className={className}
+      className={classNames}
+      {...otherProps}
     >
       {children}
     </td>
@@ -45,8 +52,8 @@ TableCell.defaultProps = {
   align: null,
   ariaSort: 'none',
   children: null,
+  className: undefined,
   columnHeader: false,
-  onClick: null,
   role: 'gridcell',
   rowHeader: false,
 };
@@ -55,8 +62,8 @@ TableCell.propTypes = {
   align: PropTypes.string,
   ariaSort: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
   columnHeader: PropTypes.bool,
-  onClick: PropTypes.func,
   role: PropTypes.string,
   rowHeader: PropTypes.bool,
 };

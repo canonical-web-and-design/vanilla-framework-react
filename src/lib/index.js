@@ -7,6 +7,9 @@ import Button from './components/Button/Button';
 import Card from './components/Card/Card';
 import CodeBlock from './components/CodeBlock/CodeBlock';
 import CodeSnippet from './components/CodeSnippet/CodeSnippet';
+import ContextualMenu from './components/ContextualMenu/ContextualMenu';
+import ContextualMenuDropdown from './components/ContextualMenu/ContextualMenuDropdown';
+import ContextualMenuGroup from './components/ContextualMenu/ContextualMenuGroup';
 import DividerList from './components/DividerList/DividerList';
 import DividerListItem from './components/DividerList/DividerListItem';
 import FieldSet from './components/Form/FieldSet';
@@ -60,11 +63,11 @@ import ToolTip from './components/ToolTip/ToolTip';
 
 export {
   Accordion, AccordionItem, BlockQuote, Breadcrumb, BreadcrumbItem, Button, Card, CodeBlock,
-  CodeSnippet, DividerList, DividerListItem, FieldSet, Form, FormControl, FormGroup, FormHelpText,
-  Footer, FooterNav, FooterNavContainer, HeadingIcon, Image, InlineImages, Input, Label, Link, List,
-  ListItem, ListTree, ListTreeGroup, ListTreeItem, Matrix, MatrixItem, MediaObject, Modal,
-  MutedHeading, Navigation, NavigationBanner, NavigationLink, Notification, Pagination,
-  PaginationItem, SideNav, SideNavBanner, SideNavGroup, SideNavLink, Slider, SliderInput,
-  SteppedList, SteppedListItem, Strip, StripColumn, StripRow, Switch, Table, TableCell, TableRow,
-  Tabs, TabsItem, ToolTip,
+  CodeSnippet, ContextualMenu, ContextualMenuDropdown, ContextualMenuGroup, DividerList,
+  DividerListItem, FieldSet, Form, FormControl, FormGroup, FormHelpText, Footer, FooterNav,
+  FooterNavContainer, HeadingIcon, Image, InlineImages, Input, Label, Link, List, ListItem,
+  ListTree, ListTreeGroup, ListTreeItem, Matrix, MatrixItem, MediaObject, Modal, MutedHeading,
+  Navigation, NavigationBanner, NavigationLink, Notification, Pagination, PaginationItem, SideNav,
+  SideNavBanner, SideNavGroup, SideNavLink, Slider, SliderInput, SteppedList, SteppedListItem,
+  Strip, StripColumn, StripRow, Switch, Table, TableCell, TableRow, Tabs, TabsItem, ToolTip,
 };

@@ -2,33 +2,49 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import getClassName from '../../utils/getClassName';
 
-const Link = (props) => {
-  const {
-    soft, strong, inverted, external, top,
-  } = props;
-  const customClasses = props.className;
-
-  const className = getClassName({
-    'p-link--soft': soft,
-    'p-link--strong': strong,
-    'p-link--inverted': inverted,
-    'p-link--external': external,
-    'p-top__link': top,
-    [`${customClasses}`]: customClasses,
-  });
-
-  if (top) {
-    return (
-      <div className="p-top">
-        <a href={props.href} className={className}>{props.children}</a>
-      </div>
-    );
+class Link extends React.Component {
+  constructor() {
+    super();
+    this.onClick = this.onClick.bind(this);
   }
 
-  return (
-    <a href={props.href} className={className}>{props.children}</a>
-  );
-};
+  onClick(event) {
+    const { onClick } = this.props;
+
+    if (onClick) {
+      event.preventDefault();
+      onClick(event);
+    }
+  }
+
+  render() {
+    const {
+      children, className, soft, strong, inverted, external, top, href,
+    } = this.props;
+
+    const classNames = getClassName({
+      [className]: className,
+      'p-link': true,
+      'p-link--soft': soft,
+      'p-link--strong': strong,
+      'p-link--inverted': inverted,
+      'p-link--external': external,
+      'p-top__link': top,
+    });
+
+    if (top) {
+      return (
+        <div className="p-top">
+          <a href={href} className={classNames} onClick={this.onClick}>{children}</a>
+        </div>
+      );
+    }
+
+    return (
+      <a href={href} className={classNames} onClick={this.onClick}>{children}</a>
+    );
+  }
+}
 
 Link.defaultProps = {
   className: '',
@@ -37,6 +53,7 @@ Link.defaultProps = {
   inverted: false,
   external: false,
   top: false,
+  onClick: null,
 };
 
 Link.propTypes = {
@@ -48,6 +65,7 @@ Link.propTypes = {
   inverted: PropTypes.bool,
   external: PropTypes.bool,
   top: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 Link.displayName = 'Link';

@@ -3,26 +3,30 @@
 exports[`Link component should accept modifiers correctly 1`] = `
 <div>
   <a
-    className="p-link--external"
+    className="p-link p-link--external"
     href="https://vanillaframework.io/"
+    onClick={[Function]}
   >
     External Link
   </a>
   <a
-    className="p-link--soft"
+    className="p-link p-link--soft"
     href="https://vanilla-framework.github.io/vanilla-framework-react/"
+    onClick={[Function]}
   >
     Soft Link
   </a>
   <a
-    className="p-link--strong"
+    className="p-link p-link--strong"
     href="https://vanilla-framework.github.io/vanilla-framework-react/"
+    onClick={[Function]}
   >
     Strong Link
   </a>
   <a
-    className="p-link--inverted"
+    className="p-link p-link--inverted"
     href="https://vanilla-framework.github.io/vanilla-framework-react/"
+    onClick={[Function]}
   >
     Inverted Link
   </a>
@@ -30,21 +34,24 @@ exports[`Link component should accept modifiers correctly 1`] = `
     className="p-top"
   >
     <a
-      className="p-top__link"
+      className="p-link p-top__link"
       href="https://vanilla-framework.github.io/vanilla-framework-react/"
+      onClick={[Function]}
     >
       Back to top
     </a>
   </div>
   <a
-    className="p-link--strong p-link--external"
+    className="p-link p-link--strong p-link--external"
     href="https://vanillaframework.io/"
+    onClick={[Function]}
   >
     External/Strong Link
   </a>
   <a
-    className="p-link--soft p-link--external"
+    className="p-link p-link--soft p-link--external"
     href="https://vanillaframework.io/"
+    onClick={[Function]}
   >
     External/Soft Link
   </a>
@@ -52,8 +59,9 @@ exports[`Link component should accept modifiers correctly 1`] = `
     className="p-top"
   >
     <a
-      className="p-link--strong p-top__link"
+      className="p-link p-link--strong p-top__link"
       href="https://vanilla-framework.github.io/vanilla-framework-react/"
+      onClick={[Function]}
     >
       Strong/Back to top Link
     </a>
@@ -63,8 +71,9 @@ exports[`Link component should accept modifiers correctly 1`] = `
 
 exports[`Link component should render a simple link correctly 1`] = `
 <a
-  className=""
+  className="p-link"
   href="https://vanilla-framework.github.io/vanilla-framework-react/"
+  onClick={[Function]}
 >
   Default Link
 </a>

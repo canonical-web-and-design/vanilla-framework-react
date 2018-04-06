@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContextualMenu> should render ContextualMenuGroups correctly 1`] = `
+<span
+  className="p-contextual-menu p-contextual-menu--left"
+>
+  <div
+    aria-controls="menu"
+    aria-expanded={false}
+    aria-haspopup="true"
+    className="p-contextual-menu__toggle"
+    onClick={[Function]}
+    role="link"
+    tabIndex={0}
+  >
+    Menu
+  </div>
+  <span
+    aria-hidden={true}
+    className="p-contextual-menu__dropdown"
+    id="menu"
+  >
+    <span
+      className="p-contextual-menu__group"
+    >
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 1
+      </a>
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 2
+      </a>
+    </span>
+    <span
+      className="p-contextual-menu__group"
+    >
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 3
+      </a>
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 4
+      </a>
+    </span>
+  </span>
+</span>
+`;
+
+exports[`<ContextualMenu> should render a simple ContextualMenu correctly 1`] = `
+<span
+  className="p-contextual-menu"
+>
+  <div
+    aria-controls="menu"
+    aria-expanded={false}
+    aria-haspopup="true"
+    className="p-contextual-menu__toggle"
+    onClick={[Function]}
+    role="link"
+    tabIndex={0}
+  >
+    Menu
+  </div>
+  <span
+    aria-hidden={true}
+    className="p-contextual-menu__dropdown"
+    id="menu"
+  >
+    <a
+      className="p-contextual-menu__link"
+      href="#a"
+    >
+      Link 1
+    </a>
+    <a
+      className="p-contextual-menu__link"
+      href="#a"
+    >
+      Link 2
+    </a>
+    <a
+      className="p-contextual-menu__link"
+      href="#a"
+    >
+      Link 3
+    </a>
+  </span>
+</span>
+`;
+
+exports[`<ContextualMenu> should render with position prop correctly 1`] = `
+<div>
+  <span
+    className="p-contextual-menu p-contextual-menu--left"
+  >
+    <div
+      aria-controls="menu"
+      aria-expanded={false}
+      aria-haspopup="true"
+      className="p-contextual-menu__toggle"
+      onClick={[Function]}
+      role="link"
+      tabIndex={0}
+    >
+      Menu
+    </div>
+    <span
+      aria-hidden={true}
+      className="p-contextual-menu__dropdown"
+      id="menu"
+    >
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 1
+      </a>
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 2
+      </a>
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 3
+      </a>
+    </span>
+  </span>
+  <span
+    className="p-contextual-menu p-contextual-menu--center"
+  >
+    <div
+      aria-controls="menu"
+      aria-expanded={false}
+      aria-haspopup="true"
+      className="p-contextual-menu__toggle"
+      onClick={[Function]}
+      role="link"
+      tabIndex={0}
+    >
+      Menu
+    </div>
+    <span
+      aria-hidden={true}
+      className="p-contextual-menu__dropdown"
+      id="menu"
+    >
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 1
+      </a>
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 2
+      </a>
+      <a
+        className="p-contextual-menu__link"
+        href="#a"
+      >
+        Link 3
+      </a>
+    </span>
+  </span>
+</div>
+`;

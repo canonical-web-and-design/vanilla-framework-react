@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import getClassName from '../../utils/getClassName';
 
 const Notification = (props) => {
   const {
-    action, children, status, caution, information, negative, positive,
+    action, children, className, status, caution, information, negative, positive,
   } = props;
 
-  const className = classNames({
+  const classNames = getClassName({
+    [className]: className,
     'p-notification--information': information,
     'p-notification--positive': positive,
     'p-notification--caution': caution,
     'p-notification--negative': negative,
-  });
+  }) || 'p-notification';
 
   return (
-    <div className={className || 'p-notification'}>
+    <div className={classNames}>
       <p className="p-notification__response">
         {status && <span className="p-notification__status">{status}</span>}
         {children}
@@ -28,6 +29,7 @@ const Notification = (props) => {
 Notification.defaultProps = {
   action: null,
   caution: false,
+  className: undefined,
   information: false,
   negative: false,
   positive: false,
@@ -41,6 +43,7 @@ Notification.propTypes = {
   }),
   caution: PropTypes.bool,
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
   information: PropTypes.bool,
   negative: PropTypes.bool,
   positive: PropTypes.bool,

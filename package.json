@@ -22,10 +22,6 @@
   "homepage": "https://github.com/vanilla-framework/vanilla-framework-react#readme",
   "license": "MIT",
   "dependencies": {
-    "@storybook/addon-info": "^3.2.14",
-    "@storybook/addon-knobs": "^3.2.17",
-    "@storybook/react": "^3.2.14",
-    "classnames": "^2.2.5",
     "dedent-js": "^1.0.1",
     "natural-compare-lite": "^1.4.0",
     "pretty": "^2.0.0",
@@ -33,7 +29,10 @@
   },
   "devDependencies": {
     "@percy-io/percy-storybook": "^1.2.5",
+    "@storybook/addon-info": "^3.2.14",
+    "@storybook/addon-knobs": "^3.2.17",
     "@storybook/addon-options": "^3.2.17",
+    "@storybook/react": "^3.2.14",
     "autoprefixer": "7.1.6",
     "babel-cli": "^6.26.0",
     "babel-core": "6.26.0",

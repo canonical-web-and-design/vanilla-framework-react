@@ -7,6 +7,7 @@ cache:
 before-script:
   - yarn build
 script:
+  - yarn lint
   - yarn test
   - yarn snapshot
 deploy:

@@ -81,5 +81,5 @@ describe('ToolTip component', () => {
     );
     const json = toolTip.toJSON();
     expect(json).toMatchSnapshot();
-  })
+  });
 });

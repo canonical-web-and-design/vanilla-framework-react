@@ -11,7 +11,7 @@
     "prepublish": "export BABEL_ENV=production && rm -rf dist && babel src/lib -d dist",
     "serve": "start-storybook -p ${PORT:-8102}",
     "snapshot": "build-storybook && percy-storybook --widths=320,1280",
-    "test": "export BABEL_ENV=test && jest --watch --env=jsdom"
+    "test": "BABEL_ENV=test jest --watch --env=jsdom"
   },
   "repository": {
     "type": "git",

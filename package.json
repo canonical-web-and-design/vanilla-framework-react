@@ -10,7 +10,7 @@
     "lint": "eslint ./src/",
     "serve": "start-storybook -p ${PORT:-8102}",
     "snapshot": "build-storybook && percy-storybook --widths=320,1280",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "yarn jest --watch --env=jsdom"
   },
   "repository": {
     "type": "git",

@@ -4,7 +4,7 @@
   "description": "Vanilla Framework, built using React",
   "main": "build/index.js",
   "scripts": {
-    "build": "node scripts/build.js",
+    "build": "",
     "build-storybook": "build-storybook",
     "clean": "rm -rf node_modules && rm -rf build",
     "lint": "eslint ./src/",

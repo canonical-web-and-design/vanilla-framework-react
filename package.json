@@ -2,15 +2,16 @@
   "name": "vanilla-framework-react",
   "version": "0.1.3",
   "description": "Vanilla Framework, built using React",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "",
     "build-storybook": "build-storybook",
     "clean": "rm -rf node_modules && rm -rf build",
     "lint": "eslint ./src/",
+    "prepublish": "export BABEL_ENV=production && rm -rf dist && babel src/lib -d dist",
     "serve": "start-storybook -p ${PORT:-8102}",
     "snapshot": "build-storybook && percy-storybook --widths=320,1280",
-    "test": "yarn jest --watch --env=jsdom"
+    "test": "export BABEL_ENV=test && jest --watch --env=jsdom"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/vanilla-framework/vanilla-framework-react#readme",
   "license": "MIT",
   "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "dedent-js": "^1.0.1",
     "natural-compare-lite": "^1.4.0",
     "pretty": "^2.0.0",
@@ -39,6 +41,7 @@
     "babel-eslint": "8.0.2",
     "babel-jest": "21.2.0",
     "babel-loader": "7.1.2",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-app": "^3.0.2",
@@ -115,13 +118,5 @@
       "jsx",
       "node"
     ]
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }

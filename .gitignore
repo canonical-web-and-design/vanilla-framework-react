@@ -64,5 +64,6 @@ env[23]/
 .env.test.local
 .env.production.local
 
-# percy static site
+# project-specific ignore files
+/dist
 /storybook-static

@@ -4,11 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules
-before-script:
-  - yarn build
 script:
   - yarn lint
-  - yarn test
+  - yarn jest --env=jsdom
   - yarn snapshot
 deploy:
   provider: pages

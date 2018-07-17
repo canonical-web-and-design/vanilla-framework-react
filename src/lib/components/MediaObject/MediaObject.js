@@ -1,108 +1,106 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import getClassName from '../../utils/getClassName';
 
-const MediaObject = (props) => {
-  let image;
-  let title;
-  let description;
-  let metadata;
+class MediaObject extends React.Component {
+  constructor() {
+    super();
 
-  if (props.img) {
-    image = (
-      <img
-        className={`p-media-object__image${props.round ? ' is-round' : ''}`}
-        src={props.img.src}
-        alt={props.img.alt}
-      />
-    );
+    this.generateMetadata = this.generateMetadata.bind(this);
   }
 
-  if (props.title) {
-    if (props.title.link) {
-      title = (
-        <h3 className="p-media-object__title">
-          <a href={props.title.link}>{props.title.name}</a>
-        </h3>
-      );
-    } else {
-      title = (
-        <h3 className="p-media-object__title">
-          {props.title.name}
-        </h3>
-      );
-    }
-  }
+  generateMetadata() {
+    const { metadata } = this.props;
 
-  if (props.description) {
-    description = (
-      <p className="p-media-object__content">
-        {props.description}
-      </p>
-    );
-  }
+    const metadataItems = metadata.map((item, index) => {
+      const { description, type } = item;
+      const key = `${type}${index}`;
+      const metadataClass = getClassName({
+        'p-media-object__meta-list-item': !type,
+        'p-media-object__meta-list-item--date': type === 'date',
+        'p-media-object__meta-list-item--location': type === 'location',
+        'p-media-object__meta-list-item--venue': type === 'venue',
+      }) || undefined;
 
-  if (props.metadata) {
-    const metadataItems = Object.keys(props.metadata).map((key) => {
-      if (key === 'topic') {
-        return (
-          <li key={key} className="p-media-object__meta-list-item">
-            {props.metadata[key]}
-          </li>
-        );
-      }
       return (
-        <li key={key} className={`p-media-object__meta-list-item--${key}`}>
-          {props.metadata[key]}
-        </li>
+        <li key={key} className={metadataClass}>{description}</li>
       );
     });
 
-    metadata = (
+    return (
       <ul className="p-media-object__meta-list">
         {metadataItems}
       </ul>
     );
   }
 
-  return (
-    <div className={props.large ? 'p-media-object--large' : 'p-media-object'}>
-      {image}
-      <div className="p-media-object__details">
-        {title}
-        {description}
-        {metadata}
+  render() {
+    const {
+      children, className, href, img, large, metadata, round, title,
+    } = this.props;
+
+    const containerClass = getClassName({
+      [className]: className,
+      'p-media-object': !large,
+      'p-media-object--large': large,
+    }) || undefined;
+
+    const imgClass = getClassName({
+      'p-media-object__image': true,
+      'is-round': round,
+    } || undefined);
+
+    return (
+      <div className={containerClass}>
+        {img &&
+          <img className={imgClass} src={img.src} alt={img.alt} />
+        }
+        <div className="p-media-object__details">
+          {title &&
+            <h3 className="p-media-object__title">
+              {href ? <a href={href}>{title}</a> : title}
+            </h3>
+          }
+          {children &&
+            <div className="p-media-object__content">
+              {children}
+            </div>
+          }
+          {metadata && this.generateMetadata()}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 MediaObject.defaultProps = {
-  round: false,
+  children: undefined,
+  className: undefined,
+  href: undefined,
+  img: undefined,
   large: false,
-  img: null,
-  title: null,
-  description: null,
-  metadata: null,
+  metadata: undefined,
+  round: false,
+  title: undefined,
 };
 
 MediaObject.propTypes = {
-  round: PropTypes.bool,
-  large: PropTypes.bool,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  href: PropTypes.string,
   img: PropTypes.shape({
-    src: PropTypes.string,
     alt: PropTypes.string,
+    src: PropTypes.string,
   }),
-  title: PropTypes.shape({
-    name: PropTypes.string,
-    link: PropTypes.string,
-  }),
-  description: PropTypes.string,
-  metadata: PropTypes.shape({
-    topic: PropTypes.string,
-    date: PropTypes.string,
-    venue: PropTypes.string,
-    location: PropTypes.string,
-  }),
+  large: PropTypes.bool,
+  metadata: PropTypes.arrayOf(
+    PropTypes.shape({
+      description: PropTypes.string,
+      type: PropTypes.string,
+    }),
+  ),
+  round: PropTypes.bool,
+  title: PropTypes.string,
 };
 
 MediaObject.displayName = 'MediaObject';

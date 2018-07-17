@@ -14,7 +14,7 @@ class Matrix extends React.Component {
     const extraMatrixItems = [];
 
     for (let i = 0; i < emptyItemCount; i += 1) {
-      extraMatrixItems.push(<MatrixItem key={i} />);
+      extraMatrixItems.push(<MatrixItem key={i} className="u-hide--small" />);
     }
 
     return extraMatrixItems;

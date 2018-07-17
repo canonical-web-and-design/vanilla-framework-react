@@ -227,7 +227,7 @@ class Table extends React.Component {
           style={{ flexBasis: '4rem', flexGrow: '0' }}
         >
           {isExpandable ?
-            <Button style={{ marginRight: '0.5rem', padding: '0' }} onClick={() => this.handleExpand(row.id)}>
+            <Button style={{ padding: '0' }} onClick={() => this.handleExpand(row.id)}>
               <i className={isExpanded ? 'p-icon--minus' : 'p-icon--plus'} />
             </Button> :
             ''

@@ -16,10 +16,10 @@ const ExpandedCellExample = (props) => {
         <MediaObject
           round
           img={{ src: 'http://placehold.it/120x120', alt: '' }}
-          title={{ name }}
-          description="Lorem ipsum dolor sit amet"
-          metadata={{ location }}
-        />
+          metadata={[{ type: 'location', description: location }]}
+        >
+          <p>Lorem ipsum dolor sit amet</p>
+        </MediaObject>
       </div>
       <div className="col-4">
         <h3>About me</h3>

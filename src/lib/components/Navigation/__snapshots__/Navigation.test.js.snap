@@ -55,7 +55,16 @@ exports[`<Navigation> renders with a single NavigationLink correctly 1`] = `
         className="p-navigation__link"
         href="#"
       >
-        Title
+        <h3
+          style={
+            Object {
+              "alignSelf": "center",
+              "margin": 0,
+            }
+          }
+        >
+          Title
+        </h3>
       </a>
     </div>
     <a
@@ -110,7 +119,16 @@ exports[`<Navigation> renders with a text-based NavigationBanner correctly 1`] =
         className="p-navigation__link"
         href="#"
       >
-        Title
+        <h3
+          style={
+            Object {
+              "alignSelf": "center",
+              "margin": 0,
+            }
+          }
+        >
+          Title
+        </h3>
       </a>
     </div>
     <a
@@ -146,7 +164,16 @@ exports[`<Navigation> renders with multiple NavigationLinks correctly 1`] = `
         className="p-navigation__link"
         href="#"
       >
-        Title
+        <h3
+          style={
+            Object {
+              "alignSelf": "center",
+              "margin": 0,
+            }
+          }
+        >
+          Title
+        </h3>
       </a>
     </div>
     <a

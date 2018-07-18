@@ -1,9 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, boolean } from '@storybook/addon-knobs';
+import { boolean, select, text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 import MediaObject from './MediaObject';
+
+const metadataOptions = [undefined, 'date', 'location', 'venue'];
 
 storiesOf('Media Object', module)
   .add('Default',
@@ -11,16 +13,27 @@ storiesOf('Media Object', module)
       <MediaObject
         round={boolean('Round', false)}
         large={boolean('Large', false)}
+        href={text('href', '#')}
         img={{ src: text('Image', 'http://placehold.it/72x72'), alt: '' }}
-        title={{ name: text('Title', 'Event Title'), link: text('Link', '#') }}
-        description={text('Description', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')}
-        metadata={{
-          topic: text('Topic', 'CSS frameworks'),
-          date: text('Date', '21 - 23 February 2017'),
-          venue: text('Venue', 'Venue 360'),
-          location: text('Location', 'Santa Clara, CA'),
-        }}
-      />),
+        title={text('Title', 'Event Title')}
+        metadata={[
+          {
+            description: text('Metadata description', 'CSS frameworks'),
+            type: select('Metadata type', metadataOptions),
+          }, {
+            description: '21 - 23 February 2017',
+            type: 'date',
+          }, {
+            description: 'Venue 360',
+            type: 'venue',
+          }, {
+            description: 'Santa Clara, CA',
+            type: 'location',
+          },
+        ]}
+      >
+        <p>{text('Description', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')}</p>
+      </MediaObject>),
     ),
   )
 
@@ -30,15 +43,17 @@ storiesOf('Media Object', module)
         round={boolean('Round', true)}
         large={boolean('Large', false)}
         img={{ src: text('Image', 'http://placehold.it/72x72'), alt: '' }}
-        title={{ name: text('Title', 'Person Name'), link: text('Link', '#') }}
-        description={text('Description', 'Lorem ipsum dolor sit amet')}
-        metadata={{
-          topic: text('Topic'),
-          date: text('Date'),
-          venue: text('Venue'),
-          location: text('Location', 'London, UK'),
-        }}
-      />),
+        title={text('Title', 'Person Name')}
+        href={text('href', '#')}
+        metadata={[
+          {
+            description: text('Metadata description', 'London, UK'),
+            type: select('Metadata type', metadataOptions, 'location'),
+          },
+        ]}
+      >
+        <p>{text('Description', 'Lorem ipsum dolor sit amet')}</p>
+      </MediaObject>),
     ),
   )
 
@@ -48,14 +63,10 @@ storiesOf('Media Object', module)
         round={boolean('Round', false)}
         large={boolean('Large', true)}
         img={{ src: text('Image', 'http://placehold.it/96x96'), alt: '' }}
-        title={{ name: text('Title', 'Title'), link: text('Link') }}
-        description={text('Description', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')}
-        metadata={{
-          topic: text('Topic'),
-          date: text('Date'),
-          venue: text('Venue'),
-          location: text('Location'),
-        }}
-      />),
+        title={text('Title', 'Title')}
+        href={text('href', undefined)}
+      >
+        <p>{text('Description', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')}</p>
+      </MediaObject>),
     ),
   );

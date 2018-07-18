@@ -13,6 +13,7 @@ storiesOf('Notification', module)
         positive={boolean('Positive', false)}
         caution={boolean('Caution', false)}
         negative={boolean('Negative', false)}
+        visible={boolean('Visible', true)}
         status={text('Status', null)}
         action={{
           value: text('Action text', null),
@@ -31,6 +32,7 @@ storiesOf('Notification', module)
         positive={boolean('Positive', false)}
         caution={boolean('Caution', false)}
         negative={boolean('Negative', false)}
+        visible={boolean('Visible', true)}
         status={text('Status', 'Information:')}
         action={{
           value: text('Action text', null),
@@ -49,6 +51,7 @@ storiesOf('Notification', module)
         positive={boolean('Positive', true)}
         caution={boolean('Caution', false)}
         negative={boolean('Negative', false)}
+        visible={boolean('Visible', true)}
         status={text('Status', 'Success:')}
         action={{
           value: text('Action text', null),
@@ -67,6 +70,7 @@ storiesOf('Notification', module)
         positive={boolean('Positive', false)}
         caution={boolean('Caution', true)}
         negative={boolean('Negative', false)}
+        visible={boolean('Visible', true)}
         status={text('Status', 'Blocked:')}
         action={{
           value: text('Action text', null),
@@ -85,6 +89,7 @@ storiesOf('Notification', module)
         positive={boolean('Positive', false)}
         caution={boolean('Caution', false)}
         negative={boolean('Negative', true)}
+        visible={boolean('Visible', true)}
         status={text('Status', 'Error:')}
         action={{
           value: text('Action text', null),
@@ -103,9 +108,10 @@ storiesOf('Notification', module)
         positive={boolean('Positive', false)}
         caution={boolean('Caution', false)}
         negative={boolean('Negative', false)}
+        visible={boolean('Visible', true)}
         status={text('Status', null)}
         action={{
-          value: text('Action text', 'Dismiss'),
+          value: text('Action text', 'More information'),
           href: text('Action href', '#'),
         }}
       >

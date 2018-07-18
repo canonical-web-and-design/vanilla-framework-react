@@ -208,10 +208,10 @@ storiesOf('Strip', module)
           <StripColumn size={6}>
             <h2>Ubuntu Enterprise Summit</h2>
             <h3>5 &mdash; 6 December 2017</h3>
-            <h5>Find out how the world&lsquo;s top companies use Ubuntu to succeed</h5>
-            <p>
+            <h4>Find out how the world&lsquo;s top companies use Ubuntu to succeed</h4>
+            <div>
               <Button positive value="Sign up now" />
-            </p>
+            </div>
           </StripColumn>
           <StripColumn size={6}>
             <Image src="https://assets.ubuntu.com/v1/9c1315fb-IOT_Ubuntu_devices_inforgrapic+v3.svg" alt="Ubuntu devices infographic" />

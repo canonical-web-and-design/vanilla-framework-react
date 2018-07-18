@@ -14,7 +14,7 @@ class NavigationBanner extends React.Component {
         <div className="p-navigation__logo">
           <Tag className="p-navigation__link" href={href}>
             {(logo.src ?
-              <img className="p-navigation__image" src={logo.src} alt={logo.alt} /> : title
+              <img className="p-navigation__image" src={logo.src} alt={logo.alt} /> : <h3 style={{ margin: 0, alignSelf: 'center' }}>{title}</h3>
             )}
           </Tag>
         </div>

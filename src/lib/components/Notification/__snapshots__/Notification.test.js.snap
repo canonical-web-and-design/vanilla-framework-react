@@ -3,54 +3,143 @@
 exports[`Notification component should render a caution Notification 1`] = `
 <div
   className="p-notification--caution"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
 >
   <p
     className="p-notification__response"
   >
     This is a caution Notification
   </p>
+  <button
+    aria-label="Close notification"
+    className="p-icon--close"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "backgroundSize": "1rem",
+        "border": "0",
+        "margin": "1.1875rem 1rem auto auto",
+        "padding": ".5rem",
+      }
+    }
+  >
+    Close
+  </button>
 </div>
 `;
 
 exports[`Notification component should render a default Notification 1`] = `
 <div
   className="p-notification"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
 >
   <p
     className="p-notification__response"
   >
     This is a default Notification
   </p>
+  <button
+    aria-label="Close notification"
+    className="p-icon--close"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "backgroundSize": "1rem",
+        "border": "0",
+        "margin": "1.1875rem 1rem auto auto",
+        "padding": ".5rem",
+      }
+    }
+  >
+    Close
+  </button>
 </div>
 `;
 
 exports[`Notification component should render a negative Notification 1`] = `
 <div
   className="p-notification--negative"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
 >
   <p
     className="p-notification__response"
   >
     This is a negative Notification
   </p>
+  <button
+    aria-label="Close notification"
+    className="p-icon--close"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "backgroundSize": "1rem",
+        "border": "0",
+        "margin": "1.1875rem 1rem auto auto",
+        "padding": ".5rem",
+      }
+    }
+  >
+    Close
+  </button>
 </div>
 `;
 
 exports[`Notification component should render a positive Notification 1`] = `
 <div
   className="p-notification--positive"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
 >
   <p
     className="p-notification__response"
   >
     This is a positive Notification
   </p>
+  <button
+    aria-label="Close notification"
+    className="p-icon--close"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "backgroundSize": "1rem",
+        "border": "0",
+        "margin": "1.1875rem 1rem auto auto",
+        "padding": ".5rem",
+      }
+    }
+  >
+    Close
+  </button>
 </div>
 `;
 
 exports[`Notification component should render a status if prop is provided 1`] = `
 <div
   className="p-notification"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
 >
   <p
     className="p-notification__response"
@@ -62,12 +151,33 @@ exports[`Notification component should render a status if prop is provided 1`] =
     </span>
     This is a Notification with a status
   </p>
+  <button
+    aria-label="Close notification"
+    className="p-icon--close"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "backgroundSize": "1rem",
+        "border": "0",
+        "margin": "1.1875rem 1rem auto auto",
+        "padding": ".5rem",
+      }
+    }
+  >
+    Close
+  </button>
 </div>
 `;
 
 exports[`Notification component should render an action if prop is provided 1`] = `
 <div
   className="p-notification"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
 >
   <p
     className="p-notification__response"
@@ -80,17 +190,54 @@ exports[`Notification component should render an action if prop is provided 1`] 
       Action
     </a>
   </p>
+  <button
+    aria-label="Close notification"
+    className="p-icon--close"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "backgroundSize": "1rem",
+        "border": "0",
+        "margin": "1.1875rem 1rem auto auto",
+        "padding": ".5rem",
+      }
+    }
+  >
+    Close
+  </button>
 </div>
 `;
 
 exports[`Notification component should render an information Notification 1`] = `
 <div
   className="p-notification--information"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
 >
   <p
     className="p-notification__response"
   >
     This is an information Notification
   </p>
+  <button
+    aria-label="Close notification"
+    className="p-icon--close"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "backgroundSize": "1rem",
+        "border": "0",
+        "margin": "1.1875rem 1rem auto auto",
+        "padding": ".5rem",
+      }
+    }
+  >
+    Close
+  </button>
 </div>
 `;

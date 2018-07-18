@@ -740,7 +740,6 @@ exports[`<Table> should render an expandable table correctly 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "marginRight": "0.5rem",
               "padding": "0",
             }
           }
@@ -802,7 +801,6 @@ exports[`<Table> should render an expandable table correctly 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "marginRight": "0.5rem",
               "padding": "0",
             }
           }
@@ -864,7 +862,6 @@ exports[`<Table> should render an expandable table correctly 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "marginRight": "0.5rem",
               "padding": "0",
             }
           }

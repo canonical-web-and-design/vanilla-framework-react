@@ -26,11 +26,13 @@ exports[`MediaObject component should render a MediaObject with several optional
         Event Title
       </a>
     </h3>
-    <p
+    <div
       className="p-media-object__content"
     >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
     <ul
       className="p-media-object__meta-list"
     >
@@ -71,11 +73,13 @@ exports[`MediaObject component should render default style correctly 1`] = `
     >
       Event Title
     </h3>
-    <p
+    <div
       className="p-media-object__content"
     >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
   </div>
 </div>
 `;
@@ -85,28 +89,13 @@ exports[`MediaObject component should render image correctly 1`] = `
   className="p-media-object"
 >
   <img
-    alt=""
+    alt="alt"
     className="p-media-object__image"
     src="http://placehold.it/72x72"
   />
   <div
     className="p-media-object__details"
-  >
-    <h3
-      className="p-media-object__title"
-    >
-      <a
-        href="#"
-      >
-        Event Title
-      </a>
-    </h3>
-    <p
-      className="p-media-object__content"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </div>
+  />
 </div>
 `;
 
@@ -116,18 +105,7 @@ exports[`MediaObject component should render large prop correctly 1`] = `
 >
   <div
     className="p-media-object__details"
-  >
-    <h3
-      className="p-media-object__title"
-    >
-      Event Title
-    </h3>
-    <p
-      className="p-media-object__content"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </div>
+  />
 </div>
 `;
 
@@ -138,20 +116,6 @@ exports[`MediaObject component should render metadata correctly 1`] = `
   <div
     className="p-media-object__details"
   >
-    <h3
-      className="p-media-object__title"
-    >
-      <a
-        href="#"
-      >
-        Event Title
-      </a>
-    </h3>
-    <p
-      className="p-media-object__content"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
     <ul
       className="p-media-object__meta-list"
     >
@@ -180,28 +144,22 @@ exports[`MediaObject component should render metadata correctly 1`] = `
 </div>
 `;
 
-exports[`MediaObject component should render round prop correctly 1`] = `
+exports[`MediaObject component should render round image correctly 1`] = `
 <div
   className="p-media-object"
 >
+  <img
+    alt="alt"
+    className="p-media-object__image is-round"
+    src="http://placehold.it/72x72"
+  />
   <div
     className="p-media-object__details"
-  >
-    <h3
-      className="p-media-object__title"
-    >
-      Event Title
-    </h3>
-    <p
-      className="p-media-object__content"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </div>
+  />
 </div>
 `;
 
-exports[`MediaObject component should render title link correctly 1`] = `
+exports[`MediaObject component should render title with link correctly 1`] = `
 <div
   className="p-media-object"
 >
@@ -217,11 +175,6 @@ exports[`MediaObject component should render title link correctly 1`] = `
         Event Title
       </a>
     </h3>
-    <p
-      className="p-media-object__content"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
   </div>
 </div>
 `;

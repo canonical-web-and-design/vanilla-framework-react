@@ -11,11 +11,11 @@ exports[`Matrix component should auto-fill to have a multiple of three MatrixIte
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
@@ -25,11 +25,11 @@ exports[`Matrix component should auto-fill to have a multiple of three MatrixIte
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
@@ -39,11 +39,11 @@ exports[`Matrix component should auto-fill to have a multiple of three MatrixIte
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
@@ -53,33 +53,33 @@ exports[`Matrix component should auto-fill to have a multiple of three MatrixIte
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>
@@ -107,33 +107,33 @@ exports[`Matrix component should convert title to link when href prop provided 1
           Title
         </a>
       </h3>
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>
@@ -152,11 +152,11 @@ exports[`Matrix component should render a Matrix with multiple MatrixItem correc
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
@@ -166,11 +166,11 @@ exports[`Matrix component should render a Matrix with multiple MatrixItem correc
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
@@ -180,11 +180,11 @@ exports[`Matrix component should render a Matrix with multiple MatrixItem correc
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
 </ul>
@@ -201,33 +201,33 @@ exports[`Matrix component should render a Matrix with one MatrixItem correctly 1
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>
@@ -250,33 +250,33 @@ exports[`Matrix component should render a title when title prop provided 1`] = `
       >
         Title
       </h3>
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>
@@ -309,33 +309,33 @@ exports[`Matrix component should render an image when img prop provided 1`] = `
           Title
         </a>
       </h3>
-      <p
+      <div
         className="p-matrix__desc"
       >
         description
-      </p>
+      </div>
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>
   </li>
   <li
-    className="p-matrix__item"
+    className="u-hide--small p-matrix__item"
   >
     <div
       className="p-matrix__content"
     >
       
-      <p
+      <div
         className="p-matrix__desc"
       />
     </div>

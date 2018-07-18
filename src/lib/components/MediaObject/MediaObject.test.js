@@ -13,11 +13,19 @@ describe('MediaObject component', () => {
 
   it('should render default style correctly', () => {
     const mediaObject = ReactTestRenderer.create(
-      <MediaObject
-        title={{ name: 'Event Title' }}
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua."
-      />,
+      <MediaObject title="Event Title">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </MediaObject>,
+    );
+    const json = mediaObject.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('should render title with link correctly', () => {
+    const mediaObject = ReactTestRenderer.create(
+      <MediaObject title="Event Title" href="#" />,
     );
     const json = mediaObject.toJSON();
     expect(json).toMatchSnapshot();
@@ -25,25 +33,7 @@ describe('MediaObject component', () => {
 
   it('should render large prop correctly', () => {
     const mediaObject = ReactTestRenderer.create(
-      <MediaObject
-        large
-        title={{ name: 'Event Title' }}
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua."
-      />,
-    );
-    const json = mediaObject.toJSON();
-    expect(json).toMatchSnapshot();
-  });
-
-  it('should render round prop correctly', () => {
-    const mediaObject = ReactTestRenderer.create(
-      <MediaObject
-        round
-        title={{ name: 'Event Title' }}
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua."
-      />,
+      <MediaObject large />,
     );
     const json = mediaObject.toJSON();
     expect(json).toMatchSnapshot();
@@ -51,24 +41,15 @@ describe('MediaObject component', () => {
 
   it('should render image correctly', () => {
     const mediaObject = ReactTestRenderer.create(
-      <MediaObject
-        img={{ src: 'http://placehold.it/72x72', alt: '' }}
-        title={{ name: 'Event Title', link: '#' }}
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua."
-      />,
+      <MediaObject img={{ src: 'http://placehold.it/72x72', alt: 'alt' }} />,
     );
     const json = mediaObject.toJSON();
     expect(json).toMatchSnapshot();
   });
 
-  it('should render title link correctly', () => {
+  it('should render round image correctly', () => {
     const mediaObject = ReactTestRenderer.create(
-      <MediaObject
-        title={{ name: 'Event Title', link: '#' }}
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua."
-      />,
+      <MediaObject round img={{ src: 'http://placehold.it/72x72', alt: 'alt' }} />,
     );
     const json = mediaObject.toJSON();
     expect(json).toMatchSnapshot();
@@ -77,15 +58,20 @@ describe('MediaObject component', () => {
   it('should render metadata correctly', () => {
     const mediaObject = ReactTestRenderer.create(
       <MediaObject
-        title={{ name: 'Event Title', link: '#' }}
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua."
-        metadata={{
-          topic: 'CSS frameworks',
-          date: '21 - 23 February 2017',
-          venue: 'Venue 360',
-          location: 'Santa Clara, CA',
-        }}
+        metadata={[
+          {
+            description: 'CSS frameworks',
+          }, {
+            description: '21 - 23 February 2017',
+            type: 'date',
+          }, {
+            description: 'Venue 360',
+            type: 'venue',
+          }, {
+            description: 'Santa Clara, CA',
+            type: 'location',
+          },
+        ]}
       />,
     );
     const json = mediaObject.toJSON();
@@ -97,16 +83,27 @@ describe('MediaObject component', () => {
       <MediaObject
         round
         large
-        title={{ name: 'Event Title', link: '#' }}
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua."
-        metadata={{
-          topic: 'CSS frameworks',
-          date: '21 - 23 February 2017',
-          venue: 'Venue 360',
-          location: 'Santa Clara, CA',
-        }}
-      />,
+        title="Event Title"
+        href="#"
+        metadata={[
+          {
+            description: 'CSS frameworks',
+          }, {
+            description: '21 - 23 February 2017',
+            type: 'date',
+          }, {
+            description: 'Venue 360',
+            type: 'venue',
+          }, {
+            description: 'Santa Clara, CA',
+            type: 'location',
+          },
+        ]}
+      >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </MediaObject>,
     );
     const json = mediaObject.toJSON();
     expect(json).toMatchSnapshot();

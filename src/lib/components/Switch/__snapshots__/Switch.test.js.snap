@@ -1,28 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Switch component should compare with a snapshot 1`] = `
-<span>
-  <label
-    htmlFor="switch-on"
-    id="switch-on-label"
-  >
-    Turn On/Off
-    <button
-      aria-checked={false}
-      aria-labelledby="switch-on-label"
-      className="p-switch"
-      id="switch-on"
-      onClick={[Function]}
-      role="switch"
-      type="button"
-    >
-      <span>
-        On
-      </span>
-      <span>
-        Off
-      </span>
-    </button>
-  </label>
-</span>
+<label
+  htmlFor="switch"
+>
+  Turn On/Off
+  <input
+    checked={false}
+    className="p-switch"
+    id="switch"
+    type="checkbox"
+    value="off"
+  />
+  <div
+    className="p-switch__slider"
+  />
+</label>
 `;

@@ -60,7 +60,7 @@
     "object-assign": "4.1.1",
     "promise": "8.0.1",
     "react": "16.2.0",
-    "react-dom": "16.2.0",
+    "react-dom": "16.8.6",
     "react-test-renderer": "16.2.0",
     "whatwg-fetch": "2.0.3"
   },

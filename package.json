@@ -29,7 +29,7 @@
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
-    "@percy-io/percy-storybook": "1.2.7",
+    "@percy-io/percy-storybook": "2.1.0",
     "@storybook/addon-info": "3.2.17",
     "@storybook/addon-knobs": "3.2.17",
     "@storybook/addon-options": "3.2.17",

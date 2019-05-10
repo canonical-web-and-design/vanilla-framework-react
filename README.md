@@ -1,3 +1,9 @@
+***Archived***
+
+*Ths project has been archived for the time being, as it's not currently being maintained or actively used.*
+
+---
+
 # Vanilla Framework (in React)
 
 This is a simple implementation of Vanilla Framework using React.
